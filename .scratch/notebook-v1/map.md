@@ -4,24 +4,31 @@ Label: wayfinder:map
 
 ## Destination
 
-A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL), it is transcribed on the Omarchy machine, and the Owner reads it in an installable PWA that is easy to read, works offline on each device, and writes every Transcript out as Export files the Owner controls. The map is done when nothing is left to decide before implementation starts.
+A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL), it is transcribed on the Omarchy machine, and the Owner reads it in an installable PWA that fetches everything live over the tailnet and is easy to read. An Export downloads a Transcript as files to whichever device asks. The map is done when nothing is left to decide before implementation starts.
 
 ## Notes
 
 - Domain language: `GLOSSARY.md`. Settled architecture: `docs/adr/` and `docs/transcription.md`. Read all three before resolving any ticket.
 - Skills: prototype tickets use `prototype`; UI tickets also consult `web-design-guidelines` and `shadcn`; grilling tickets use `grilling` + `domain-modeling`.
 - Standing decisions (from charting):
-  - Storage: the Omarchy machine is the source of truth; nothing goes to a cloud.
+  - Storage: the Omarchy machine holds the entire Library; nothing goes to a cloud. Devices keep no Library data: the PWA caches only its app shell and reads everything live over the tailnet. A device gets a copy of a Transcript only through an Export download.
   - Auth: none; the tailnet is the boundary (ADR 0001).
   - Database: one SQLite file via Drizzle (ADR 0002).
   - Speech-to-text: Parakeet TDT 0.6b v3 via onnx-asr on CUDA, loading voxtype's model files directly.
   - Languages: English plus Parakeet's European languages only.
-  - Media: uploads are kept as Opus audio for playback; YouTube Sources play through the embed.
+  - Media: every Source keeps its audio on the Omarchy machine, uploads as Opus and URL Sources as the native audio yt-dlp downloaded. YouTube Sources play through the embed by default and fall back to the kept audio when embedding is disabled or the video is gone.
+- Before any device installs the PWA: the Owner logs in to Tailscale, names the machine `omarchy`, enables MagicDNS and HTTPS, and finalises the tailnet name (see "Running Notebook always-on").
 - First build step after the map closes: re-scaffold with SQLite, no auth, no Docker (the current scaffold still has Postgres and Better Auth).
 
 ## Decisions so far
 
+- [PWA offline storage and install over Tailscale](issues/01-pwa-offline-storage.md): ts.net certs satisfy PWA install, but the hostname must never change once installed; share-to-app works only on Android/desktop Chrome, so a paste field is required. (Its device-storage findings went unused: devices keep no Library data.)
+- [Media URL ingestion and synced playback](issues/02-media-url-ingestion.md): yt-dlp as a pinned Python library, keeping the native Opus/WebM; metadata covers the Library card; failures are classified by error text; the YouTube embed is polled for time; our own audio is served with Range support.
+- [Running Notebook always-on](issues/09-always-on-operation.md): systemd user services started at boot via linger; one Hono process on `127.0.0.1:4310` behind `tailscale serve` at `https://omarchy.<tailnet>.ts.net/`; the Library lives in `~/.local/share/notebook/` with daily DB snapshots; a weekly yt-dlp upgrade.
+
 ## Not yet specified
+
+- **Off-disk backups**: copying DB snapshots (and maybe media) somewhere other than this disk. It waits until the Owner has a second drive or machine in mind.
 
 - **AI reading help**: summary, chapters, key points, and Q&A over a Transcript from a local LLM on the GPU. In scope, but it depends on what the reader shows, so it waits for the reader prototype.
 - **Speaker labels (diarization)**: whether and how Segments carry a speaker, and how that changes paragraph grouping. Waits on the reader layout and data model.
@@ -33,3 +40,4 @@ A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL
 - Multi-user or public deployment: see ADR 0001. It becomes a new effort if it happens.
 - Native mobile app (Expo): the PWA covers phone access for now.
 - Cloud storage or sync services.
+- Offline reading on devices: the Owner chose live access over the tailnet, with Export as the only way a Transcript lands on a device. [What each device keeps offline](issues/08-offline-behaviour.md) was closed for this reason.

@@ -25,8 +25,8 @@ The process that turns a Source's media into its Transcript, together with its s
 _Avoid_: Job (when talking about the domain), task, conversion
 
 **Export**:
-The files written for a finished Transcript into a folder the owner chooses, so the text lives outside the app too.
-_Avoid_: Backup, download, sync
+A Transcript turned into files and downloaded to the device that asked for it. It is the only way Library data reaches a device.
+_Avoid_: Backup, sync, offline copy
 
 **Owner**:
 The one person whose machine runs Notebook and whose tailnet devices may reach it.

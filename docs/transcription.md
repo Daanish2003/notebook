@@ -9,7 +9,7 @@ Read this before working on uploads, jobs, the worker, or transcript storage.
 3. **Fetch.** For URLs, `yt-dlp -x` downloads the audio and fills in `title` and `duration`.
 4. **Normalise.** `ffmpeg` converts to 16 kHz mono WAV (`$MEDIA_DIR/<id>/audio.wav`).
 5. **Transcribe.** onnx-asr runs Parakeet TDT 0.6b v3 with Silero VAD and timestamps. The model loads once, when the worker starts.
-6. **Store.** Insert one `transcript_segment` row per VAD segment (`idx`, `start_ms`, `end_ms`, `text`, and `words` as JSON with per-token times), then set `status = 'done'`. On failure, set `status = 'error'` with the message. Delete `audio.wav` afterwards; keep or remove the source according to a setting.
+6. **Store.** Insert one `transcript_segment` row per VAD segment (`idx`, `start_ms`, `end_ms`, `text`, and `words` as JSON with per-token times), then set `status = 'done'`. On failure, set `status = 'error'` with the message. Delete `audio.wav` afterwards. Always keep the Source's audio for playback: uploads transcoded to Opus, and URL Sources as the native audio yt-dlp downloaded.
 
 The server and web app only read rows, so the worker can restart at any time without losing jobs.
 
@@ -22,17 +22,17 @@ The server and web app only read rows, so the worker can restart at any time wit
 
 ## Config (worker env)
 
-| Var             | Default                                              |
-| --------------- | ---------------------------------------------------- |
-| `DATABASE_URL`  | the same SQLite file as `packages/db`                |
-| `STT_MODEL_DIR` | `~/.local/share/voxtype/models/parakeet-tdt-0.6b-v3` |
-| `MEDIA_DIR`     | `<repo>/data/media` (git-ignored)                    |
-| `STT_PROVIDERS` | `CUDAExecutionProvider,CPUExecutionProvider`         |
+| Var             | Default                                               |
+| --------------- | ----------------------------------------------------- |
+| `DATABASE_URL`  | the same SQLite file as `packages/db`                 |
+| `STT_MODEL_DIR` | `~/.local/share/voxtype/models/parakeet-tdt-0.6b-v3`  |
+| `MEDIA_DIR`     | `~/.local/share/notebook/media` (dev: `./data/media`) |
+| `STT_PROVIDERS` | `CUDAExecutionProvider,CPUExecutionProvider`          |
 
 Python deps (managed with `uv`): `onnx-asr[gpu,hub]` (Silero VAD downloads from HF on first run), the stdlib `sqlite3` module. System tools: `ffmpeg`, `yt-dlp`.
 
 ## Running it
 
 - Dev: `pnpm dev`, and `uv run` the worker from `apps/transcriber`.
-- Always-on: systemd user units for the server and worker, with `tailscale serve` providing HTTPS on the tailnet. The PWA install prompt requires HTTPS.
+- Always-on: see the map ticket "Running Notebook always-on": systemd user services with linger, one Hono process on `127.0.0.1:4310`, and `tailscale serve` at `https://omarchy.<tailnet>.ts.net/`.
 - The voxtype daemon keeps its own copy of the model in VRAM. Both fit on 12 GB.
