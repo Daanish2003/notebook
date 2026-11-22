@@ -42,3 +42,13 @@ For UI changes, also run the app and look at it: `pnpm dev` (web on http://local
 Use Conventional Commits, scoped by workspace: `web`, `server`, `api`, `auth`, `db`, `ui`, `transcribe`, `config`, or `deps` (example: `feat(api): add notes router`). Lefthook lints and formats staged files on commit and typechecks on push. When a hook fails, fix the cause and commit again.
 
 Personal or machine-specific notes go in `CLAUDE.local.md`, which is git-ignored.
+
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues on this repo, via the `gh` CLI; build tickets carry `ready-for-agent`. See `docs/agents/issue-tracker.md`.
+
+### Domain docs
+
+Single-context: `GLOSSARY.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
