@@ -69,3 +69,6 @@ web-build
 
 # Claude Code (personal)
 .claude/settings.local.json
+
+# Personal agent notes
+CLAUDE.local.md
