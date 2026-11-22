@@ -1,0 +1,104 @@
+{
+"meta": {
+"system": "sortformer-4spk-v2.1 (nemo)",
+"audio_s": 240.0,
+"load_s": 77.94,
+"wall_s": 1.53,
+"rtfx": 156.5,
+"vram_mib": 1036,
+"torch_peak_alloc_mib": 918,
+"rss_mib": 2499,
+"speakers_active": 3,
+"frames": [
+3000,
+4
+]
+},
+"turns": [
+{
+"start": 0.0,
+"end": 13.84,
+"speaker": "S0"
+},
+{
+"start": 14.48,
+"end": 16.08,
+"speaker": "S0"
+},
+{
+"start": 16.16,
+"end": 16.96,
+"speaker": "S0"
+},
+{
+"start": 122.48,
+"end": 193.12,
+"speaker": "S0"
+},
+{
+"start": 16.16,
+"end": 16.64,
+"speaker": "S1"
+},
+{
+"start": 17.12,
+"end": 31.12,
+"speaker": "S1"
+},
+{
+"start": 83.36,
+"end": 97.76,
+"speaker": "S1"
+},
+{
+"start": 102.64,
+"end": 121.36,
+"speaker": "S1"
+},
+{
+"start": 193.28,
+"end": 203.28,
+"speaker": "S1"
+},
+{
+"start": 30.96,
+"end": 31.52,
+"speaker": "S2"
+},
+{
+"start": 31.92,
+"end": 45.44,
+"speaker": "S2"
+},
+{
+"start": 46.4,
+"end": 55.2,
+"speaker": "S2"
+},
+{
+"start": 55.28,
+"end": 63.76,
+"speaker": "S2"
+},
+{
+"start": 64.32,
+"end": 82.96,
+"speaker": "S2"
+},
+{
+"start": 94.64,
+"end": 94.88,
+"speaker": "S2"
+},
+{
+"start": 97.76,
+"end": 102.64,
+"speaker": "S2"
+},
+{
+"start": 203.28,
+"end": 239.99,
+"speaker": "S2"
+}
+]
+}

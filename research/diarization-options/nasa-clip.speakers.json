@@ -1,0 +1,5803 @@
+{
+ "source": {
+  "title": "Houston We Have a Podcast: Artemis Flight Directors",
+  "url": "https://www.youtube.com/watch?v=ZC4hpgNoumQ",
+  "license": "NASA, US public domain",
+  "excerpt_s": [
+   0.0,
+   240.0
+  ],
+  "note": "4-minute clip cut from 10:00-14:00 of the episode; times are relative to the clip start (add 600 s for the episode). Conversational, two to three speakers; machine transcript, uncorrected."
+ },
+ "diarization": {
+  "model": "nvidia/Nemotron-3-Diarization (ONNX, offline)",
+  "assignment": "align.assign_words_probs + align.snap_to_sentences",
+  "names": {
+   "S0": "Judd Frieling",
+   "S1": "Gary Jordan",
+   "S2": "Rick LaBrode"
+  }
+ },
+ "segments": [
+  {
+   "idx": 0,
+   "start": 0.0,
+   "end": 17.0,
+   "text": "and and and lead. And so that's what we assign that. So cargo missions is another great example. You know, there's multiple different teams from multiple centers, you know, that we need to make sure that we're all um, you know, looking at the same sheet of music. Got it. Essentially.",
+   "words": [
+    {
+     "w": "and",
+     "start": 0.24,
+     "end": 0.4,
+     "p": 0.897,
+     "spk": "S0"
+    },
+    {
+     "w": "and",
+     "start": 0.4,
+     "end": 0.72,
+     "p": 0.877,
+     "spk": "S0"
+    },
+    {
+     "w": "and",
+     "start": 0.72,
+     "end": 0.96,
+     "p": 0.82,
+     "spk": "S0"
+    },
+    {
+     "w": "lead.",
+     "start": 0.96,
+     "end": 1.52,
+     "p": 0.815,
+     "spk": "S0"
+    },
+    {
+     "w": "And",
+     "start": 1.52,
+     "end": 1.68,
+     "p": 0.984,
+     "spk": "S0"
+    },
+    {
+     "w": "so",
+     "start": 1.68,
+     "end": 1.84,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "that's",
+     "start": 1.84,
+     "end": 2.08,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "what",
+     "start": 2.08,
+     "end": 2.32,
+     "p": 0.996,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 2.32,
+     "end": 2.64,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "assign",
+     "start": 2.64,
+     "end": 3.12,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "that.",
+     "start": 3.12,
+     "end": 3.36,
+     "p": 0.965,
+     "spk": "S0"
+    },
+    {
+     "w": "So",
+     "start": 3.36,
+     "end": 3.92,
+     "p": 0.991,
+     "spk": "S0"
+    },
+    {
+     "w": "cargo",
+     "start": 3.92,
+     "end": 4.4,
+     "p": 0.904,
+     "spk": "S0"
+    },
+    {
+     "w": "missions",
+     "start": 4.4,
+     "end": 4.8,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "is",
+     "start": 4.8,
+     "end": 4.96,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "another",
+     "start": 4.96,
+     "end": 5.2,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "great",
+     "start": 5.2,
+     "end": 5.44,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "example.",
+     "start": 5.44,
+     "end": 5.84,
+     "p": 0.942,
+     "spk": "S0"
+    },
+    {
+     "w": "You",
+     "start": 5.84,
+     "end": 6.0,
+     "p": 0.899,
+     "spk": "S0"
+    },
+    {
+     "w": "know,",
+     "start": 6.0,
+     "end": 6.16,
+     "p": 0.845,
+     "spk": "S0"
+    },
+    {
+     "w": "there's",
+     "start": 6.16,
+     "end": 6.4,
+     "p": 0.998,
+     "spk": "S0"
+    },
+    {
+     "w": "multiple",
+     "start": 6.4,
+     "end": 6.8,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "different",
+     "start": 6.8,
+     "end": 7.2,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "teams",
+     "start": 7.2,
+     "end": 8.08,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "from",
+     "start": 8.08,
+     "end": 8.4,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "multiple",
+     "start": 8.4,
+     "end": 8.96,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "centers,",
+     "start": 8.96,
+     "end": 9.76,
+     "p": 0.926,
+     "spk": "S0"
+    },
+    {
+     "w": "you",
+     "start": 9.76,
+     "end": 9.92,
+     "p": 0.972,
+     "spk": "S0"
+    },
+    {
+     "w": "know,",
+     "start": 9.92,
+     "end": 10.16,
+     "p": 0.944,
+     "spk": "S0"
+    },
+    {
+     "w": "that",
+     "start": 10.16,
+     "end": 10.32,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 10.32,
+     "end": 10.56,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "need",
+     "start": 10.56,
+     "end": 10.8,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "to",
+     "start": 10.8,
+     "end": 11.04,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "make",
+     "start": 11.04,
+     "end": 11.28,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "sure",
+     "start": 11.28,
+     "end": 11.52,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "that",
+     "start": 11.52,
+     "end": 11.68,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "we're",
+     "start": 11.68,
+     "end": 12.24,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "all",
+     "start": 12.24,
+     "end": 12.56,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "um,",
+     "start": 12.56,
+     "end": 12.96,
+     "p": 0.505,
+     "spk": "S0"
+    },
+    {
+     "w": "you",
+     "start": 12.96,
+     "end": 13.28,
+     "p": 0.987,
+     "spk": "S0"
+    },
+    {
+     "w": "know,",
+     "start": 13.28,
+     "end": 14.24,
+     "p": 0.882,
+     "spk": "S0"
+    },
+    {
+     "w": "looking",
+     "start": 14.24,
+     "end": 14.64,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "at",
+     "start": 14.64,
+     "end": 14.8,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "the",
+     "start": 14.8,
+     "end": 14.88,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "same",
+     "start": 14.88,
+     "end": 15.12,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "sheet",
+     "start": 15.12,
+     "end": 15.44,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "of",
+     "start": 15.44,
+     "end": 15.52,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "music.",
+     "start": 15.52,
+     "end": 15.92,
+     "p": 0.884,
+     "spk": "S0"
+    },
+    {
+     "w": "Got",
+     "start": 15.92,
+     "end": 16.08,
+     "p": 0.918,
+     "spk": "S1"
+    },
+    {
+     "w": "it.",
+     "start": 16.08,
+     "end": 16.4,
+     "p": 0.637,
+     "spk": "S1"
+    },
+    {
+     "w": "Essentially.",
+     "start": 16.4,
+     "end": 17.0,
+     "p": 0.974,
+     "spk": "S0"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S0",
+     "start": 0.24,
+     "end": 15.92,
+     "words": [
+      0,
+      48
+     ]
+    },
+    {
+     "spk": "S1",
+     "start": 15.92,
+     "end": 16.4,
+     "words": [
+      48,
+      50
+     ]
+    },
+    {
+     "spk": "S0",
+     "start": 16.4,
+     "end": 17.0,
+     "words": [
+      50,
+      51
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 1,
+   "start": 17.02,
+   "end": 36.71,
+   "text": "So so Rick, from your lead position of Artemis, what responsibilities as aside from sitting in mission control and actually being the flight director for, you know, whatever your shift is, what are the lead responsibilities that you're helping out with? Yeah. I think um and this goes for any lead, uh any lead role.",
+   "words": [
+    {
+     "w": "So",
+     "start": 17.1,
+     "end": 17.42,
+     "p": 0.895,
+     "spk": "S1"
+    },
+    {
+     "w": "so",
+     "start": 17.42,
+     "end": 17.58,
+     "p": 0.875,
+     "spk": "S1"
+    },
+    {
+     "w": "Rick,",
+     "start": 17.58,
+     "end": 17.98,
+     "p": 0.843,
+     "spk": "S1"
+    },
+    {
+     "w": "from",
+     "start": 17.98,
+     "end": 18.22,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "your",
+     "start": 18.22,
+     "end": 18.46,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "lead",
+     "start": 18.46,
+     "end": 18.78,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "position",
+     "start": 18.78,
+     "end": 19.1,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "of",
+     "start": 19.1,
+     "end": 19.34,
+     "p": 0.99,
+     "spk": "S1"
+    },
+    {
+     "w": "Artemis,",
+     "start": 19.34,
+     "end": 20.38,
+     "p": 0.992,
+     "spk": "S1"
+    },
+    {
+     "w": "what",
+     "start": 20.38,
+     "end": 20.7,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "responsibilities",
+     "start": 20.7,
+     "end": 21.66,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "as",
+     "start": 21.66,
+     "end": 21.98,
+     "p": 0.554,
+     "spk": "S1"
+    },
+    {
+     "w": "aside",
+     "start": 21.98,
+     "end": 22.46,
+     "p": 0.935,
+     "spk": "S1"
+    },
+    {
+     "w": "from",
+     "start": 22.46,
+     "end": 22.78,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "sitting",
+     "start": 22.78,
+     "end": 23.1,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "in",
+     "start": 23.1,
+     "end": 23.26,
+     "p": 0.996,
+     "spk": "S1"
+    },
+    {
+     "w": "mission",
+     "start": 23.26,
+     "end": 23.66,
+     "p": 0.957,
+     "spk": "S1"
+    },
+    {
+     "w": "control",
+     "start": 23.66,
+     "end": 24.14,
+     "p": 0.993,
+     "spk": "S1"
+    },
+    {
+     "w": "and",
+     "start": 24.14,
+     "end": 24.3,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "actually",
+     "start": 24.3,
+     "end": 24.7,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "being",
+     "start": 24.7,
+     "end": 25.1,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "the",
+     "start": 25.1,
+     "end": 25.34,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "flight",
+     "start": 25.34,
+     "end": 25.82,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "director",
+     "start": 25.82,
+     "end": 26.38,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "for,",
+     "start": 26.38,
+     "end": 26.62,
+     "p": 0.723,
+     "spk": "S1"
+    },
+    {
+     "w": "you",
+     "start": 26.62,
+     "end": 26.78,
+     "p": 0.994,
+     "spk": "S1"
+    },
+    {
+     "w": "know,",
+     "start": 26.78,
+     "end": 26.94,
+     "p": 0.942,
+     "spk": "S1"
+    },
+    {
+     "w": "whatever",
+     "start": 26.94,
+     "end": 27.34,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "your",
+     "start": 27.34,
+     "end": 27.58,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "shift",
+     "start": 27.58,
+     "end": 27.98,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "is,",
+     "start": 27.98,
+     "end": 28.38,
+     "p": 0.962,
+     "spk": "S1"
+    },
+    {
+     "w": "what",
+     "start": 28.38,
+     "end": 28.62,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "are",
+     "start": 28.62,
+     "end": 28.78,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "the",
+     "start": 28.78,
+     "end": 28.94,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "lead",
+     "start": 28.94,
+     "end": 29.26,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "responsibilities",
+     "start": 29.26,
+     "end": 29.9,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "that",
+     "start": 29.9,
+     "end": 30.06,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "you're",
+     "start": 30.06,
+     "end": 30.3,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "helping",
+     "start": 30.3,
+     "end": 30.62,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "out",
+     "start": 30.62,
+     "end": 30.78,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "with?",
+     "start": 30.78,
+     "end": 31.1,
+     "p": 0.966,
+     "spk": "S1"
+    },
+    {
+     "w": "Yeah.",
+     "start": 31.1,
+     "end": 31.82,
+     "p": 0.8,
+     "spk": "S2"
+    },
+    {
+     "w": "I",
+     "start": 31.82,
+     "end": 32.06,
+     "p": 0.916,
+     "spk": "S2"
+    },
+    {
+     "w": "think",
+     "start": 32.06,
+     "end": 32.3,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "um",
+     "start": 32.3,
+     "end": 32.86,
+     "p": 0.964,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 32.86,
+     "end": 33.1,
+     "p": 0.995,
+     "spk": "S2"
+    },
+    {
+     "w": "this",
+     "start": 33.1,
+     "end": 33.34,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "goes",
+     "start": 33.34,
+     "end": 33.58,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "for",
+     "start": 33.58,
+     "end": 33.82,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "any",
+     "start": 33.82,
+     "end": 34.14,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "lead,",
+     "start": 34.14,
+     "end": 34.7,
+     "p": 0.875,
+     "spk": "S2"
+    },
+    {
+     "w": "uh",
+     "start": 34.7,
+     "end": 35.18,
+     "p": 0.98,
+     "spk": "S2"
+    },
+    {
+     "w": "any",
+     "start": 35.18,
+     "end": 35.5,
+     "p": 0.993,
+     "spk": "S2"
+    },
+    {
+     "w": "lead",
+     "start": 35.5,
+     "end": 35.98,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "role.",
+     "start": 35.98,
+     "end": 36.71,
+     "p": 0.858,
+     "spk": "S2"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S1",
+     "start": 17.1,
+     "end": 31.1,
+     "words": [
+      0,
+      41
+     ]
+    },
+    {
+     "spk": "S2",
+     "start": 31.1,
+     "end": 36.71,
+     "words": [
+      41,
+      55
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 2,
+   "start": 36.64,
+   "end": 55.52,
+   "text": "whether it be for an increment, an ISS, or a cargo mission or Artemis, is the lead is is really ultimately responsible for building the mission and then executing it. And that's that's you interface with the programs, with uh ESD, the Exploration System Division at a headquarters.",
+   "words": [
+    {
+     "w": "whether",
+     "start": 36.72,
+     "end": 37.04,
+     "p": 0.899,
+     "spk": "S2"
+    },
+    {
+     "w": "it",
+     "start": 37.04,
+     "end": 37.12,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "be",
+     "start": 37.12,
+     "end": 37.28,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "for",
+     "start": 37.28,
+     "end": 37.36,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "an",
+     "start": 37.36,
+     "end": 37.52,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "increment,",
+     "start": 37.52,
+     "end": 38.16,
+     "p": 0.932,
+     "spk": "S2"
+    },
+    {
+     "w": "an",
+     "start": 38.16,
+     "end": 38.32,
+     "p": 0.997,
+     "spk": "S2"
+    },
+    {
+     "w": "ISS,",
+     "start": 38.32,
+     "end": 38.96,
+     "p": 0.917,
+     "spk": "S2"
+    },
+    {
+     "w": "or",
+     "start": 38.96,
+     "end": 39.2,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "a",
+     "start": 39.2,
+     "end": 39.36,
+     "p": 0.899,
+     "spk": "S2"
+    },
+    {
+     "w": "cargo",
+     "start": 39.36,
+     "end": 39.84,
+     "p": 0.989,
+     "spk": "S2"
+    },
+    {
+     "w": "mission",
+     "start": 39.84,
+     "end": 40.32,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "or",
+     "start": 40.32,
+     "end": 40.64,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "Artemis,",
+     "start": 40.64,
+     "end": 41.68,
+     "p": 0.952,
+     "spk": "S2"
+    },
+    {
+     "w": "is",
+     "start": 41.68,
+     "end": 42.0,
+     "p": 0.992,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 42.0,
+     "end": 42.16,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "lead",
+     "start": 42.16,
+     "end": 42.48,
+     "p": 0.994,
+     "spk": "S2"
+    },
+    {
+     "w": "is",
+     "start": 42.48,
+     "end": 42.8,
+     "p": 0.965,
+     "spk": "S2"
+    },
+    {
+     "w": "is",
+     "start": 42.8,
+     "end": 43.12,
+     "p": 0.933,
+     "spk": "S2"
+    },
+    {
+     "w": "really",
+     "start": 43.12,
+     "end": 43.6,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "ultimately",
+     "start": 43.6,
+     "end": 44.24,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "responsible",
+     "start": 44.24,
+     "end": 45.2,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "for",
+     "start": 45.2,
+     "end": 46.08,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "building",
+     "start": 46.08,
+     "end": 46.56,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 46.56,
+     "end": 46.72,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "mission",
+     "start": 46.72,
+     "end": 47.12,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 47.12,
+     "end": 47.28,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "then",
+     "start": 47.28,
+     "end": 47.44,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "executing",
+     "start": 47.44,
+     "end": 47.92,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "it.",
+     "start": 47.92,
+     "end": 48.16,
+     "p": 0.964,
+     "spk": "S2"
+    },
+    {
+     "w": "And",
+     "start": 48.16,
+     "end": 48.32,
+     "p": 0.988,
+     "spk": "S2"
+    },
+    {
+     "w": "that's",
+     "start": 48.32,
+     "end": 48.72,
+     "p": 0.983,
+     "spk": "S2"
+    },
+    {
+     "w": "that's",
+     "start": 48.72,
+     "end": 49.12,
+     "p": 0.991,
+     "spk": "S2"
+    },
+    {
+     "w": "you",
+     "start": 49.12,
+     "end": 49.36,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "interface",
+     "start": 49.36,
+     "end": 50.08,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "with",
+     "start": 50.08,
+     "end": 50.24,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 50.24,
+     "end": 50.48,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "programs,",
+     "start": 50.48,
+     "end": 51.28,
+     "p": 0.884,
+     "spk": "S2"
+    },
+    {
+     "w": "with",
+     "start": 51.28,
+     "end": 51.52,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "uh",
+     "start": 51.52,
+     "end": 51.92,
+     "p": 0.486,
+     "spk": "S2"
+    },
+    {
+     "w": "ESD,",
+     "start": 51.92,
+     "end": 52.64,
+     "p": 0.987,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 52.64,
+     "end": 52.72,
+     "p": 0.996,
+     "spk": "S2"
+    },
+    {
+     "w": "Exploration",
+     "start": 52.72,
+     "end": 53.28,
+     "p": 0.843,
+     "spk": "S2"
+    },
+    {
+     "w": "System",
+     "start": 53.28,
+     "end": 53.6,
+     "p": 0.993,
+     "spk": "S2"
+    },
+    {
+     "w": "Division",
+     "start": 53.6,
+     "end": 53.92,
+     "p": 0.993,
+     "spk": "S2"
+    },
+    {
+     "w": "at",
+     "start": 53.92,
+     "end": 54.0,
+     "p": 0.431,
+     "spk": "S2"
+    },
+    {
+     "w": "a",
+     "start": 54.0,
+     "end": 54.16,
+     "p": 0.66,
+     "spk": "S2"
+    },
+    {
+     "w": "headquarters.",
+     "start": 54.16,
+     "end": 55.52,
+     "p": 0.974,
+     "spk": "S2"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S2",
+     "start": 36.72,
+     "end": 55.52,
+     "words": [
+      0,
+      48
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 3,
+   "start": 55.36,
+   "end": 70.72,
+   "text": "They provide us the mission objectives, the mission priorities that they want us to go and accomplish. And then we take those, we build a plan, then we train to that plan, and then we go and execute that plan. So uh it's a constant back and forth.",
+   "words": [
+    {
+     "w": "They",
+     "start": 55.6,
+     "end": 56.0,
+     "p": 0.782,
+     "spk": "S2"
+    },
+    {
+     "w": "provide",
+     "start": 56.0,
+     "end": 56.48,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "us",
+     "start": 56.48,
+     "end": 56.72,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 56.72,
+     "end": 57.04,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "mission",
+     "start": 57.04,
+     "end": 57.44,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "objectives,",
+     "start": 57.44,
+     "end": 58.08,
+     "p": 0.997,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 58.08,
+     "end": 58.16,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "mission",
+     "start": 58.16,
+     "end": 58.56,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "priorities",
+     "start": 58.56,
+     "end": 59.12,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "that",
+     "start": 59.12,
+     "end": 59.28,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "they",
+     "start": 59.28,
+     "end": 59.52,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "want",
+     "start": 59.52,
+     "end": 59.68,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "us",
+     "start": 59.68,
+     "end": 59.84,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "to",
+     "start": 59.84,
+     "end": 59.92,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "go",
+     "start": 59.92,
+     "end": 60.08,
+     "p": 0.997,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 60.08,
+     "end": 60.24,
+     "p": 0.987,
+     "spk": "S2"
+    },
+    {
+     "w": "accomplish.",
+     "start": 60.24,
+     "end": 60.88,
+     "p": 0.925,
+     "spk": "S2"
+    },
+    {
+     "w": "And",
+     "start": 60.88,
+     "end": 61.04,
+     "p": 0.991,
+     "spk": "S2"
+    },
+    {
+     "w": "then",
+     "start": 61.04,
+     "end": 61.28,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "we",
+     "start": 61.28,
+     "end": 61.44,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "take",
+     "start": 61.44,
+     "end": 61.76,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "those,",
+     "start": 61.76,
+     "end": 62.32,
+     "p": 0.927,
+     "spk": "S2"
+    },
+    {
+     "w": "we",
+     "start": 62.32,
+     "end": 62.64,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "build",
+     "start": 62.64,
+     "end": 63.04,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "a",
+     "start": 63.04,
+     "end": 63.36,
+     "p": 0.973,
+     "spk": "S2"
+    },
+    {
+     "w": "plan,",
+     "start": 63.36,
+     "end": 64.08,
+     "p": 0.967,
+     "spk": "S2"
+    },
+    {
+     "w": "then",
+     "start": 64.08,
+     "end": 64.32,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "we",
+     "start": 64.32,
+     "end": 64.64,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "train",
+     "start": 64.64,
+     "end": 65.04,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "to",
+     "start": 65.04,
+     "end": 65.2,
+     "p": 0.989,
+     "spk": "S2"
+    },
+    {
+     "w": "that",
+     "start": 65.2,
+     "end": 65.44,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "plan,",
+     "start": 65.44,
+     "end": 65.76,
+     "p": 0.811,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 65.76,
+     "end": 65.92,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "then",
+     "start": 65.92,
+     "end": 66.08,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "we",
+     "start": 66.08,
+     "end": 66.16,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "go",
+     "start": 66.16,
+     "end": 66.32,
+     "p": 0.998,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 66.32,
+     "end": 66.48,
+     "p": 0.997,
+     "spk": "S2"
+    },
+    {
+     "w": "execute",
+     "start": 66.48,
+     "end": 66.96,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "that",
+     "start": 66.96,
+     "end": 67.28,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "plan.",
+     "start": 67.28,
+     "end": 67.68,
+     "p": 0.964,
+     "spk": "S2"
+    },
+    {
+     "w": "So",
+     "start": 67.68,
+     "end": 68.0,
+     "p": 0.975,
+     "spk": "S2"
+    },
+    {
+     "w": "uh",
+     "start": 68.0,
+     "end": 68.32,
+     "p": 0.938,
+     "spk": "S2"
+    },
+    {
+     "w": "it's",
+     "start": 68.32,
+     "end": 68.96,
+     "p": 0.873,
+     "spk": "S2"
+    },
+    {
+     "w": "a",
+     "start": 68.96,
+     "end": 69.12,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "constant",
+     "start": 69.12,
+     "end": 69.68,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "back",
+     "start": 69.68,
+     "end": 69.92,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 69.92,
+     "end": 70.16,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "forth.",
+     "start": 70.16,
+     "end": 70.72,
+     "p": 0.991,
+     "spk": "S2"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S2",
+     "start": 55.6,
+     "end": 70.72,
+     "words": [
+      0,
+      48
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 4,
+   "start": 70.84,
+   "end": 83.04,
+   "text": "Uh so the lead is is the point person really that's interfacing with the up and out and then uh conveys it down and in and works with the various piece parts uh to build that plan and then go and train it and then execute it.",
+   "words": [
+    {
+     "w": "Uh",
+     "start": 71.0,
+     "end": 71.4,
+     "p": 0.795,
+     "spk": "S2"
+    },
+    {
+     "w": "so",
+     "start": 71.4,
+     "end": 71.64,
+     "p": 0.998,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 71.64,
+     "end": 71.88,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "lead",
+     "start": 71.88,
+     "end": 72.2,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "is",
+     "start": 72.2,
+     "end": 72.44,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "is",
+     "start": 72.44,
+     "end": 72.6,
+     "p": 0.935,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 72.6,
+     "end": 72.76,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "point",
+     "start": 72.76,
+     "end": 73.08,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "person",
+     "start": 73.08,
+     "end": 73.32,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "really",
+     "start": 73.32,
+     "end": 73.56,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "that's",
+     "start": 73.56,
+     "end": 73.8,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "interfacing",
+     "start": 73.8,
+     "end": 74.44,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "with",
+     "start": 74.44,
+     "end": 74.6,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 74.6,
+     "end": 74.76,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "up",
+     "start": 74.76,
+     "end": 75.0,
+     "p": 0.952,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 75.0,
+     "end": 75.24,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "out",
+     "start": 75.24,
+     "end": 75.56,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 75.56,
+     "end": 75.8,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "then",
+     "start": 75.8,
+     "end": 76.04,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "uh",
+     "start": 76.04,
+     "end": 76.28,
+     "p": 0.948,
+     "spk": "S2"
+    },
+    {
+     "w": "conveys",
+     "start": 76.28,
+     "end": 76.76,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "it",
+     "start": 76.76,
+     "end": 76.92,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "down",
+     "start": 76.92,
+     "end": 77.16,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 77.16,
+     "end": 77.4,
+     "p": 0.998,
+     "spk": "S2"
+    },
+    {
+     "w": "in",
+     "start": 77.4,
+     "end": 77.64,
+     "p": 0.991,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 77.64,
+     "end": 77.88,
+     "p": 0.997,
+     "spk": "S2"
+    },
+    {
+     "w": "works",
+     "start": 77.88,
+     "end": 78.2,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "with",
+     "start": 78.2,
+     "end": 78.36,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 78.36,
+     "end": 78.44,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "various",
+     "start": 78.44,
+     "end": 78.92,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "piece",
+     "start": 78.92,
+     "end": 79.32,
+     "p": 0.956,
+     "spk": "S2"
+    },
+    {
+     "w": "parts",
+     "start": 79.32,
+     "end": 79.64,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "uh",
+     "start": 79.64,
+     "end": 79.8,
+     "p": 0.963,
+     "spk": "S2"
+    },
+    {
+     "w": "to",
+     "start": 79.8,
+     "end": 79.96,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "build",
+     "start": 79.96,
+     "end": 80.28,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "that",
+     "start": 80.28,
+     "end": 80.52,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "plan",
+     "start": 80.52,
+     "end": 80.76,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 80.76,
+     "end": 80.92,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "then",
+     "start": 80.92,
+     "end": 81.08,
+     "p": 0.998,
+     "spk": "S2"
+    },
+    {
+     "w": "go",
+     "start": 81.08,
+     "end": 81.24,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 81.24,
+     "end": 81.48,
+     "p": 0.99,
+     "spk": "S2"
+    },
+    {
+     "w": "train",
+     "start": 81.48,
+     "end": 81.72,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "it",
+     "start": 81.72,
+     "end": 81.96,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 81.96,
+     "end": 82.04,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "then",
+     "start": 82.04,
+     "end": 82.2,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "execute",
+     "start": 82.2,
+     "end": 82.68,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "it.",
+     "start": 82.68,
+     "end": 83.04,
+     "p": 0.992,
+     "spk": "S2"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S2",
+     "start": 71.0,
+     "end": 83.04,
+     "words": [
+      0,
+      47
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 5,
+   "start": 83.23,
+   "end": 91.94,
+   "text": "So essentially uh i it sounds like it's like a high level plan first. Like the the goal is we want to put, you know, human boots on the moon. That's that's what we want to do. And you're saying",
+   "words": [
+    {
+     "w": "So",
+     "start": 83.23,
+     "end": 83.55,
+     "p": 0.986,
+     "spk": "S1"
+    },
+    {
+     "w": "essentially",
+     "start": 83.55,
+     "end": 84.11,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "uh",
+     "start": 84.11,
+     "end": 84.27,
+     "p": 0.468,
+     "spk": "S1"
+    },
+    {
+     "w": "i",
+     "start": 84.27,
+     "end": 84.43,
+     "p": 0.363,
+     "spk": "S1"
+    },
+    {
+     "w": "it",
+     "start": 84.43,
+     "end": 84.59,
+     "p": 0.98,
+     "spk": "S1"
+    },
+    {
+     "w": "sounds",
+     "start": 84.59,
+     "end": 84.83,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "like",
+     "start": 84.83,
+     "end": 84.91,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "it's",
+     "start": 84.91,
+     "end": 85.07,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "like",
+     "start": 85.07,
+     "end": 85.23,
+     "p": 0.989,
+     "spk": "S1"
+    },
+    {
+     "w": "a",
+     "start": 85.23,
+     "end": 85.31,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "high",
+     "start": 85.31,
+     "end": 85.55,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "level",
+     "start": 85.55,
+     "end": 85.87,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "plan",
+     "start": 85.87,
+     "end": 86.11,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "first.",
+     "start": 86.11,
+     "end": 86.51,
+     "p": 0.864,
+     "spk": "S1"
+    },
+    {
+     "w": "Like",
+     "start": 86.51,
+     "end": 86.83,
+     "p": 0.991,
+     "spk": "S1"
+    },
+    {
+     "w": "the",
+     "start": 86.83,
+     "end": 87.07,
+     "p": 0.902,
+     "spk": "S1"
+    },
+    {
+     "w": "the",
+     "start": 87.07,
+     "end": 87.15,
+     "p": 0.863,
+     "spk": "S1"
+    },
+    {
+     "w": "goal",
+     "start": 87.15,
+     "end": 87.47,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "is",
+     "start": 87.47,
+     "end": 87.71,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "we",
+     "start": 87.71,
+     "end": 87.87,
+     "p": 0.998,
+     "spk": "S1"
+    },
+    {
+     "w": "want",
+     "start": 87.87,
+     "end": 88.03,
+     "p": 0.557,
+     "spk": "S1"
+    },
+    {
+     "w": "to",
+     "start": 88.03,
+     "end": 88.11,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "put,",
+     "start": 88.11,
+     "end": 88.35,
+     "p": 0.769,
+     "spk": "S1"
+    },
+    {
+     "w": "you",
+     "start": 88.35,
+     "end": 88.43,
+     "p": 0.997,
+     "spk": "S1"
+    },
+    {
+     "w": "know,",
+     "start": 88.43,
+     "end": 88.67,
+     "p": 0.98,
+     "spk": "S1"
+    },
+    {
+     "w": "human",
+     "start": 88.67,
+     "end": 89.07,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "boots",
+     "start": 89.07,
+     "end": 89.47,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "on",
+     "start": 89.47,
+     "end": 89.55,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "the",
+     "start": 89.55,
+     "end": 89.63,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "moon.",
+     "start": 89.63,
+     "end": 89.95,
+     "p": 0.969,
+     "spk": "S1"
+    },
+    {
+     "w": "That's",
+     "start": 89.95,
+     "end": 90.27,
+     "p": 0.962,
+     "spk": "S1"
+    },
+    {
+     "w": "that's",
+     "start": 90.27,
+     "end": 90.43,
+     "p": 0.992,
+     "spk": "S1"
+    },
+    {
+     "w": "what",
+     "start": 90.43,
+     "end": 90.51,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "we",
+     "start": 90.51,
+     "end": 90.59,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "want",
+     "start": 90.59,
+     "end": 90.67,
+     "p": 0.547,
+     "spk": "S1"
+    },
+    {
+     "w": "to",
+     "start": 90.67,
+     "end": 90.75,
+     "p": 0.996,
+     "spk": "S1"
+    },
+    {
+     "w": "do.",
+     "start": 90.75,
+     "end": 90.99,
+     "p": 0.795,
+     "spk": "S1"
+    },
+    {
+     "w": "And",
+     "start": 90.99,
+     "end": 91.15,
+     "p": 0.97,
+     "spk": "S1"
+    },
+    {
+     "w": "you're",
+     "start": 91.15,
+     "end": 91.31,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "saying",
+     "start": 91.31,
+     "end": 91.94,
+     "p": 1.0,
+     "spk": "S1"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S1",
+     "start": 83.23,
+     "end": 91.94,
+     "words": [
+      0,
+      40
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 6,
+   "start": 91.9,
+   "end": 105.6,
+   "text": "Here's how we get there from an operational perspective. Here's what we need to accomplish. Here's what we need to verify to get to that goal. Yeah. They they rely on us to actually put together the mission to achieve their uh their mission objectives. That's it. Okay. Now let's dive into mission control.",
+   "words": [
+    {
+     "w": "Here's",
+     "start": 91.98,
+     "end": 92.3,
+     "p": 0.893,
+     "spk": "S1"
+    },
+    {
+     "w": "how",
+     "start": 92.3,
+     "end": 92.46,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "we",
+     "start": 92.46,
+     "end": 92.62,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "get",
+     "start": 92.62,
+     "end": 92.78,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "there",
+     "start": 92.78,
+     "end": 93.02,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "from",
+     "start": 93.02,
+     "end": 93.26,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "an",
+     "start": 93.26,
+     "end": 93.42,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "operational",
+     "start": 93.42,
+     "end": 93.9,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "perspective.",
+     "start": 93.9,
+     "end": 94.78,
+     "p": 0.951,
+     "spk": "S1"
+    },
+    {
+     "w": "Here's",
+     "start": 94.78,
+     "end": 95.02,
+     "p": 0.993,
+     "spk": "S1"
+    },
+    {
+     "w": "what",
+     "start": 95.02,
+     "end": 95.18,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "we",
+     "start": 95.18,
+     "end": 95.26,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "need",
+     "start": 95.26,
+     "end": 95.34,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "to",
+     "start": 95.34,
+     "end": 95.42,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "accomplish.",
+     "start": 95.42,
+     "end": 95.9,
+     "p": 0.89,
+     "spk": "S1"
+    },
+    {
+     "w": "Here's",
+     "start": 95.9,
+     "end": 96.14,
+     "p": 0.992,
+     "spk": "S1"
+    },
+    {
+     "w": "what",
+     "start": 96.14,
+     "end": 96.22,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "we",
+     "start": 96.22,
+     "end": 96.3,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "need",
+     "start": 96.3,
+     "end": 96.46,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "to",
+     "start": 96.46,
+     "end": 96.54,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "verify",
+     "start": 96.54,
+     "end": 96.94,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "to",
+     "start": 96.94,
+     "end": 97.1,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "get",
+     "start": 97.1,
+     "end": 97.18,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "to",
+     "start": 97.18,
+     "end": 97.26,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "that",
+     "start": 97.26,
+     "end": 97.42,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "goal.",
+     "start": 97.42,
+     "end": 97.82,
+     "p": 0.995,
+     "spk": "S1"
+    },
+    {
+     "w": "Yeah.",
+     "start": 97.82,
+     "end": 98.14,
+     "p": 0.792,
+     "spk": "S2"
+    },
+    {
+     "w": "They",
+     "start": 98.14,
+     "end": 98.38,
+     "p": 0.813,
+     "spk": "S2"
+    },
+    {
+     "w": "they",
+     "start": 98.38,
+     "end": 98.54,
+     "p": 0.881,
+     "spk": "S2"
+    },
+    {
+     "w": "rely",
+     "start": 98.54,
+     "end": 98.86,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "on",
+     "start": 98.86,
+     "end": 99.02,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "us",
+     "start": 99.02,
+     "end": 99.18,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "to",
+     "start": 99.18,
+     "end": 99.34,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "actually",
+     "start": 99.34,
+     "end": 99.58,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "put",
+     "start": 99.58,
+     "end": 99.74,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "together",
+     "start": 99.74,
+     "end": 100.06,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 100.06,
+     "end": 100.22,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "mission",
+     "start": 100.22,
+     "end": 100.46,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "to",
+     "start": 100.46,
+     "end": 100.62,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "achieve",
+     "start": 100.62,
+     "end": 101.02,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "their",
+     "start": 101.02,
+     "end": 101.42,
+     "p": 0.902,
+     "spk": "S2"
+    },
+    {
+     "w": "uh",
+     "start": 101.42,
+     "end": 101.58,
+     "p": 0.514,
+     "spk": "S2"
+    },
+    {
+     "w": "their",
+     "start": 101.58,
+     "end": 101.74,
+     "p": 0.988,
+     "spk": "S2"
+    },
+    {
+     "w": "mission",
+     "start": 101.74,
+     "end": 102.06,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "objectives.",
+     "start": 102.06,
+     "end": 102.7,
+     "p": 0.996,
+     "spk": "S2"
+    },
+    {
+     "w": "That's",
+     "start": 102.7,
+     "end": 102.94,
+     "p": 0.83,
+     "spk": "S1"
+    },
+    {
+     "w": "it.",
+     "start": 102.94,
+     "end": 103.18,
+     "p": 0.869,
+     "spk": "S1"
+    },
+    {
+     "w": "Okay.",
+     "start": 103.18,
+     "end": 103.58,
+     "p": 0.854,
+     "spk": "S1"
+    },
+    {
+     "w": "Now",
+     "start": 103.58,
+     "end": 103.82,
+     "p": 0.995,
+     "spk": "S1"
+    },
+    {
+     "w": "let's",
+     "start": 103.82,
+     "end": 104.06,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "dive",
+     "start": 104.06,
+     "end": 104.38,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "into",
+     "start": 104.38,
+     "end": 104.62,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "mission",
+     "start": 104.62,
+     "end": 105.02,
+     "p": 0.998,
+     "spk": "S1"
+    },
+    {
+     "w": "control.",
+     "start": 105.02,
+     "end": 105.6,
+     "p": 0.987,
+     "spk": "S1"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S1",
+     "start": 91.98,
+     "end": 97.82,
+     "words": [
+      0,
+      26
+     ]
+    },
+    {
+     "spk": "S2",
+     "start": 97.82,
+     "end": 102.7,
+     "words": [
+      26,
+      45
+     ]
+    },
+    {
+     "spk": "S1",
+     "start": 102.7,
+     "end": 105.6,
+     "words": [
+      45,
+      54
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 7,
+   "start": 105.44,
+   "end": 121.44,
+   "text": "So what do you do? So there's a lot of different pieces to this. This is specifically about when it comes to an Artemis mission, what are you doing in mission control? So so the grander picture, jud Judd I'll I'll go to you. The grander picture when it comes to an Artemis mission, what is the responsibility? What is the purpose of mission control?",
+   "words": [
+    {
+     "w": "So",
+     "start": 105.44,
+     "end": 105.76,
+     "p": 0.916,
+     "spk": "S1"
+    },
+    {
+     "w": "what",
+     "start": 105.76,
+     "end": 105.84,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "do",
+     "start": 105.84,
+     "end": 106.0,
+     "p": 0.985,
+     "spk": "S1"
+    },
+    {
+     "w": "you",
+     "start": 106.0,
+     "end": 106.08,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "do?",
+     "start": 106.08,
+     "end": 106.32,
+     "p": 0.958,
+     "spk": "S1"
+    },
+    {
+     "w": "So",
+     "start": 106.32,
+     "end": 106.48,
+     "p": 0.993,
+     "spk": "S1"
+    },
+    {
+     "w": "there's",
+     "start": 106.48,
+     "end": 106.72,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "a",
+     "start": 106.72,
+     "end": 106.8,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "lot",
+     "start": 106.8,
+     "end": 106.88,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "of",
+     "start": 106.88,
+     "end": 106.96,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "different",
+     "start": 106.96,
+     "end": 107.28,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "pieces",
+     "start": 107.28,
+     "end": 107.6,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "to",
+     "start": 107.6,
+     "end": 107.76,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "this.",
+     "start": 107.76,
+     "end": 108.0,
+     "p": 0.985,
+     "spk": "S1"
+    },
+    {
+     "w": "This",
+     "start": 108.0,
+     "end": 108.16,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "is",
+     "start": 108.16,
+     "end": 108.32,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "specifically",
+     "start": 108.32,
+     "end": 108.96,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "about",
+     "start": 108.96,
+     "end": 109.2,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "when",
+     "start": 109.2,
+     "end": 109.36,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "it",
+     "start": 109.36,
+     "end": 109.44,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "comes",
+     "start": 109.44,
+     "end": 109.6,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "to",
+     "start": 109.6,
+     "end": 109.68,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "an",
+     "start": 109.68,
+     "end": 109.84,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "Artemis",
+     "start": 109.84,
+     "end": 110.48,
+     "p": 0.996,
+     "spk": "S1"
+    },
+    {
+     "w": "mission,",
+     "start": 110.48,
+     "end": 110.8,
+     "p": 0.873,
+     "spk": "S1"
+    },
+    {
+     "w": "what",
+     "start": 110.8,
+     "end": 111.04,
+     "p": 0.998,
+     "spk": "S1"
+    },
+    {
+     "w": "are",
+     "start": 111.04,
+     "end": 111.12,
+     "p": 0.998,
+     "spk": "S1"
+    },
+    {
+     "w": "you",
+     "start": 111.12,
+     "end": 111.28,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "doing",
+     "start": 111.28,
+     "end": 111.52,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "in",
+     "start": 111.52,
+     "end": 111.76,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "mission",
+     "start": 111.76,
+     "end": 112.08,
+     "p": 0.959,
+     "spk": "S1"
+    },
+    {
+     "w": "control?",
+     "start": 112.08,
+     "end": 112.56,
+     "p": 0.984,
+     "spk": "S1"
+    },
+    {
+     "w": "So",
+     "start": 112.56,
+     "end": 112.88,
+     "p": 0.943,
+     "spk": "S1"
+    },
+    {
+     "w": "so",
+     "start": 112.88,
+     "end": 113.12,
+     "p": 0.757,
+     "spk": "S1"
+    },
+    {
+     "w": "the",
+     "start": 113.12,
+     "end": 113.2,
+     "p": 0.997,
+     "spk": "S1"
+    },
+    {
+     "w": "grander",
+     "start": 113.2,
+     "end": 113.6,
+     "p": 0.993,
+     "spk": "S1"
+    },
+    {
+     "w": "picture,",
+     "start": 113.6,
+     "end": 113.92,
+     "p": 0.937,
+     "spk": "S1"
+    },
+    {
+     "w": "jud",
+     "start": 113.92,
+     "end": 114.16,
+     "p": 0.464,
+     "spk": "S1"
+    },
+    {
+     "w": "Judd",
+     "start": 114.16,
+     "end": 114.48,
+     "p": 0.833,
+     "spk": "S1"
+    },
+    {
+     "w": "I'll",
+     "start": 114.48,
+     "end": 114.64,
+     "p": 0.84,
+     "spk": "S1"
+    },
+    {
+     "w": "I'll",
+     "start": 114.64,
+     "end": 114.8,
+     "p": 0.927,
+     "spk": "S1"
+    },
+    {
+     "w": "go",
+     "start": 114.8,
+     "end": 114.88,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "to",
+     "start": 114.88,
+     "end": 114.96,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "you.",
+     "start": 114.96,
+     "end": 115.2,
+     "p": 0.876,
+     "spk": "S1"
+    },
+    {
+     "w": "The",
+     "start": 115.2,
+     "end": 115.36,
+     "p": 0.983,
+     "spk": "S1"
+    },
+    {
+     "w": "grander",
+     "start": 115.36,
+     "end": 115.76,
+     "p": 0.998,
+     "spk": "S1"
+    },
+    {
+     "w": "picture",
+     "start": 115.76,
+     "end": 116.08,
+     "p": 0.998,
+     "spk": "S1"
+    },
+    {
+     "w": "when",
+     "start": 116.08,
+     "end": 116.24,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "it",
+     "start": 116.24,
+     "end": 116.32,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "comes",
+     "start": 116.32,
+     "end": 116.48,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "to",
+     "start": 116.48,
+     "end": 116.56,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "an",
+     "start": 116.56,
+     "end": 116.72,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "Artemis",
+     "start": 116.72,
+     "end": 117.44,
+     "p": 0.994,
+     "spk": "S1"
+    },
+    {
+     "w": "mission,",
+     "start": 117.44,
+     "end": 117.92,
+     "p": 0.924,
+     "spk": "S1"
+    },
+    {
+     "w": "what",
+     "start": 117.92,
+     "end": 118.16,
+     "p": 0.995,
+     "spk": "S1"
+    },
+    {
+     "w": "is",
+     "start": 118.16,
+     "end": 118.32,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "the",
+     "start": 118.32,
+     "end": 118.48,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "responsibility?",
+     "start": 118.48,
+     "end": 119.28,
+     "p": 0.914,
+     "spk": "S1"
+    },
+    {
+     "w": "What",
+     "start": 119.28,
+     "end": 119.44,
+     "p": 0.999,
+     "spk": "S1"
+    },
+    {
+     "w": "is",
+     "start": 119.44,
+     "end": 119.6,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "the",
+     "start": 119.6,
+     "end": 119.76,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "purpose",
+     "start": 119.76,
+     "end": 120.32,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "of",
+     "start": 120.32,
+     "end": 120.48,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "mission",
+     "start": 120.48,
+     "end": 120.88,
+     "p": 0.973,
+     "spk": "S1"
+    },
+    {
+     "w": "control?",
+     "start": 120.88,
+     "end": 121.44,
+     "p": 0.989,
+     "spk": "S1"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S1",
+     "start": 105.44,
+     "end": 121.44,
+     "words": [
+      0,
+      65
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 8,
+   "start": 122.3,
+   "end": 141.09,
+   "text": "Uh essentially to um be responsible for all of the execution uh of that mission, that particular mission. So whether that be uh you know uplinking plans to do burns, whether that be uh you know uh coordinating all the communication requirements, things like that, uh",
+   "words": [
+    {
+     "w": "Uh",
+     "start": 122.46,
+     "end": 122.7,
+     "p": 0.661,
+     "spk": "S0"
+    },
+    {
+     "w": "essentially",
+     "start": 122.7,
+     "end": 123.74,
+     "p": 0.992,
+     "spk": "S0"
+    },
+    {
+     "w": "to",
+     "start": 123.74,
+     "end": 124.06,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "um",
+     "start": 124.06,
+     "end": 124.54,
+     "p": 0.836,
+     "spk": "S0"
+    },
+    {
+     "w": "be",
+     "start": 124.54,
+     "end": 124.86,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "responsible",
+     "start": 124.86,
+     "end": 125.66,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "for",
+     "start": 125.66,
+     "end": 125.9,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "all",
+     "start": 125.9,
+     "end": 126.06,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "of",
+     "start": 126.06,
+     "end": 126.3,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "the",
+     "start": 126.3,
+     "end": 126.54,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "execution",
+     "start": 126.54,
+     "end": 127.5,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "uh",
+     "start": 127.5,
+     "end": 127.9,
+     "p": 0.975,
+     "spk": "S0"
+    },
+    {
+     "w": "of",
+     "start": 127.9,
+     "end": 128.14,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "that",
+     "start": 128.14,
+     "end": 128.3,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "mission,",
+     "start": 128.3,
+     "end": 128.86,
+     "p": 0.941,
+     "spk": "S0"
+    },
+    {
+     "w": "that",
+     "start": 128.86,
+     "end": 129.02,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "particular",
+     "start": 129.02,
+     "end": 129.5,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "mission.",
+     "start": 129.5,
+     "end": 129.98,
+     "p": 0.951,
+     "spk": "S0"
+    },
+    {
+     "w": "So",
+     "start": 129.98,
+     "end": 130.38,
+     "p": 0.995,
+     "spk": "S0"
+    },
+    {
+     "w": "whether",
+     "start": 130.38,
+     "end": 130.86,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "that",
+     "start": 130.86,
+     "end": 131.18,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "be",
+     "start": 131.18,
+     "end": 131.58,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "uh",
+     "start": 131.58,
+     "end": 131.9,
+     "p": 0.942,
+     "spk": "S0"
+    },
+    {
+     "w": "you",
+     "start": 131.9,
+     "end": 132.06,
+     "p": 0.887,
+     "spk": "S0"
+    },
+    {
+     "w": "know",
+     "start": 132.06,
+     "end": 132.46,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "uplinking",
+     "start": 132.46,
+     "end": 133.34,
+     "p": 0.996,
+     "spk": "S0"
+    },
+    {
+     "w": "plans",
+     "start": 133.34,
+     "end": 133.82,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "to",
+     "start": 133.82,
+     "end": 134.06,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "do",
+     "start": 134.06,
+     "end": 134.38,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "burns,",
+     "start": 134.38,
+     "end": 135.02,
+     "p": 0.984,
+     "spk": "S0"
+    },
+    {
+     "w": "whether",
+     "start": 135.02,
+     "end": 135.42,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "that",
+     "start": 135.42,
+     "end": 135.74,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "be",
+     "start": 135.74,
+     "end": 136.14,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "uh",
+     "start": 136.14,
+     "end": 136.46,
+     "p": 0.981,
+     "spk": "S0"
+    },
+    {
+     "w": "you",
+     "start": 136.46,
+     "end": 136.7,
+     "p": 0.895,
+     "spk": "S0"
+    },
+    {
+     "w": "know",
+     "start": 136.7,
+     "end": 136.94,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "uh",
+     "start": 136.94,
+     "end": 137.1,
+     "p": 0.875,
+     "spk": "S0"
+    },
+    {
+     "w": "coordinating",
+     "start": 137.1,
+     "end": 137.82,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "all",
+     "start": 137.82,
+     "end": 137.98,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "the",
+     "start": 137.98,
+     "end": 138.14,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "communication",
+     "start": 138.14,
+     "end": 138.78,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "requirements,",
+     "start": 138.78,
+     "end": 139.5,
+     "p": 0.991,
+     "spk": "S0"
+    },
+    {
+     "w": "things",
+     "start": 139.5,
+     "end": 139.9,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "like",
+     "start": 139.9,
+     "end": 140.06,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "that,",
+     "start": 140.06,
+     "end": 140.46,
+     "p": 0.702,
+     "spk": "S0"
+    },
+    {
+     "w": "uh",
+     "start": 140.46,
+     "end": 141.09,
+     "p": 0.863,
+     "spk": "S0"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S0",
+     "start": 122.46,
+     "end": 141.09,
+     "words": [
+      0,
+      46
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 9,
+   "start": 141.05,
+   "end": 160.16,
+   "text": "That's essentially what mission control does is it controls the vehicle. Um and so so we we do that uh a number of different ways. We we we talked about a little bit, uh, you know, being a flight controller versus flight director, you know. Uh we divide the vehicle up into different systems. And so each one of those systems",
+   "words": [
+    {
+     "w": "That's",
+     "start": 141.05,
+     "end": 141.37,
+     "p": 0.956,
+     "spk": "S0"
+    },
+    {
+     "w": "essentially",
+     "start": 141.37,
+     "end": 141.77,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "what",
+     "start": 141.77,
+     "end": 142.09,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "mission",
+     "start": 142.09,
+     "end": 142.49,
+     "p": 0.989,
+     "spk": "S0"
+    },
+    {
+     "w": "control",
+     "start": 142.49,
+     "end": 142.89,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "does",
+     "start": 142.89,
+     "end": 143.21,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "is",
+     "start": 143.21,
+     "end": 143.45,
+     "p": 0.983,
+     "spk": "S0"
+    },
+    {
+     "w": "it",
+     "start": 143.45,
+     "end": 143.77,
+     "p": 0.993,
+     "spk": "S0"
+    },
+    {
+     "w": "controls",
+     "start": 143.77,
+     "end": 144.25,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "the",
+     "start": 144.25,
+     "end": 144.49,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "vehicle.",
+     "start": 144.49,
+     "end": 145.21,
+     "p": 0.99,
+     "spk": "S0"
+    },
+    {
+     "w": "Um",
+     "start": 145.21,
+     "end": 145.61,
+     "p": 0.412,
+     "spk": "S0"
+    },
+    {
+     "w": "and",
+     "start": 145.61,
+     "end": 145.85,
+     "p": 0.907,
+     "spk": "S0"
+    },
+    {
+     "w": "so",
+     "start": 145.85,
+     "end": 146.33,
+     "p": 0.996,
+     "spk": "S0"
+    },
+    {
+     "w": "so",
+     "start": 146.33,
+     "end": 146.65,
+     "p": 0.741,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 146.65,
+     "end": 146.97,
+     "p": 0.992,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 146.97,
+     "end": 147.29,
+     "p": 0.936,
+     "spk": "S0"
+    },
+    {
+     "w": "do",
+     "start": 147.29,
+     "end": 147.61,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "that",
+     "start": 147.61,
+     "end": 147.85,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "uh",
+     "start": 147.85,
+     "end": 148.17,
+     "p": 0.889,
+     "spk": "S0"
+    },
+    {
+     "w": "a",
+     "start": 148.17,
+     "end": 148.33,
+     "p": 0.731,
+     "spk": "S0"
+    },
+    {
+     "w": "number",
+     "start": 148.33,
+     "end": 148.65,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "of",
+     "start": 148.65,
+     "end": 148.73,
+     "p": 0.998,
+     "spk": "S0"
+    },
+    {
+     "w": "different",
+     "start": 148.73,
+     "end": 148.97,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "ways.",
+     "start": 148.97,
+     "end": 149.37,
+     "p": 0.98,
+     "spk": "S0"
+    },
+    {
+     "w": "We",
+     "start": 149.37,
+     "end": 149.61,
+     "p": 0.93,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 149.61,
+     "end": 149.85,
+     "p": 0.924,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 149.85,
+     "end": 150.01,
+     "p": 0.823,
+     "spk": "S0"
+    },
+    {
+     "w": "talked",
+     "start": 150.01,
+     "end": 150.25,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "about",
+     "start": 150.25,
+     "end": 150.49,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "a",
+     "start": 150.49,
+     "end": 150.57,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "little",
+     "start": 150.57,
+     "end": 150.73,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "bit,",
+     "start": 150.73,
+     "end": 150.89,
+     "p": 0.718,
+     "spk": "S0"
+    },
+    {
+     "w": "uh,",
+     "start": 150.89,
+     "end": 151.05,
+     "p": 0.713,
+     "spk": "S0"
+    },
+    {
+     "w": "you",
+     "start": 151.05,
+     "end": 151.13,
+     "p": 0.97,
+     "spk": "S0"
+    },
+    {
+     "w": "know,",
+     "start": 151.13,
+     "end": 151.29,
+     "p": 0.901,
+     "spk": "S0"
+    },
+    {
+     "w": "being",
+     "start": 151.29,
+     "end": 151.45,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "a",
+     "start": 151.45,
+     "end": 151.53,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "flight",
+     "start": 151.53,
+     "end": 151.77,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "controller",
+     "start": 151.77,
+     "end": 152.17,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "versus",
+     "start": 152.17,
+     "end": 152.49,
+     "p": 0.979,
+     "spk": "S0"
+    },
+    {
+     "w": "flight",
+     "start": 152.49,
+     "end": 152.73,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "director,",
+     "start": 152.73,
+     "end": 153.13,
+     "p": 0.907,
+     "spk": "S0"
+    },
+    {
+     "w": "you",
+     "start": 153.13,
+     "end": 153.29,
+     "p": 0.986,
+     "spk": "S0"
+    },
+    {
+     "w": "know.",
+     "start": 153.29,
+     "end": 153.61,
+     "p": 0.653,
+     "spk": "S0"
+    },
+    {
+     "w": "Uh",
+     "start": 153.61,
+     "end": 154.01,
+     "p": 0.946,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 154.01,
+     "end": 154.33,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "divide",
+     "start": 154.33,
+     "end": 155.29,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "the",
+     "start": 155.29,
+     "end": 155.61,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "vehicle",
+     "start": 155.61,
+     "end": 156.33,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "up",
+     "start": 156.33,
+     "end": 156.57,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "into",
+     "start": 156.57,
+     "end": 156.81,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "different",
+     "start": 156.81,
+     "end": 157.37,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "systems.",
+     "start": 157.37,
+     "end": 158.01,
+     "p": 0.788,
+     "spk": "S0"
+    },
+    {
+     "w": "And",
+     "start": 158.01,
+     "end": 158.25,
+     "p": 0.991,
+     "spk": "S0"
+    },
+    {
+     "w": "so",
+     "start": 158.25,
+     "end": 158.49,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "each",
+     "start": 158.49,
+     "end": 158.73,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "one",
+     "start": 158.73,
+     "end": 158.89,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "of",
+     "start": 158.89,
+     "end": 159.05,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "those",
+     "start": 159.05,
+     "end": 159.37,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "systems",
+     "start": 159.37,
+     "end": 160.16,
+     "p": 1.0,
+     "spk": "S0"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S0",
+     "start": 141.05,
+     "end": 160.16,
+     "words": [
+      0,
+      61
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 10,
+   "start": 160.19,
+   "end": 176.04,
+   "text": "uh we represent with a flight controller, right? So one of those systems could be the the computer systems, one of them could be the communication systems, one of them could be the navigation systems, one of them eventually will be the environmental systems when we when we put humans on on on Artemis.",
+   "words": [
+    {
+     "w": "uh",
+     "start": 160.35,
+     "end": 160.67,
+     "p": 0.762,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 160.67,
+     "end": 160.91,
+     "p": 0.996,
+     "spk": "S0"
+    },
+    {
+     "w": "represent",
+     "start": 160.91,
+     "end": 161.39,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "with",
+     "start": 161.39,
+     "end": 161.55,
+     "p": 0.988,
+     "spk": "S0"
+    },
+    {
+     "w": "a",
+     "start": 161.55,
+     "end": 161.71,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "flight",
+     "start": 161.71,
+     "end": 162.03,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "controller,",
+     "start": 162.03,
+     "end": 162.51,
+     "p": 0.828,
+     "spk": "S0"
+    },
+    {
+     "w": "right?",
+     "start": 162.51,
+     "end": 162.83,
+     "p": 0.887,
+     "spk": "S0"
+    },
+    {
+     "w": "So",
+     "start": 162.83,
+     "end": 163.15,
+     "p": 0.997,
+     "spk": "S0"
+    },
+    {
+     "w": "one",
+     "start": 163.15,
+     "end": 163.31,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "of",
+     "start": 163.31,
+     "end": 163.47,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "those",
+     "start": 163.47,
+     "end": 163.79,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "systems",
+     "start": 163.79,
+     "end": 164.27,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "could",
+     "start": 164.27,
+     "end": 164.43,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "be",
+     "start": 164.43,
+     "end": 164.59,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "the",
+     "start": 164.59,
+     "end": 164.83,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "the",
+     "start": 164.83,
+     "end": 164.99,
+     "p": 0.863,
+     "spk": "S0"
+    },
+    {
+     "w": "computer",
+     "start": 164.99,
+     "end": 165.47,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "systems,",
+     "start": 165.47,
+     "end": 165.95,
+     "p": 0.972,
+     "spk": "S0"
+    },
+    {
+     "w": "one",
+     "start": 165.95,
+     "end": 166.11,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "of",
+     "start": 166.11,
+     "end": 166.19,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "them",
+     "start": 166.19,
+     "end": 166.35,
+     "p": 0.837,
+     "spk": "S0"
+    },
+    {
+     "w": "could",
+     "start": 166.35,
+     "end": 166.51,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "be",
+     "start": 166.51,
+     "end": 166.67,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "the",
+     "start": 166.67,
+     "end": 166.75,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "communication",
+     "start": 166.75,
+     "end": 167.39,
+     "p": 0.99,
+     "spk": "S0"
+    },
+    {
+     "w": "systems,",
+     "start": 167.39,
+     "end": 167.79,
+     "p": 0.961,
+     "spk": "S0"
+    },
+    {
+     "w": "one",
+     "start": 167.79,
+     "end": 167.95,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "of",
+     "start": 167.95,
+     "end": 168.11,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "them",
+     "start": 168.11,
+     "end": 168.27,
+     "p": 0.94,
+     "spk": "S0"
+    },
+    {
+     "w": "could",
+     "start": 168.27,
+     "end": 168.51,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "be",
+     "start": 168.51,
+     "end": 168.67,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "the",
+     "start": 168.67,
+     "end": 168.91,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "navigation",
+     "start": 168.91,
+     "end": 169.63,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "systems,",
+     "start": 169.63,
+     "end": 170.11,
+     "p": 0.922,
+     "spk": "S0"
+    },
+    {
+     "w": "one",
+     "start": 170.11,
+     "end": 170.27,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "of",
+     "start": 170.27,
+     "end": 170.35,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "them",
+     "start": 170.35,
+     "end": 170.67,
+     "p": 0.641,
+     "spk": "S0"
+    },
+    {
+     "w": "eventually",
+     "start": 170.67,
+     "end": 171.23,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "will",
+     "start": 171.23,
+     "end": 171.47,
+     "p": 0.997,
+     "spk": "S0"
+    },
+    {
+     "w": "be",
+     "start": 171.47,
+     "end": 171.63,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "the",
+     "start": 171.63,
+     "end": 171.79,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "environmental",
+     "start": 171.79,
+     "end": 172.43,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "systems",
+     "start": 172.43,
+     "end": 172.83,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "when",
+     "start": 172.83,
+     "end": 172.99,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 172.99,
+     "end": 173.31,
+     "p": 0.981,
+     "spk": "S0"
+    },
+    {
+     "w": "when",
+     "start": 173.31,
+     "end": 173.47,
+     "p": 0.978,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 173.47,
+     "end": 173.71,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "put",
+     "start": 173.71,
+     "end": 173.87,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "humans",
+     "start": 173.87,
+     "end": 174.27,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "on",
+     "start": 174.27,
+     "end": 174.59,
+     "p": 0.998,
+     "spk": "S0"
+    },
+    {
+     "w": "on",
+     "start": 174.59,
+     "end": 174.83,
+     "p": 0.975,
+     "spk": "S0"
+    },
+    {
+     "w": "on",
+     "start": 174.83,
+     "end": 175.07,
+     "p": 0.875,
+     "spk": "S0"
+    },
+    {
+     "w": "Artemis.",
+     "start": 175.07,
+     "end": 176.04,
+     "p": 0.988,
+     "spk": "S0"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S0",
+     "start": 160.35,
+     "end": 176.04,
+     "words": [
+      0,
+      54
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 11,
+   "start": 175.87,
+   "end": 195.36,
+   "text": "um thermal systems. And so so we look to to each one of those flight controllers to uh advise us on hey what's going on with that system, you know, how best can we um uh you know complete our mission objectives based on conditions that we we encountered. Got it. Now Rick",
+   "words": [
+    {
+     "w": "um",
+     "start": 176.11,
+     "end": 176.51,
+     "p": 0.454,
+     "spk": "S0"
+    },
+    {
+     "w": "thermal",
+     "start": 176.51,
+     "end": 177.15,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "systems.",
+     "start": 177.15,
+     "end": 177.55,
+     "p": 0.875,
+     "spk": "S0"
+    },
+    {
+     "w": "And",
+     "start": 177.55,
+     "end": 177.79,
+     "p": 0.981,
+     "spk": "S0"
+    },
+    {
+     "w": "so",
+     "start": 177.79,
+     "end": 178.11,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "so",
+     "start": 178.11,
+     "end": 178.35,
+     "p": 0.899,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 178.35,
+     "end": 178.59,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "look",
+     "start": 178.59,
+     "end": 178.83,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "to",
+     "start": 178.83,
+     "end": 179.07,
+     "p": 0.998,
+     "spk": "S0"
+    },
+    {
+     "w": "to",
+     "start": 179.07,
+     "end": 179.31,
+     "p": 0.951,
+     "spk": "S0"
+    },
+    {
+     "w": "each",
+     "start": 179.31,
+     "end": 179.47,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "one",
+     "start": 179.47,
+     "end": 179.63,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "of",
+     "start": 179.63,
+     "end": 179.71,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "those",
+     "start": 179.71,
+     "end": 179.95,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "flight",
+     "start": 179.95,
+     "end": 180.43,
+     "p": 0.965,
+     "spk": "S0"
+    },
+    {
+     "w": "controllers",
+     "start": 180.43,
+     "end": 181.23,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "to",
+     "start": 181.23,
+     "end": 181.63,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "uh",
+     "start": 181.63,
+     "end": 182.03,
+     "p": 0.434,
+     "spk": "S0"
+    },
+    {
+     "w": "advise",
+     "start": 182.03,
+     "end": 182.67,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "us",
+     "start": 182.67,
+     "end": 182.91,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "on",
+     "start": 182.91,
+     "end": 183.15,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "hey",
+     "start": 183.15,
+     "end": 183.47,
+     "p": 0.971,
+     "spk": "S0"
+    },
+    {
+     "w": "what's",
+     "start": 183.47,
+     "end": 183.79,
+     "p": 0.994,
+     "spk": "S0"
+    },
+    {
+     "w": "going",
+     "start": 183.79,
+     "end": 183.95,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "on",
+     "start": 183.95,
+     "end": 184.11,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "with",
+     "start": 184.11,
+     "end": 184.27,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "that",
+     "start": 184.27,
+     "end": 184.59,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "system,",
+     "start": 184.59,
+     "end": 184.99,
+     "p": 0.653,
+     "spk": "S0"
+    },
+    {
+     "w": "you",
+     "start": 184.99,
+     "end": 185.15,
+     "p": 0.99,
+     "spk": "S0"
+    },
+    {
+     "w": "know,",
+     "start": 185.15,
+     "end": 185.47,
+     "p": 0.85,
+     "spk": "S0"
+    },
+    {
+     "w": "how",
+     "start": 185.47,
+     "end": 185.79,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "best",
+     "start": 185.79,
+     "end": 186.11,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "can",
+     "start": 186.11,
+     "end": 186.43,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 186.43,
+     "end": 186.75,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "um",
+     "start": 186.75,
+     "end": 187.39,
+     "p": 0.865,
+     "spk": "S0"
+    },
+    {
+     "w": "uh",
+     "start": 187.39,
+     "end": 187.87,
+     "p": 0.93,
+     "spk": "S0"
+    },
+    {
+     "w": "you",
+     "start": 187.87,
+     "end": 188.11,
+     "p": 0.98,
+     "spk": "S0"
+    },
+    {
+     "w": "know",
+     "start": 188.11,
+     "end": 188.51,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "complete",
+     "start": 188.51,
+     "end": 188.99,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "our",
+     "start": 188.99,
+     "end": 189.23,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "mission",
+     "start": 189.23,
+     "end": 189.55,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "objectives",
+     "start": 189.55,
+     "end": 190.19,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "based",
+     "start": 190.19,
+     "end": 190.59,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "on",
+     "start": 190.59,
+     "end": 190.91,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "conditions",
+     "start": 190.91,
+     "end": 191.47,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "that",
+     "start": 191.47,
+     "end": 191.63,
+     "p": 1.0,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 191.63,
+     "end": 192.03,
+     "p": 0.999,
+     "spk": "S0"
+    },
+    {
+     "w": "we",
+     "start": 192.03,
+     "end": 192.35,
+     "p": 0.975,
+     "spk": "S0"
+    },
+    {
+     "w": "encountered.",
+     "start": 192.35,
+     "end": 193.23,
+     "p": 0.968,
+     "spk": "S0"
+    },
+    {
+     "w": "Got",
+     "start": 193.23,
+     "end": 193.55,
+     "p": 0.955,
+     "spk": "S1"
+    },
+    {
+     "w": "it.",
+     "start": 193.55,
+     "end": 194.03,
+     "p": 0.918,
+     "spk": "S1"
+    },
+    {
+     "w": "Now",
+     "start": 194.03,
+     "end": 194.43,
+     "p": 0.977,
+     "spk": "S1"
+    },
+    {
+     "w": "Rick",
+     "start": 194.43,
+     "end": 195.36,
+     "p": 0.998,
+     "spk": "S1"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S0",
+     "start": 176.11,
+     "end": 193.23,
+     "words": [
+      0,
+      49
+     ]
+    },
+    {
+     "spk": "S1",
+     "start": 193.23,
+     "end": 195.36,
+     "words": [
+      49,
+      53
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 12,
+   "start": 195.36,
+   "end": 214.31,
+   "text": "This taking on everything that Judge just said for Artemis One, what is that mission that you guys are controlling? What is Artemis One? Yeah. So the biggest thing with Artemis One, our our primary objectives really is to to test the vehicle, validate its capability before we put the astronauts on it on Artemis II.",
+   "words": [
+    {
+     "w": "This",
+     "start": 195.52,
+     "end": 196.16,
+     "p": 0.536,
+     "spk": "S1"
+    },
+    {
+     "w": "taking",
+     "start": 196.16,
+     "end": 196.48,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "on",
+     "start": 196.48,
+     "end": 196.8,
+     "p": 0.432,
+     "spk": "S1"
+    },
+    {
+     "w": "everything",
+     "start": 196.8,
+     "end": 197.04,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "that",
+     "start": 197.04,
+     "end": 197.28,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "Judge",
+     "start": 197.28,
+     "end": 197.68,
+     "p": 0.869,
+     "spk": "S1"
+    },
+    {
+     "w": "just",
+     "start": 197.68,
+     "end": 198.0,
+     "p": 0.997,
+     "spk": "S1"
+    },
+    {
+     "w": "said",
+     "start": 198.0,
+     "end": 198.48,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "for",
+     "start": 198.48,
+     "end": 198.8,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "Artemis",
+     "start": 198.8,
+     "end": 199.52,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "One,",
+     "start": 199.52,
+     "end": 200.16,
+     "p": 0.752,
+     "spk": "S1"
+    },
+    {
+     "w": "what",
+     "start": 200.16,
+     "end": 200.4,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "is",
+     "start": 200.4,
+     "end": 200.64,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "that",
+     "start": 200.64,
+     "end": 200.8,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "mission",
+     "start": 200.8,
+     "end": 201.2,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "that",
+     "start": 201.2,
+     "end": 201.36,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "you",
+     "start": 201.36,
+     "end": 201.52,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "guys",
+     "start": 201.52,
+     "end": 201.68,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "are",
+     "start": 201.68,
+     "end": 201.84,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "controlling?",
+     "start": 201.84,
+     "end": 202.24,
+     "p": 0.989,
+     "spk": "S1"
+    },
+    {
+     "w": "What",
+     "start": 202.24,
+     "end": 202.4,
+     "p": 0.997,
+     "spk": "S1"
+    },
+    {
+     "w": "is",
+     "start": 202.4,
+     "end": 202.56,
+     "p": 1.0,
+     "spk": "S1"
+    },
+    {
+     "w": "Artemis",
+     "start": 202.56,
+     "end": 203.12,
+     "p": 0.932,
+     "spk": "S1"
+    },
+    {
+     "w": "One?",
+     "start": 203.12,
+     "end": 203.44,
+     "p": 0.795,
+     "spk": "S1"
+    },
+    {
+     "w": "Yeah.",
+     "start": 203.44,
+     "end": 203.92,
+     "p": 0.913,
+     "spk": "S2"
+    },
+    {
+     "w": "So",
+     "start": 203.92,
+     "end": 204.24,
+     "p": 0.96,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 204.24,
+     "end": 204.4,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "biggest",
+     "start": 204.4,
+     "end": 204.72,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "thing",
+     "start": 204.72,
+     "end": 204.88,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "with",
+     "start": 204.88,
+     "end": 205.04,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "Artemis",
+     "start": 205.04,
+     "end": 205.6,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "One,",
+     "start": 205.6,
+     "end": 205.92,
+     "p": 0.798,
+     "spk": "S2"
+    },
+    {
+     "w": "our",
+     "start": 205.92,
+     "end": 206.08,
+     "p": 0.926,
+     "spk": "S2"
+    },
+    {
+     "w": "our",
+     "start": 206.08,
+     "end": 206.24,
+     "p": 0.603,
+     "spk": "S2"
+    },
+    {
+     "w": "primary",
+     "start": 206.24,
+     "end": 206.56,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "objectives",
+     "start": 206.56,
+     "end": 207.2,
+     "p": 0.965,
+     "spk": "S2"
+    },
+    {
+     "w": "really",
+     "start": 207.2,
+     "end": 207.44,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "is",
+     "start": 207.44,
+     "end": 207.6,
+     "p": 0.998,
+     "spk": "S2"
+    },
+    {
+     "w": "to",
+     "start": 207.6,
+     "end": 207.92,
+     "p": 0.993,
+     "spk": "S2"
+    },
+    {
+     "w": "to",
+     "start": 207.92,
+     "end": 208.56,
+     "p": 0.711,
+     "spk": "S2"
+    },
+    {
+     "w": "test",
+     "start": 208.56,
+     "end": 209.04,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 209.04,
+     "end": 209.2,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "vehicle,",
+     "start": 209.2,
+     "end": 210.0,
+     "p": 0.995,
+     "spk": "S2"
+    },
+    {
+     "w": "validate",
+     "start": 210.0,
+     "end": 210.56,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "its",
+     "start": 210.56,
+     "end": 210.72,
+     "p": 0.997,
+     "spk": "S2"
+    },
+    {
+     "w": "capability",
+     "start": 210.72,
+     "end": 211.28,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "before",
+     "start": 211.28,
+     "end": 211.6,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "we",
+     "start": 211.6,
+     "end": 211.84,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "put",
+     "start": 211.84,
+     "end": 212.08,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 212.08,
+     "end": 212.32,
+     "p": 0.985,
+     "spk": "S2"
+    },
+    {
+     "w": "astronauts",
+     "start": 212.32,
+     "end": 212.96,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "on",
+     "start": 212.96,
+     "end": 213.04,
+     "p": 0.993,
+     "spk": "S2"
+    },
+    {
+     "w": "it",
+     "start": 213.04,
+     "end": 213.28,
+     "p": 0.597,
+     "spk": "S2"
+    },
+    {
+     "w": "on",
+     "start": 213.28,
+     "end": 213.36,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "Artemis",
+     "start": 213.36,
+     "end": 213.92,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "II.",
+     "start": 213.92,
+     "end": 214.31,
+     "p": 0.725,
+     "spk": "S2"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S1",
+     "start": 195.52,
+     "end": 203.44,
+     "words": [
+      0,
+      24
+     ]
+    },
+    {
+     "spk": "S2",
+     "start": 203.44,
+     "end": 214.31,
+     "words": [
+      24,
+      56
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 13,
+   "start": 214.3,
+   "end": 232.64,
+   "text": "So we have uh we're we're building it and we're still doing it right now. Uh we're building the timeline that's um gonna include uh just just operating the systems to to understand how they're gonna perform in in the cislunar environment or during acid and entry for Judd's team. Um",
+   "words": [
+    {
+     "w": "So",
+     "start": 214.54,
+     "end": 214.78,
+     "p": 0.969,
+     "spk": "S2"
+    },
+    {
+     "w": "we",
+     "start": 214.78,
+     "end": 214.94,
+     "p": 0.996,
+     "spk": "S2"
+    },
+    {
+     "w": "have",
+     "start": 214.94,
+     "end": 215.18,
+     "p": 0.998,
+     "spk": "S2"
+    },
+    {
+     "w": "uh",
+     "start": 215.18,
+     "end": 215.42,
+     "p": 0.69,
+     "spk": "S2"
+    },
+    {
+     "w": "we're",
+     "start": 215.42,
+     "end": 215.58,
+     "p": 0.622,
+     "spk": "S2"
+    },
+    {
+     "w": "we're",
+     "start": 215.58,
+     "end": 215.82,
+     "p": 0.976,
+     "spk": "S2"
+    },
+    {
+     "w": "building",
+     "start": 215.82,
+     "end": 216.14,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "it",
+     "start": 216.14,
+     "end": 216.3,
+     "p": 0.319,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 216.3,
+     "end": 216.46,
+     "p": 0.998,
+     "spk": "S2"
+    },
+    {
+     "w": "we're",
+     "start": 216.46,
+     "end": 216.62,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "still",
+     "start": 216.62,
+     "end": 216.86,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "doing",
+     "start": 216.86,
+     "end": 217.02,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "it",
+     "start": 217.02,
+     "end": 217.18,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "right",
+     "start": 217.18,
+     "end": 217.42,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "now.",
+     "start": 217.42,
+     "end": 217.74,
+     "p": 0.774,
+     "spk": "S2"
+    },
+    {
+     "w": "Uh",
+     "start": 217.74,
+     "end": 217.98,
+     "p": 0.977,
+     "spk": "S2"
+    },
+    {
+     "w": "we're",
+     "start": 217.98,
+     "end": 218.22,
+     "p": 0.996,
+     "spk": "S2"
+    },
+    {
+     "w": "building",
+     "start": 218.22,
+     "end": 218.54,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 218.54,
+     "end": 218.7,
+     "p": 0.981,
+     "spk": "S2"
+    },
+    {
+     "w": "timeline",
+     "start": 218.7,
+     "end": 219.26,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "that's",
+     "start": 219.26,
+     "end": 219.82,
+     "p": 0.997,
+     "spk": "S2"
+    },
+    {
+     "w": "um",
+     "start": 219.82,
+     "end": 220.3,
+     "p": 0.973,
+     "spk": "S2"
+    },
+    {
+     "w": "gonna",
+     "start": 220.3,
+     "end": 220.78,
+     "p": 0.926,
+     "spk": "S2"
+    },
+    {
+     "w": "include",
+     "start": 220.78,
+     "end": 221.42,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "uh",
+     "start": 221.42,
+     "end": 221.82,
+     "p": 0.985,
+     "spk": "S2"
+    },
+    {
+     "w": "just",
+     "start": 221.82,
+     "end": 222.38,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "just",
+     "start": 222.38,
+     "end": 222.78,
+     "p": 0.615,
+     "spk": "S2"
+    },
+    {
+     "w": "operating",
+     "start": 222.78,
+     "end": 223.42,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 223.42,
+     "end": 223.66,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "systems",
+     "start": 223.66,
+     "end": 224.14,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "to",
+     "start": 224.14,
+     "end": 224.7,
+     "p": 0.975,
+     "spk": "S2"
+    },
+    {
+     "w": "to",
+     "start": 224.7,
+     "end": 225.1,
+     "p": 0.758,
+     "spk": "S2"
+    },
+    {
+     "w": "understand",
+     "start": 225.1,
+     "end": 225.66,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "how",
+     "start": 225.66,
+     "end": 225.9,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "they're",
+     "start": 225.9,
+     "end": 226.14,
+     "p": 0.995,
+     "spk": "S2"
+    },
+    {
+     "w": "gonna",
+     "start": 226.14,
+     "end": 226.46,
+     "p": 0.993,
+     "spk": "S2"
+    },
+    {
+     "w": "perform",
+     "start": 226.46,
+     "end": 227.02,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "in",
+     "start": 227.02,
+     "end": 227.26,
+     "p": 0.995,
+     "spk": "S2"
+    },
+    {
+     "w": "in",
+     "start": 227.26,
+     "end": 227.42,
+     "p": 0.969,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 227.42,
+     "end": 227.58,
+     "p": 0.957,
+     "spk": "S2"
+    },
+    {
+     "w": "cislunar",
+     "start": 227.58,
+     "end": 228.7,
+     "p": 0.885,
+     "spk": "S2"
+    },
+    {
+     "w": "environment",
+     "start": 228.7,
+     "end": 229.26,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "or",
+     "start": 229.26,
+     "end": 229.42,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "during",
+     "start": 229.42,
+     "end": 229.82,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "acid",
+     "start": 229.82,
+     "end": 230.22,
+     "p": 0.73,
+     "spk": "S2"
+    },
+    {
+     "w": "and",
+     "start": 230.22,
+     "end": 230.38,
+     "p": 0.833,
+     "spk": "S2"
+    },
+    {
+     "w": "entry",
+     "start": 230.38,
+     "end": 230.7,
+     "p": 0.998,
+     "spk": "S2"
+    },
+    {
+     "w": "for",
+     "start": 230.7,
+     "end": 230.94,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "Judd's",
+     "start": 230.94,
+     "end": 231.42,
+     "p": 0.96,
+     "spk": "S2"
+    },
+    {
+     "w": "team.",
+     "start": 231.42,
+     "end": 231.98,
+     "p": 0.96,
+     "spk": "S2"
+    },
+    {
+     "w": "Um",
+     "start": 231.98,
+     "end": 232.64,
+     "p": 0.826,
+     "spk": "S2"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S2",
+     "start": 214.54,
+     "end": 232.64,
+     "words": [
+      0,
+      51
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 14,
+   "start": 232.73,
+   "end": 239.98,
+   "text": "You know, they've done testing uh so we have a a a feel for how the system's gonna operate. Testing at Plumbrook, where they do a thermal vacuum they bring.",
+   "words": [
+    {
+     "w": "You",
+     "start": 232.81,
+     "end": 232.97,
+     "p": 0.906,
+     "spk": "S2"
+    },
+    {
+     "w": "know,",
+     "start": 232.97,
+     "end": 233.13,
+     "p": 0.915,
+     "spk": "S2"
+    },
+    {
+     "w": "they've",
+     "start": 233.13,
+     "end": 233.37,
+     "p": 0.996,
+     "spk": "S2"
+    },
+    {
+     "w": "done",
+     "start": 233.37,
+     "end": 233.69,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "testing",
+     "start": 233.69,
+     "end": 234.33,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "uh",
+     "start": 234.33,
+     "end": 234.73,
+     "p": 0.789,
+     "spk": "S2"
+    },
+    {
+     "w": "so",
+     "start": 234.73,
+     "end": 234.97,
+     "p": 0.996,
+     "spk": "S2"
+    },
+    {
+     "w": "we",
+     "start": 234.97,
+     "end": 235.13,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "have",
+     "start": 235.13,
+     "end": 235.29,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "a",
+     "start": 235.29,
+     "end": 235.45,
+     "p": 0.895,
+     "spk": "S2"
+    },
+    {
+     "w": "a",
+     "start": 235.45,
+     "end": 235.61,
+     "p": 0.618,
+     "spk": "S2"
+    },
+    {
+     "w": "a",
+     "start": 235.61,
+     "end": 235.77,
+     "p": 0.74,
+     "spk": "S2"
+    },
+    {
+     "w": "feel",
+     "start": 235.77,
+     "end": 236.09,
+     "p": 0.998,
+     "spk": "S2"
+    },
+    {
+     "w": "for",
+     "start": 236.09,
+     "end": 236.25,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "how",
+     "start": 236.25,
+     "end": 236.41,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "the",
+     "start": 236.41,
+     "end": 236.57,
+     "p": 0.998,
+     "spk": "S2"
+    },
+    {
+     "w": "system's",
+     "start": 236.57,
+     "end": 236.89,
+     "p": 0.945,
+     "spk": "S2"
+    },
+    {
+     "w": "gonna",
+     "start": 236.89,
+     "end": 237.05,
+     "p": 0.815,
+     "spk": "S2"
+    },
+    {
+     "w": "operate.",
+     "start": 237.05,
+     "end": 237.45,
+     "p": 0.813,
+     "spk": "S2"
+    },
+    {
+     "w": "Testing",
+     "start": 237.45,
+     "end": 237.69,
+     "p": 0.996,
+     "spk": "S2"
+    },
+    {
+     "w": "at",
+     "start": 237.69,
+     "end": 237.85,
+     "p": 0.991,
+     "spk": "S2"
+    },
+    {
+     "w": "Plumbrook,",
+     "start": 237.85,
+     "end": 238.57,
+     "p": 0.762,
+     "spk": "S2"
+    },
+    {
+     "w": "where",
+     "start": 238.57,
+     "end": 238.65,
+     "p": 0.998,
+     "spk": "S2"
+    },
+    {
+     "w": "they",
+     "start": 238.65,
+     "end": 238.73,
+     "p": 0.997,
+     "spk": "S2"
+    },
+    {
+     "w": "do",
+     "start": 238.73,
+     "end": 238.81,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "a",
+     "start": 238.81,
+     "end": 238.89,
+     "p": 0.993,
+     "spk": "S2"
+    },
+    {
+     "w": "thermal",
+     "start": 238.89,
+     "end": 239.21,
+     "p": 1.0,
+     "spk": "S2"
+    },
+    {
+     "w": "vacuum",
+     "start": 239.21,
+     "end": 239.53,
+     "p": 0.999,
+     "spk": "S2"
+    },
+    {
+     "w": "they",
+     "start": 239.53,
+     "end": 239.69,
+     "p": 0.7,
+     "spk": "S2"
+    },
+    {
+     "w": "bring.",
+     "start": 239.69,
+     "end": 239.98,
+     "p": 0.889,
+     "spk": "S2"
+    }
+   ],
+   "runs": [
+    {
+     "spk": "S2",
+     "start": 232.81,
+     "end": 239.98,
+     "words": [
+      0,
+      30
+     ]
+    }
+   ]
+  }
+ ],
+ "paragraphs": [
+  {
+   "spk": "Judd Frieling",
+   "start": 0.24,
+   "end": 15.92,
+   "at": [
+    0,
+    0
+   ]
+  },
+  {
+   "spk": "Gary Jordan",
+   "start": 15.92,
+   "end": 16.4,
+   "at": [
+    0,
+    48
+   ]
+  },
+  {
+   "spk": "Judd Frieling",
+   "start": 16.4,
+   "end": 17.0,
+   "at": [
+    0,
+    50
+   ]
+  },
+  {
+   "spk": "Gary Jordan",
+   "start": 17.1,
+   "end": 31.1,
+   "at": [
+    1,
+    0
+   ]
+  },
+  {
+   "spk": "Rick LaBrode",
+   "start": 31.1,
+   "end": 70.72,
+   "at": [
+    1,
+    41
+   ]
+  },
+  {
+   "spk": "Rick LaBrode",
+   "start": 71.0,
+   "end": 83.04,
+   "at": [
+    4,
+    0
+   ]
+  },
+  {
+   "spk": "Gary Jordan",
+   "start": 83.23,
+   "end": 97.82,
+   "at": [
+    5,
+    0
+   ]
+  },
+  {
+   "spk": "Rick LaBrode",
+   "start": 97.82,
+   "end": 102.7,
+   "at": [
+    6,
+    26
+   ]
+  },
+  {
+   "spk": "Gary Jordan",
+   "start": 102.7,
+   "end": 121.44,
+   "at": [
+    6,
+    45
+   ]
+  },
+  {
+   "spk": "Judd Frieling",
+   "start": 122.46,
+   "end": 162.83,
+   "at": [
+    8,
+    0
+   ]
+  },
+  {
+   "spk": "Judd Frieling",
+   "start": 162.83,
+   "end": 193.23,
+   "at": [
+    10,
+    8
+   ]
+  },
+  {
+   "spk": "Gary Jordan",
+   "start": 193.23,
+   "end": 203.44,
+   "at": [
+    11,
+    49
+   ]
+  },
+  {
+   "spk": "Rick LaBrode",
+   "start": 203.44,
+   "end": 239.98,
+   "at": [
+    12,
+    24
+   ]
+  }
+ ]
+}
