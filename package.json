@@ -29,7 +29,8 @@
     "lint:fix": "oxlint --fix",
     "format": "oxfmt --write",
     "format:check": "oxfmt --check",
-    "check:fix": "oxlint --fix && oxfmt --write"
+    "check:fix": "oxlint --fix && oxfmt --write",
+    "prototype": "pnpm -F web exec vite dev --port 4311 --strictPort"
   },
   "dependencies": {
     "zod": "catalog:"
