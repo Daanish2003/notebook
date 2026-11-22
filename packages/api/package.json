@@ -10,7 +10,6 @@
     "check-types": "tsc -b"
   },
   "dependencies": {
-    "@notebook/auth": "workspace:*",
     "@notebook/db": "workspace:*",
     "@orpc/client": "catalog:",
     "@orpc/openapi": "catalog:",

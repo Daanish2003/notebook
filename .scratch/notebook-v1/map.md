@@ -21,7 +21,7 @@ A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL
   - Media: every Source keeps its audio on the Omarchy machine, uploads as Opus and URL Sources as the native audio yt-dlp downloaded. YouTube Sources play through the embed by default and fall back to the kept audio when embedding is disabled or the video is gone.
 - Before first use of AI notes: the Owner runs `claude setup-token` on omarchy (the CLI login expires around 2026-11-27) and turns off model training in Claude's privacy settings and ChatGPT's data controls.
 - Before any device installs the PWA: the Owner logs in to Tailscale, names the machine `omarchy`, enables MagicDNS and HTTPS, and finalises the tailnet name (see "Running Notebook always-on").
-- First build step after the map closes: re-scaffold with SQLite, no auth, no Docker (the current scaffold still has Postgres and Better Auth).
+- First build step after the map closes: re-scaffold with SQLite, no auth, no Docker. Done 2026-11-22.
 
 ## Decisions so far
 

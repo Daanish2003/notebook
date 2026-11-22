@@ -8,33 +8,12 @@
       "computedHash": "7eb0c4aa4c517767bec18b858523c9021485d054b7ecae0d4f9fb6e428b0c8ff",
       "wellKnownDigest": "sha256:9e26882ed5233c01cae6d530b7b3b3c3a8c187ec53e269448d823e0065b06d09"
     },
-    "better-auth-best-practices": {
-      "source": "better-auth/skills",
-      "commit": "20c9e88a5c007461a703f1c213572b073196113e",
-      "sourceType": "github",
-      "skillPath": "better-auth/best-practices/SKILL.md",
-      "computedHash": "2773c3687f2cf96d659049ebf2d8c86058a33541b09360712df0dc6b1404c403"
-    },
-    "better-auth-security-best-practices": {
-      "source": "better-auth/skills",
-      "commit": "20c9e88a5c007461a703f1c213572b073196113e",
-      "sourceType": "github",
-      "skillPath": "security/SKILL.md",
-      "computedHash": "36e9710eaa13c61c00bec00a4902fdc6ed829e6de13127238ae57494e93c1d9d"
-    },
     "build-audit-logs": {
       "source": "evlog.dev",
       "sourceUrl": "https://www.evlog.dev",
       "sourceType": "well-known",
       "computedHash": "8bbbb575aa15977228e7246bb702537bc3d0304cf8b88bfd52909738fce636fa",
       "wellKnownDigest": "sha256:b23d47912c43ca0ef77c001186fcefe57133d5872124c368881e1424ae4b9836"
-    },
-    "email-and-password-best-practices": {
-      "source": "better-auth/skills",
-      "commit": "20c9e88a5c007461a703f1c213572b073196113e",
-      "sourceType": "github",
-      "skillPath": "better-auth/emailAndPassword/SKILL.md",
-      "computedHash": "407c1244202876daa748818ed41dc55afde1b3f7aec48ae3a1f1c8a7ee40465e"
     },
     "hono": {
       "source": "honojs/skills",

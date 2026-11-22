@@ -1,19 +1,15 @@
 import type { Context as ApiContext } from "@notebook/api/context";
 import type { Context as HonoContext } from "hono";
 
-import { db, auth } from "./services";
+import { db } from "./services";
 
 export type CreateContextOptions = {
   context: HonoContext;
 };
 
-export async function createContext({ context }: CreateContextOptions): Promise<ApiContext> {
-  const session = await auth.api.getSession({
-    headers: context.req.raw.headers,
-  });
+export async function createContext(_options: CreateContextOptions): Promise<ApiContext> {
   return {
     db,
-    session,
   };
 }
 

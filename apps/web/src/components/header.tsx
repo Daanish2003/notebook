@@ -1,13 +1,9 @@
 import { Link } from "@tanstack/react-router";
 
 import { ModeToggle } from "./mode-toggle";
-import UserMenu from "./user-menu";
 
 export default function Header() {
-  const links = [
-    { to: "/", label: "Home" },
-    { to: "/dashboard", label: "Dashboard" },
-  ] as const;
+  const links = [{ to: "/", label: "Home" }] as const;
 
   return (
     <div>
@@ -23,7 +19,6 @@ export default function Header() {
         </nav>
         <div className="flex items-center gap-2">
           <ModeToggle />
-          <UserMenu />
         </div>
       </div>
       <hr />

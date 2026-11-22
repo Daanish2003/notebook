@@ -12,8 +12,7 @@ This project was created with [Better-T-Stack](https://github.com/AmanVarshney01
 - **oRPC** - End-to-end type-safe APIs with OpenAPI integration
 - **Bun** - Runtime environment
 - **Drizzle** - TypeScript-first ORM
-- **PostgreSQL** - Database engine
-- **Authentication** - Better-Auth
+- **SQLite/Turso** - Database engine
 - **PWA** - Progressive Web App support
 - **Oxlint** - Oxlint + Oxfmt (linting & formatting)
 - **Turborepo** - Optimized monorepo build system
@@ -28,10 +27,11 @@ pnpm install
 
 ## Database Setup
 
-This project uses PostgreSQL with Drizzle ORM.
+This project uses SQLite with Drizzle ORM.
 
-1. Make sure you have a PostgreSQL database set up.
-2. Update your `apps/server/.env` file with your PostgreSQL connection details.
+1. SQLite stores data in a local file, so no database server is needed. Applying the schema creates the file `DATABASE_URL` points to.
+
+2. Update your `.env` file in the `apps/server` directory with the appropriate connection details if needed.
 
 3. Apply the schema to your database:
 
@@ -98,7 +98,6 @@ notebook/
 ├── packages/
 │   ├── ui/          # Shared shadcn/ui components and styles
 │   ├── api/         # API layer / business logic
-│   ├── auth/        # Authentication configuration & logic
 │   └── db/          # Database schema & queries
 ```
 
@@ -115,7 +114,3 @@ notebook/
 - `pnpm run db:studio`: Open database studio UI
 - `pnpm run check`: Run Oxlint and Oxfmt
 - `cd apps/web && pnpm run generate-pwa-assets`: Generate PWA assets
-
-## Better Auth Schema Generation
-
-After changing auth plugins or schema options, run `pnpm run auth:generate` from the project root. The script runs the Better Auth CLI through `varlock run` from the owning app directory, loading the auth instance from `src/services.ts`. Review the schema changes, then use your ORM's migration workflow to apply them.

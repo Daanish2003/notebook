@@ -39,24 +39,9 @@
     "db:studio": {
       "cache": false,
       "persistent": true
-    },
-    "db:start": {
-      "cache": false
-    },
-    "db:stop": {
-      "cache": false
-    },
-    "db:watch": {
-      "cache": false,
-      "persistent": true
-    },
-    "db:down": {
-      "cache": false
     }
   },
   "globalEnv": [
-    "BETTER_AUTH_SECRET",
-    "BETTER_AUTH_URL",
     "CI",
     "CORS_ORIGIN",
     "DATABASE_URL",
