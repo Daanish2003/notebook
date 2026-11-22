@@ -34,5 +34,5 @@ Python deps (managed with `uv`): `onnx-asr[gpu,hub]` (Silero VAD downloads from 
 ## Running it
 
 - Dev: `pnpm dev`, and `uv run` the worker from `apps/transcriber`.
-- Always-on: see the map ticket "Running Notebook always-on": systemd user services with linger, one Hono process on `127.0.0.1:4310`, and `tailscale serve` at `https://omarchy.<tailnet>.ts.net/`.
+- Always-on: see the map ticket "Running Notebook always-on": socket-activated systemd user services started when the app opens (the worker only while Sources are queued), one Hono process on `127.0.0.1:4310`, and `tailscale serve` at `https://omarchy.<tailnet>.ts.net/`.
 - The voxtype daemon keeps its own copy of the model in VRAM. Both fit on 12 GB.

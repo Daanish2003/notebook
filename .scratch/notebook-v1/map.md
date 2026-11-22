@@ -24,7 +24,8 @@ A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL
 
 - [PWA offline storage and install over Tailscale](issues/01-pwa-offline-storage.md): ts.net certs satisfy PWA install, but the hostname must never change once installed; share-to-app works only on Android/desktop Chrome, so a paste field is required. (Its device-storage findings went unused: devices keep no Library data.)
 - [Media URL ingestion and synced playback](issues/02-media-url-ingestion.md): yt-dlp as a pinned Python library, keeping the native Opus/WebM; metadata covers the Library card; failures are classified by error text; the YouTube embed is polled for time; our own audio is served with Range support.
-- [Running Notebook always-on](issues/09-always-on-operation.md): systemd user services started at boot via linger; one Hono process on `127.0.0.1:4310` behind `tailscale serve` at `https://omarchy.<tailnet>.ts.net/`; the Library lives in `~/.local/share/notebook/` with daily DB snapshots; a weekly yt-dlp upgrade.
+- [Running Notebook always-on](issues/09-always-on-operation.md): started on demand by socket activation when the app opens (no linger), the server stops after 15 min idle, and the worker runs only while there's work; one Hono process on `127.0.0.1:4310` behind `tailscale serve` at `https://omarchy.<tailnet>.ts.net/`; the Library lives in `~/.local/share/notebook/` with daily DB snapshots; a weekly yt-dlp upgrade.
+- [Library and adding a Source](issues/05-library-ingest-prototype.md): Variant C "Journal". Search first, a date-grouped timeline of what was said, and a paste composer pinned at the bottom; plus drop-anywhere on desktop, a "needs attention" strip for failed and in-progress Sources, and full-Transcript search hits that open the reader at the timestamp.
 
 ## Not yet specified
 
