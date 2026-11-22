@@ -82,6 +82,14 @@
         "jsx-a11y/click-events-have-key-events": "off",
         "jsx-a11y/no-noninteractive-element-interactions": "off"
       }
+    },
+    {
+      "files": ["apps/web/src/prototype/**"],
+      "rules": {
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "react/exhaustive-effect-dependencies": "off"
+      }
     }
   ]
 }

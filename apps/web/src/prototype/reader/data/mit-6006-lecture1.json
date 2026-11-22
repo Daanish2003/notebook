@@ -1,0 +1,8955 @@
+{
+  "source": {
+    "title": "MIT 6.006 Spring 2020, Lecture 1: Algorithms and Computation (Jason Ku)",
+    "url": "https://www.youtube.com/watch?v=ZA-tUyM_y7s",
+    "license": "MIT OpenCourseWare, CC BY-NC-SA 4.0",
+    "excerpt_s": [0.0, 600.0],
+    "note": "First 10 minutes of a 45:38 lecture; machine transcript, uncorrected (e.g. 'Eric Domain' for Erik Demaine)."
+  },
+  "transcription": {
+    "model": "nemo-parakeet-tdt-0.6b-v3",
+    "onnx_asr": "0.12.0",
+    "vad": "silero",
+    "vad_kwargs": {
+      "min_silence_duration_ms": 1000,
+      "speech_pad_ms": 100
+    },
+    "suppress_non_latin_tokens": true
+  },
+  "paragraphs": [
+    {
+      "start": 12.8,
+      "end": 60.75,
+      "at": [0, 0]
+    },
+    {
+      "start": 60.75,
+      "end": 73.57,
+      "at": [3, 23]
+    },
+    {
+      "start": 76.91,
+      "end": 110.66,
+      "at": [4, 0]
+    },
+    {
+      "start": 113.52,
+      "end": 146.44,
+      "at": [9, 0]
+    },
+    {
+      "start": 146.44,
+      "end": 177.64,
+      "at": [13, 12]
+    },
+    {
+      "start": 179.23,
+      "end": 194.5,
+      "at": [15, 0]
+    },
+    {
+      "start": 197.56,
+      "end": 244.16,
+      "at": [16, 0]
+    },
+    {
+      "start": 246.25,
+      "end": 288.57,
+      "at": [23, 0]
+    },
+    {
+      "start": 288.57,
+      "end": 330.36,
+      "at": [25, 8]
+    },
+    {
+      "start": 330.36,
+      "end": 367.48,
+      "at": [27, 25]
+    },
+    {
+      "start": 367.48,
+      "end": 406.8,
+      "at": [29, 30]
+    },
+    {
+      "start": 406.8,
+      "end": 448.6,
+      "at": [32, 11]
+    },
+    {
+      "start": 448.6,
+      "end": 486.89,
+      "at": [34, 20]
+    },
+    {
+      "start": 486.89,
+      "end": 536.16,
+      "at": [36, 17]
+    },
+    {
+      "start": 536.16,
+      "end": 546.82,
+      "at": [42, 2]
+    },
+    {
+      "start": 555.5,
+      "end": 595.46,
+      "at": [43, 0]
+    }
+  ],
+  "segments": [
+    {
+      "idx": 0,
+      "start": 12.8,
+      "end": 14.18,
+      "text": "Good morning, everybody.",
+      "words": [
+        {
+          "w": "Good",
+          "start": 12.8,
+          "end": 13.04,
+          "p": 0.995
+        },
+        {
+          "w": "morning,",
+          "start": 13.04,
+          "end": 13.44,
+          "p": 0.896
+        },
+        {
+          "w": "everybody.",
+          "start": 13.44,
+          "end": 14.18,
+          "p": 0.955
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "start": 16.86,
+      "end": 35.84,
+      "text": "My name's Jason Ku. I'm going to be teaching uh this class in uh introduction to algorithms with uh two other instructors here, uh faculty in the department, uh Eric Domain and Justin Solomon. Uh they're excellent people, and so uh they will be",
+      "words": [
+        {
+          "w": "My",
+          "start": 16.94,
+          "end": 17.1,
+          "p": 0.978
+        },
+        {
+          "w": "name's",
+          "start": 17.1,
+          "end": 17.34,
+          "p": 0.875
+        },
+        {
+          "w": "Jason",
+          "start": 17.34,
+          "end": 17.74,
+          "p": 1.0
+        },
+        {
+          "w": "Ku.",
+          "start": 17.74,
+          "end": 18.46,
+          "p": 0.624
+        },
+        {
+          "w": "I'm",
+          "start": 18.46,
+          "end": 18.86,
+          "p": 0.997
+        },
+        {
+          "w": "going",
+          "start": 18.86,
+          "end": 19.1,
+          "p": 0.999
+        },
+        {
+          "w": "to",
+          "start": 19.1,
+          "end": 19.26,
+          "p": 1.0
+        },
+        {
+          "w": "be",
+          "start": 19.26,
+          "end": 19.5,
+          "p": 1.0
+        },
+        {
+          "w": "teaching",
+          "start": 19.5,
+          "end": 19.9,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 19.9,
+          "end": 20.14,
+          "p": 0.573
+        },
+        {
+          "w": "this",
+          "start": 20.14,
+          "end": 20.46,
+          "p": 0.998
+        },
+        {
+          "w": "class",
+          "start": 20.46,
+          "end": 21.1,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 21.1,
+          "end": 21.42,
+          "p": 0.986
+        },
+        {
+          "w": "uh",
+          "start": 21.42,
+          "end": 21.74,
+          "p": 0.825
+        },
+        {
+          "w": "introduction",
+          "start": 21.74,
+          "end": 22.38,
+          "p": 0.89
+        },
+        {
+          "w": "to",
+          "start": 22.38,
+          "end": 22.54,
+          "p": 1.0
+        },
+        {
+          "w": "algorithms",
+          "start": 22.54,
+          "end": 23.5,
+          "p": 0.997
+        },
+        {
+          "w": "with",
+          "start": 23.5,
+          "end": 23.66,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 23.66,
+          "end": 23.9,
+          "p": 0.842
+        },
+        {
+          "w": "two",
+          "start": 23.9,
+          "end": 24.22,
+          "p": 1.0
+        },
+        {
+          "w": "other",
+          "start": 24.22,
+          "end": 24.46,
+          "p": 1.0
+        },
+        {
+          "w": "instructors",
+          "start": 24.46,
+          "end": 25.18,
+          "p": 1.0
+        },
+        {
+          "w": "here,",
+          "start": 25.18,
+          "end": 25.5,
+          "p": 0.824
+        },
+        {
+          "w": "uh",
+          "start": 25.5,
+          "end": 25.82,
+          "p": 0.932
+        },
+        {
+          "w": "faculty",
+          "start": 25.82,
+          "end": 26.46,
+          "p": 0.998
+        },
+        {
+          "w": "in",
+          "start": 26.46,
+          "end": 26.7,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 26.7,
+          "end": 26.94,
+          "p": 1.0
+        },
+        {
+          "w": "department,",
+          "start": 26.94,
+          "end": 27.74,
+          "p": 0.927
+        },
+        {
+          "w": "uh",
+          "start": 27.74,
+          "end": 27.9,
+          "p": 0.932
+        },
+        {
+          "w": "Eric",
+          "start": 27.9,
+          "end": 28.3,
+          "p": 0.996
+        },
+        {
+          "w": "Domain",
+          "start": 28.3,
+          "end": 28.86,
+          "p": 0.828
+        },
+        {
+          "w": "and",
+          "start": 28.86,
+          "end": 28.94,
+          "p": 1.0
+        },
+        {
+          "w": "Justin",
+          "start": 28.94,
+          "end": 29.34,
+          "p": 1.0
+        },
+        {
+          "w": "Solomon.",
+          "start": 29.34,
+          "end": 30.78,
+          "p": 0.997
+        },
+        {
+          "w": "Uh",
+          "start": 30.78,
+          "end": 31.74,
+          "p": 0.934
+        },
+        {
+          "w": "they're",
+          "start": 31.74,
+          "end": 32.46,
+          "p": 0.919
+        },
+        {
+          "w": "excellent",
+          "start": 32.46,
+          "end": 33.18,
+          "p": 1.0
+        },
+        {
+          "w": "people,",
+          "start": 33.18,
+          "end": 33.66,
+          "p": 0.845
+        },
+        {
+          "w": "and",
+          "start": 33.66,
+          "end": 33.98,
+          "p": 0.998
+        },
+        {
+          "w": "so",
+          "start": 33.98,
+          "end": 34.22,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 34.22,
+          "end": 34.54,
+          "p": 0.958
+        },
+        {
+          "w": "they",
+          "start": 34.54,
+          "end": 34.86,
+          "p": 0.997
+        },
+        {
+          "w": "will",
+          "start": 34.86,
+          "end": 35.18,
+          "p": 0.999
+        },
+        {
+          "w": "be",
+          "start": 35.18,
+          "end": 35.84,
+          "p": 1.0
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "start": 35.71,
+      "end": 53.86,
+      "text": "working on uh teaching this class with me, I will be teaching the first lecture and we'll have uh each of them teach one of the next two lectures and then we'll go from there. Yeah, so uh that's this is intro to algorithms. Okay.",
+      "words": [
+        {
+          "w": "working",
+          "start": 36.03,
+          "end": 36.67,
+          "p": 0.77
+        },
+        {
+          "w": "on",
+          "start": 36.67,
+          "end": 36.91,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 36.91,
+          "end": 37.15,
+          "p": 0.918
+        },
+        {
+          "w": "teaching",
+          "start": 37.15,
+          "end": 37.79,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 37.79,
+          "end": 38.03,
+          "p": 1.0
+        },
+        {
+          "w": "class",
+          "start": 38.03,
+          "end": 38.67,
+          "p": 1.0
+        },
+        {
+          "w": "with",
+          "start": 38.67,
+          "end": 38.99,
+          "p": 1.0
+        },
+        {
+          "w": "me,",
+          "start": 38.99,
+          "end": 39.39,
+          "p": 0.592
+        },
+        {
+          "w": "I",
+          "start": 39.39,
+          "end": 39.63,
+          "p": 0.999
+        },
+        {
+          "w": "will",
+          "start": 39.63,
+          "end": 39.79,
+          "p": 1.0
+        },
+        {
+          "w": "be",
+          "start": 39.79,
+          "end": 39.95,
+          "p": 1.0
+        },
+        {
+          "w": "teaching",
+          "start": 39.95,
+          "end": 40.35,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 40.35,
+          "end": 40.59,
+          "p": 1.0
+        },
+        {
+          "w": "first",
+          "start": 40.59,
+          "end": 40.75,
+          "p": 1.0
+        },
+        {
+          "w": "lecture",
+          "start": 40.75,
+          "end": 41.55,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 41.55,
+          "end": 41.79,
+          "p": 1.0
+        },
+        {
+          "w": "we'll",
+          "start": 41.79,
+          "end": 42.19,
+          "p": 0.996
+        },
+        {
+          "w": "have",
+          "start": 42.19,
+          "end": 42.43,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 42.43,
+          "end": 42.67,
+          "p": 0.961
+        },
+        {
+          "w": "each",
+          "start": 42.67,
+          "end": 42.99,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 42.99,
+          "end": 43.23,
+          "p": 1.0
+        },
+        {
+          "w": "them",
+          "start": 43.23,
+          "end": 43.55,
+          "p": 1.0
+        },
+        {
+          "w": "teach",
+          "start": 43.55,
+          "end": 43.95,
+          "p": 1.0
+        },
+        {
+          "w": "one",
+          "start": 43.95,
+          "end": 44.19,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 44.19,
+          "end": 44.35,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 44.35,
+          "end": 44.59,
+          "p": 1.0
+        },
+        {
+          "w": "next",
+          "start": 44.59,
+          "end": 44.99,
+          "p": 1.0
+        },
+        {
+          "w": "two",
+          "start": 44.99,
+          "end": 45.31,
+          "p": 1.0
+        },
+        {
+          "w": "lectures",
+          "start": 45.31,
+          "end": 46.43,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 46.43,
+          "end": 46.75,
+          "p": 0.999
+        },
+        {
+          "w": "then",
+          "start": 46.75,
+          "end": 46.99,
+          "p": 1.0
+        },
+        {
+          "w": "we'll",
+          "start": 46.99,
+          "end": 47.31,
+          "p": 0.999
+        },
+        {
+          "w": "go",
+          "start": 47.31,
+          "end": 47.55,
+          "p": 1.0
+        },
+        {
+          "w": "from",
+          "start": 47.55,
+          "end": 47.87,
+          "p": 1.0
+        },
+        {
+          "w": "there.",
+          "start": 47.87,
+          "end": 48.35,
+          "p": 0.958
+        },
+        {
+          "w": "Yeah,",
+          "start": 48.35,
+          "end": 48.91,
+          "p": 0.831
+        },
+        {
+          "w": "so",
+          "start": 48.91,
+          "end": 49.23,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 49.23,
+          "end": 49.71,
+          "p": 0.965
+        },
+        {
+          "w": "that's",
+          "start": 49.71,
+          "end": 50.51,
+          "p": 0.996
+        },
+        {
+          "w": "this",
+          "start": 50.51,
+          "end": 50.75,
+          "p": 0.992
+        },
+        {
+          "w": "is",
+          "start": 50.75,
+          "end": 51.07,
+          "p": 0.979
+        },
+        {
+          "w": "intro",
+          "start": 51.07,
+          "end": 51.39,
+          "p": 0.758
+        },
+        {
+          "w": "to",
+          "start": 51.39,
+          "end": 51.55,
+          "p": 0.999
+        },
+        {
+          "w": "algorithms.",
+          "start": 51.55,
+          "end": 53.07,
+          "p": 0.94
+        },
+        {
+          "w": "Okay.",
+          "start": 53.07,
+          "end": 53.86,
+          "p": 0.847
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "start": 53.79,
+      "end": 73.57,
+      "text": "So we're gonna start talking about this uh course content now. What is this course about? It's about algorithms, right? Introduction to algorithms. Really, what the course is about is teaching you to solve computational problems. But it's more than that. It's not just about teaching you to solve computational problems. So solve goal.",
+      "words": [
+        {
+          "w": "So",
+          "start": 53.79,
+          "end": 54.03,
+          "p": 0.996
+        },
+        {
+          "w": "we're",
+          "start": 54.03,
+          "end": 54.19,
+          "p": 0.999
+        },
+        {
+          "w": "gonna",
+          "start": 54.19,
+          "end": 54.43,
+          "p": 0.771
+        },
+        {
+          "w": "start",
+          "start": 54.43,
+          "end": 54.67,
+          "p": 1.0
+        },
+        {
+          "w": "talking",
+          "start": 54.67,
+          "end": 54.99,
+          "p": 1.0
+        },
+        {
+          "w": "about",
+          "start": 54.99,
+          "end": 55.23,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 55.23,
+          "end": 55.39,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 55.39,
+          "end": 55.63,
+          "p": 0.805
+        },
+        {
+          "w": "course",
+          "start": 55.63,
+          "end": 56.11,
+          "p": 1.0
+        },
+        {
+          "w": "content",
+          "start": 56.11,
+          "end": 56.51,
+          "p": 1.0
+        },
+        {
+          "w": "now.",
+          "start": 56.51,
+          "end": 56.83,
+          "p": 0.991
+        },
+        {
+          "w": "What",
+          "start": 56.83,
+          "end": 56.99,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 56.99,
+          "end": 57.15,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 57.15,
+          "end": 57.31,
+          "p": 1.0
+        },
+        {
+          "w": "course",
+          "start": 57.31,
+          "end": 57.55,
+          "p": 1.0
+        },
+        {
+          "w": "about?",
+          "start": 57.55,
+          "end": 57.87,
+          "p": 0.992
+        },
+        {
+          "w": "It's",
+          "start": 57.87,
+          "end": 58.27,
+          "p": 1.0
+        },
+        {
+          "w": "about",
+          "start": 58.27,
+          "end": 58.59,
+          "p": 1.0
+        },
+        {
+          "w": "algorithms,",
+          "start": 58.59,
+          "end": 59.39,
+          "p": 0.989
+        },
+        {
+          "w": "right?",
+          "start": 59.39,
+          "end": 59.63,
+          "p": 0.957
+        },
+        {
+          "w": "Introduction",
+          "start": 59.63,
+          "end": 60.03,
+          "p": 0.999
+        },
+        {
+          "w": "to",
+          "start": 60.03,
+          "end": 60.19,
+          "p": 0.998
+        },
+        {
+          "w": "algorithms.",
+          "start": 60.19,
+          "end": 60.75,
+          "p": 0.985
+        },
+        {
+          "w": "Really,",
+          "start": 60.75,
+          "end": 60.99,
+          "p": 0.895
+        },
+        {
+          "w": "what",
+          "start": 60.99,
+          "end": 61.15,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 61.15,
+          "end": 61.23,
+          "p": 1.0
+        },
+        {
+          "w": "course",
+          "start": 61.23,
+          "end": 61.55,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 61.55,
+          "end": 61.79,
+          "p": 1.0
+        },
+        {
+          "w": "about",
+          "start": 61.79,
+          "end": 62.03,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 62.03,
+          "end": 62.35,
+          "p": 0.999
+        },
+        {
+          "w": "teaching",
+          "start": 62.35,
+          "end": 62.83,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 62.83,
+          "end": 63.07,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 63.07,
+          "end": 63.39,
+          "p": 1.0
+        },
+        {
+          "w": "solve",
+          "start": 63.39,
+          "end": 64.03,
+          "p": 1.0
+        },
+        {
+          "w": "computational",
+          "start": 64.03,
+          "end": 65.23,
+          "p": 0.998
+        },
+        {
+          "w": "problems.",
+          "start": 65.23,
+          "end": 66.19,
+          "p": 0.956
+        },
+        {
+          "w": "But",
+          "start": 66.19,
+          "end": 66.43,
+          "p": 0.999
+        },
+        {
+          "w": "it's",
+          "start": 66.43,
+          "end": 66.83,
+          "p": 0.999
+        },
+        {
+          "w": "more",
+          "start": 66.83,
+          "end": 67.07,
+          "p": 1.0
+        },
+        {
+          "w": "than",
+          "start": 67.07,
+          "end": 67.31,
+          "p": 1.0
+        },
+        {
+          "w": "that.",
+          "start": 67.31,
+          "end": 67.71,
+          "p": 0.808
+        },
+        {
+          "w": "It's",
+          "start": 67.71,
+          "end": 68.03,
+          "p": 0.996
+        },
+        {
+          "w": "not",
+          "start": 68.03,
+          "end": 68.27,
+          "p": 1.0
+        },
+        {
+          "w": "just",
+          "start": 68.27,
+          "end": 68.51,
+          "p": 1.0
+        },
+        {
+          "w": "about",
+          "start": 68.51,
+          "end": 68.75,
+          "p": 1.0
+        },
+        {
+          "w": "teaching",
+          "start": 68.75,
+          "end": 69.15,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 69.15,
+          "end": 69.31,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 69.31,
+          "end": 69.47,
+          "p": 1.0
+        },
+        {
+          "w": "solve",
+          "start": 69.47,
+          "end": 69.87,
+          "p": 1.0
+        },
+        {
+          "w": "computational",
+          "start": 69.87,
+          "end": 70.51,
+          "p": 1.0
+        },
+        {
+          "w": "problems.",
+          "start": 70.51,
+          "end": 71.07,
+          "p": 0.806
+        },
+        {
+          "w": "So",
+          "start": 71.07,
+          "end": 71.39,
+          "p": 0.998
+        },
+        {
+          "w": "solve",
+          "start": 71.39,
+          "end": 72.83,
+          "p": 0.999
+        },
+        {
+          "w": "goal.",
+          "start": 72.83,
+          "end": 73.57,
+          "p": 0.982
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "start": 76.67,
+      "end": 81.76,
+      "text": "One, solve computational.",
+      "words": [
+        {
+          "w": "One,",
+          "start": 76.91,
+          "end": 77.87,
+          "p": 0.705
+        },
+        {
+          "w": "solve",
+          "start": 77.87,
+          "end": 79.79,
+          "p": 0.733
+        },
+        {
+          "w": "computational.",
+          "start": 79.79,
+          "end": 81.76,
+          "p": 0.879
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "start": 83.64,
+      "end": 84.52,
+      "text": "Problems.",
+      "words": [
+        {
+          "w": "Problems.",
+          "start": 83.8,
+          "end": 84.52,
+          "p": 0.899
+        }
+      ]
+    },
+    {
+      "idx": 6,
+      "start": 85.56,
+      "end": 101.06,
+      "text": "But it's more than that. It's also about communicating those solutions to others and being able to communicate that your way of solving the problem is correct and efficient. Okay? So it's about",
+      "words": [
+        {
+          "w": "But",
+          "start": 85.56,
+          "end": 85.8,
+          "p": 0.955
+        },
+        {
+          "w": "it's",
+          "start": 85.8,
+          "end": 86.12,
+          "p": 0.993
+        },
+        {
+          "w": "more",
+          "start": 86.12,
+          "end": 86.36,
+          "p": 1.0
+        },
+        {
+          "w": "than",
+          "start": 86.36,
+          "end": 86.6,
+          "p": 1.0
+        },
+        {
+          "w": "that.",
+          "start": 86.6,
+          "end": 87.08,
+          "p": 0.741
+        },
+        {
+          "w": "It's",
+          "start": 87.08,
+          "end": 87.56,
+          "p": 0.995
+        },
+        {
+          "w": "also",
+          "start": 87.56,
+          "end": 87.88,
+          "p": 1.0
+        },
+        {
+          "w": "about",
+          "start": 87.88,
+          "end": 88.76,
+          "p": 1.0
+        },
+        {
+          "w": "communicating",
+          "start": 88.76,
+          "end": 90.36,
+          "p": 1.0
+        },
+        {
+          "w": "those",
+          "start": 90.36,
+          "end": 90.84,
+          "p": 1.0
+        },
+        {
+          "w": "solutions",
+          "start": 90.84,
+          "end": 91.48,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 91.48,
+          "end": 91.8,
+          "p": 1.0
+        },
+        {
+          "w": "others",
+          "start": 91.8,
+          "end": 92.6,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 92.6,
+          "end": 92.84,
+          "p": 0.999
+        },
+        {
+          "w": "being",
+          "start": 92.84,
+          "end": 93.16,
+          "p": 1.0
+        },
+        {
+          "w": "able",
+          "start": 93.16,
+          "end": 93.4,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 93.4,
+          "end": 93.64,
+          "p": 1.0
+        },
+        {
+          "w": "communicate",
+          "start": 93.64,
+          "end": 94.44,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 94.44,
+          "end": 94.76,
+          "p": 1.0
+        },
+        {
+          "w": "your",
+          "start": 94.76,
+          "end": 95.4,
+          "p": 1.0
+        },
+        {
+          "w": "way",
+          "start": 95.4,
+          "end": 95.88,
+          "p": 0.999
+        },
+        {
+          "w": "of",
+          "start": 95.88,
+          "end": 96.12,
+          "p": 1.0
+        },
+        {
+          "w": "solving",
+          "start": 96.12,
+          "end": 96.6,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 96.6,
+          "end": 96.92,
+          "p": 1.0
+        },
+        {
+          "w": "problem",
+          "start": 96.92,
+          "end": 97.24,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 97.24,
+          "end": 97.56,
+          "p": 1.0
+        },
+        {
+          "w": "correct",
+          "start": 97.56,
+          "end": 98.12,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 98.12,
+          "end": 98.36,
+          "p": 1.0
+        },
+        {
+          "w": "efficient.",
+          "start": 98.36,
+          "end": 99.32,
+          "p": 0.981
+        },
+        {
+          "w": "Okay?",
+          "start": 99.32,
+          "end": 99.96,
+          "p": 0.781
+        },
+        {
+          "w": "So",
+          "start": 99.96,
+          "end": 100.2,
+          "p": 0.834
+        },
+        {
+          "w": "it's",
+          "start": 100.2,
+          "end": 100.52,
+          "p": 0.996
+        },
+        {
+          "w": "about",
+          "start": 100.52,
+          "end": 101.06,
+          "p": 1.0
+        }
+      ]
+    },
+    {
+      "idx": 7,
+      "start": 103.29,
+      "end": 108.29,
+      "text": "Two more things. Uh prove",
+      "words": [
+        {
+          "w": "Two",
+          "start": 103.37,
+          "end": 103.69,
+          "p": 0.954
+        },
+        {
+          "w": "more",
+          "start": 103.69,
+          "end": 104.01,
+          "p": 1.0
+        },
+        {
+          "w": "things.",
+          "start": 104.01,
+          "end": 105.85,
+          "p": 0.887
+        },
+        {
+          "w": "Uh",
+          "start": 105.85,
+          "end": 106.57,
+          "p": 0.873
+        },
+        {
+          "w": "prove",
+          "start": 106.57,
+          "end": 108.29,
+          "p": 0.948
+        }
+      ]
+    },
+    {
+      "idx": 8,
+      "start": 109.63,
+      "end": 110.66,
+      "text": "Correctness.",
+      "words": [
+        {
+          "w": "Correctness.",
+          "start": 109.79,
+          "end": 110.66,
+          "p": 0.884
+        }
+      ]
+    },
+    {
+      "idx": 9,
+      "start": 113.28,
+      "end": 114.47,
+      "text": "Argue",
+      "words": [
+        {
+          "w": "Argue",
+          "start": 113.52,
+          "end": 114.47,
+          "p": 0.832
+        }
+      ]
+    },
+    {
+      "idx": 10,
+      "start": 115.55,
+      "end": 116.71,
+      "text": "Efficiency.",
+      "words": [
+        {
+          "w": "Efficiency.",
+          "start": 115.71,
+          "end": 116.71,
+          "p": 0.915
+        }
+      ]
+    },
+    {
+      "idx": 11,
+      "start": 119.04,
+      "end": 122.53,
+      "text": "And in general, it's about",
+      "words": [
+        {
+          "w": "And",
+          "start": 119.04,
+          "end": 119.6,
+          "p": 0.852
+        },
+        {
+          "w": "in",
+          "start": 119.6,
+          "end": 119.92,
+          "p": 1.0
+        },
+        {
+          "w": "general,",
+          "start": 119.92,
+          "end": 121.28,
+          "p": 0.827
+        },
+        {
+          "w": "it's",
+          "start": 121.28,
+          "end": 121.92,
+          "p": 0.993
+        },
+        {
+          "w": "about",
+          "start": 121.92,
+          "end": 122.53,
+          "p": 1.0
+        }
+      ]
+    },
+    {
+      "idx": 12,
+      "start": 123.8,
+      "end": 143.43,
+      "text": "Communication, communication, I can't spell by the way. Uh communication of these ideas. And you'll find that over the course of this class, you'll be doing a lot more writing than you do in a lot of your other courses. It really should maybe be a CI kind of class, because you'll be",
+      "words": [
+        {
+          "w": "Communication,",
+          "start": 123.96,
+          "end": 126.04,
+          "p": 0.839
+        },
+        {
+          "w": "communication,",
+          "start": 126.04,
+          "end": 128.2,
+          "p": 0.871
+        },
+        {
+          "w": "I",
+          "start": 128.2,
+          "end": 128.36,
+          "p": 0.994
+        },
+        {
+          "w": "can't",
+          "start": 128.36,
+          "end": 128.76,
+          "p": 1.0
+        },
+        {
+          "w": "spell",
+          "start": 128.76,
+          "end": 129.24,
+          "p": 1.0
+        },
+        {
+          "w": "by",
+          "start": 129.24,
+          "end": 129.4,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 129.4,
+          "end": 129.72,
+          "p": 1.0
+        },
+        {
+          "w": "way.",
+          "start": 129.72,
+          "end": 130.2,
+          "p": 0.908
+        },
+        {
+          "w": "Uh",
+          "start": 130.2,
+          "end": 130.84,
+          "p": 0.744
+        },
+        {
+          "w": "communication",
+          "start": 130.84,
+          "end": 131.8,
+          "p": 0.988
+        },
+        {
+          "w": "of",
+          "start": 131.8,
+          "end": 132.04,
+          "p": 1.0
+        },
+        {
+          "w": "these",
+          "start": 132.04,
+          "end": 132.2,
+          "p": 1.0
+        },
+        {
+          "w": "ideas.",
+          "start": 132.2,
+          "end": 132.84,
+          "p": 0.904
+        },
+        {
+          "w": "And",
+          "start": 132.84,
+          "end": 133.0,
+          "p": 0.983
+        },
+        {
+          "w": "you'll",
+          "start": 133.0,
+          "end": 133.32,
+          "p": 0.999
+        },
+        {
+          "w": "find",
+          "start": 133.32,
+          "end": 133.64,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 133.64,
+          "end": 133.88,
+          "p": 1.0
+        },
+        {
+          "w": "over",
+          "start": 133.88,
+          "end": 134.12,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 134.12,
+          "end": 134.2,
+          "p": 1.0
+        },
+        {
+          "w": "course",
+          "start": 134.2,
+          "end": 134.44,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 134.44,
+          "end": 134.52,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 134.52,
+          "end": 134.68,
+          "p": 1.0
+        },
+        {
+          "w": "class,",
+          "start": 134.68,
+          "end": 135.08,
+          "p": 0.899
+        },
+        {
+          "w": "you'll",
+          "start": 135.08,
+          "end": 135.4,
+          "p": 0.998
+        },
+        {
+          "w": "be",
+          "start": 135.4,
+          "end": 135.56,
+          "p": 1.0
+        },
+        {
+          "w": "doing",
+          "start": 135.56,
+          "end": 135.88,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 135.88,
+          "end": 136.04,
+          "p": 1.0
+        },
+        {
+          "w": "lot",
+          "start": 136.04,
+          "end": 136.28,
+          "p": 1.0
+        },
+        {
+          "w": "more",
+          "start": 136.28,
+          "end": 136.52,
+          "p": 1.0
+        },
+        {
+          "w": "writing",
+          "start": 136.52,
+          "end": 137.24,
+          "p": 1.0
+        },
+        {
+          "w": "than",
+          "start": 137.24,
+          "end": 137.48,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 137.48,
+          "end": 137.64,
+          "p": 1.0
+        },
+        {
+          "w": "do",
+          "start": 137.64,
+          "end": 137.88,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 137.88,
+          "end": 137.96,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 137.96,
+          "end": 138.12,
+          "p": 1.0
+        },
+        {
+          "w": "lot",
+          "start": 138.12,
+          "end": 138.28,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 138.28,
+          "end": 138.36,
+          "p": 1.0
+        },
+        {
+          "w": "your",
+          "start": 138.36,
+          "end": 138.52,
+          "p": 1.0
+        },
+        {
+          "w": "other",
+          "start": 138.52,
+          "end": 138.76,
+          "p": 1.0
+        },
+        {
+          "w": "courses.",
+          "start": 138.76,
+          "end": 139.32,
+          "p": 0.995
+        },
+        {
+          "w": "It",
+          "start": 139.32,
+          "end": 139.48,
+          "p": 0.99
+        },
+        {
+          "w": "really",
+          "start": 139.48,
+          "end": 139.72,
+          "p": 1.0
+        },
+        {
+          "w": "should",
+          "start": 139.72,
+          "end": 139.96,
+          "p": 1.0
+        },
+        {
+          "w": "maybe",
+          "start": 139.96,
+          "end": 140.28,
+          "p": 1.0
+        },
+        {
+          "w": "be",
+          "start": 140.28,
+          "end": 140.52,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 140.52,
+          "end": 140.84,
+          "p": 1.0
+        },
+        {
+          "w": "CI",
+          "start": 140.84,
+          "end": 141.48,
+          "p": 0.991
+        },
+        {
+          "w": "kind",
+          "start": 141.48,
+          "end": 141.72,
+          "p": 0.999
+        },
+        {
+          "w": "of",
+          "start": 141.72,
+          "end": 141.96,
+          "p": 1.0
+        },
+        {
+          "w": "class,",
+          "start": 141.96,
+          "end": 142.44,
+          "p": 0.858
+        },
+        {
+          "w": "because",
+          "start": 142.44,
+          "end": 142.68,
+          "p": 0.996
+        },
+        {
+          "w": "you'll",
+          "start": 142.68,
+          "end": 142.92,
+          "p": 0.996
+        },
+        {
+          "w": "be",
+          "start": 142.92,
+          "end": 143.43,
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "idx": 13,
+      "start": 143.32,
+      "end": 160.96,
+      "text": "doing a lot more writing than you will be coding, for sure. So it's really emp of course, solving the the computational problem is important, but really the thing that you're getting out of this class and other theory classes that you're not getting in other classes in this department",
+      "words": [
+        {
+          "w": "doing",
+          "start": 143.48,
+          "end": 143.8,
+          "p": 0.838
+        },
+        {
+          "w": "a",
+          "start": 143.8,
+          "end": 143.88,
+          "p": 1.0
+        },
+        {
+          "w": "lot",
+          "start": 143.88,
+          "end": 143.96,
+          "p": 1.0
+        },
+        {
+          "w": "more",
+          "start": 143.96,
+          "end": 144.2,
+          "p": 1.0
+        },
+        {
+          "w": "writing",
+          "start": 144.2,
+          "end": 144.52,
+          "p": 1.0
+        },
+        {
+          "w": "than",
+          "start": 144.52,
+          "end": 144.68,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 144.68,
+          "end": 144.84,
+          "p": 1.0
+        },
+        {
+          "w": "will",
+          "start": 144.84,
+          "end": 145.0,
+          "p": 1.0
+        },
+        {
+          "w": "be",
+          "start": 145.0,
+          "end": 145.16,
+          "p": 1.0
+        },
+        {
+          "w": "coding,",
+          "start": 145.16,
+          "end": 145.72,
+          "p": 0.897
+        },
+        {
+          "w": "for",
+          "start": 145.72,
+          "end": 145.96,
+          "p": 1.0
+        },
+        {
+          "w": "sure.",
+          "start": 145.96,
+          "end": 146.44,
+          "p": 0.998
+        },
+        {
+          "w": "So",
+          "start": 146.44,
+          "end": 146.84,
+          "p": 0.989
+        },
+        {
+          "w": "it's",
+          "start": 146.84,
+          "end": 147.16,
+          "p": 0.998
+        },
+        {
+          "w": "really",
+          "start": 147.16,
+          "end": 147.4,
+          "p": 0.999
+        },
+        {
+          "w": "emp",
+          "start": 147.4,
+          "end": 147.96,
+          "p": 0.442
+        },
+        {
+          "w": "of",
+          "start": 147.96,
+          "end": 148.04,
+          "p": 0.983
+        },
+        {
+          "w": "course,",
+          "start": 148.04,
+          "end": 148.52,
+          "p": 0.877
+        },
+        {
+          "w": "solving",
+          "start": 148.52,
+          "end": 149.0,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 149.0,
+          "end": 149.24,
+          "p": 0.913
+        },
+        {
+          "w": "the",
+          "start": 149.24,
+          "end": 149.4,
+          "p": 0.554
+        },
+        {
+          "w": "computational",
+          "start": 149.4,
+          "end": 150.2,
+          "p": 1.0
+        },
+        {
+          "w": "problem",
+          "start": 150.2,
+          "end": 150.52,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 150.52,
+          "end": 150.84,
+          "p": 1.0
+        },
+        {
+          "w": "important,",
+          "start": 150.84,
+          "end": 151.4,
+          "p": 0.854
+        },
+        {
+          "w": "but",
+          "start": 151.4,
+          "end": 151.64,
+          "p": 1.0
+        },
+        {
+          "w": "really",
+          "start": 151.64,
+          "end": 151.88,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 151.88,
+          "end": 152.04,
+          "p": 1.0
+        },
+        {
+          "w": "thing",
+          "start": 152.04,
+          "end": 152.28,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 152.28,
+          "end": 152.36,
+          "p": 0.999
+        },
+        {
+          "w": "you're",
+          "start": 152.36,
+          "end": 152.6,
+          "p": 0.998
+        },
+        {
+          "w": "getting",
+          "start": 152.6,
+          "end": 152.92,
+          "p": 1.0
+        },
+        {
+          "w": "out",
+          "start": 152.92,
+          "end": 153.08,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 153.08,
+          "end": 153.24,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 153.24,
+          "end": 153.4,
+          "p": 1.0
+        },
+        {
+          "w": "class",
+          "start": 153.4,
+          "end": 153.72,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 153.72,
+          "end": 153.88,
+          "p": 1.0
+        },
+        {
+          "w": "other",
+          "start": 153.88,
+          "end": 154.12,
+          "p": 1.0
+        },
+        {
+          "w": "theory",
+          "start": 154.12,
+          "end": 154.6,
+          "p": 0.999
+        },
+        {
+          "w": "classes",
+          "start": 154.6,
+          "end": 155.16,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 155.16,
+          "end": 155.32,
+          "p": 1.0
+        },
+        {
+          "w": "you're",
+          "start": 155.32,
+          "end": 155.64,
+          "p": 1.0
+        },
+        {
+          "w": "not",
+          "start": 155.64,
+          "end": 155.8,
+          "p": 1.0
+        },
+        {
+          "w": "getting",
+          "start": 155.8,
+          "end": 156.28,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 156.28,
+          "end": 157.32,
+          "p": 0.999
+        },
+        {
+          "w": "other",
+          "start": 157.32,
+          "end": 157.96,
+          "p": 1.0
+        },
+        {
+          "w": "classes",
+          "start": 157.96,
+          "end": 158.92,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 158.92,
+          "end": 159.24,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 159.24,
+          "end": 159.88,
+          "p": 1.0
+        },
+        {
+          "w": "department",
+          "start": 159.88,
+          "end": 160.96,
+          "p": 1.0
+        }
+      ]
+    },
+    {
+      "idx": 14,
+      "start": 160.89,
+      "end": 177.64,
+      "text": "is that we really concentrate on being able to prove that the things you're doing are correct and better than other things. And being able to communicate those ideas to others and not just to a computer, right? To other people to convince them that it's correct. Okay, so that's what this class is about.",
+      "words": [
+        {
+          "w": "is",
+          "start": 160.89,
+          "end": 161.21,
+          "p": 0.54
+        },
+        {
+          "w": "that",
+          "start": 161.21,
+          "end": 161.45,
+          "p": 1.0
+        },
+        {
+          "w": "we",
+          "start": 161.45,
+          "end": 161.61,
+          "p": 1.0
+        },
+        {
+          "w": "really",
+          "start": 161.61,
+          "end": 161.85,
+          "p": 1.0
+        },
+        {
+          "w": "concentrate",
+          "start": 161.85,
+          "end": 162.49,
+          "p": 1.0
+        },
+        {
+          "w": "on",
+          "start": 162.49,
+          "end": 162.65,
+          "p": 1.0
+        },
+        {
+          "w": "being",
+          "start": 162.65,
+          "end": 162.89,
+          "p": 1.0
+        },
+        {
+          "w": "able",
+          "start": 162.89,
+          "end": 163.05,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 163.05,
+          "end": 163.13,
+          "p": 1.0
+        },
+        {
+          "w": "prove",
+          "start": 163.13,
+          "end": 163.37,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 163.37,
+          "end": 163.53,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 163.53,
+          "end": 163.61,
+          "p": 1.0
+        },
+        {
+          "w": "things",
+          "start": 163.61,
+          "end": 163.93,
+          "p": 1.0
+        },
+        {
+          "w": "you're",
+          "start": 163.93,
+          "end": 164.17,
+          "p": 0.999
+        },
+        {
+          "w": "doing",
+          "start": 164.17,
+          "end": 164.49,
+          "p": 1.0
+        },
+        {
+          "w": "are",
+          "start": 164.49,
+          "end": 164.65,
+          "p": 1.0
+        },
+        {
+          "w": "correct",
+          "start": 164.65,
+          "end": 165.37,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 165.37,
+          "end": 165.61,
+          "p": 1.0
+        },
+        {
+          "w": "better",
+          "start": 165.61,
+          "end": 166.01,
+          "p": 1.0
+        },
+        {
+          "w": "than",
+          "start": 166.01,
+          "end": 166.25,
+          "p": 1.0
+        },
+        {
+          "w": "other",
+          "start": 166.25,
+          "end": 166.57,
+          "p": 0.998
+        },
+        {
+          "w": "things.",
+          "start": 166.57,
+          "end": 167.21,
+          "p": 0.828
+        },
+        {
+          "w": "And",
+          "start": 167.21,
+          "end": 167.45,
+          "p": 0.999
+        },
+        {
+          "w": "being",
+          "start": 167.45,
+          "end": 167.77,
+          "p": 1.0
+        },
+        {
+          "w": "able",
+          "start": 167.77,
+          "end": 167.93,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 167.93,
+          "end": 168.09,
+          "p": 1.0
+        },
+        {
+          "w": "communicate",
+          "start": 168.09,
+          "end": 168.57,
+          "p": 1.0
+        },
+        {
+          "w": "those",
+          "start": 168.57,
+          "end": 168.81,
+          "p": 1.0
+        },
+        {
+          "w": "ideas",
+          "start": 168.81,
+          "end": 169.29,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 169.29,
+          "end": 169.53,
+          "p": 1.0
+        },
+        {
+          "w": "others",
+          "start": 169.53,
+          "end": 170.17,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 170.17,
+          "end": 170.49,
+          "p": 1.0
+        },
+        {
+          "w": "not",
+          "start": 170.49,
+          "end": 170.73,
+          "p": 1.0
+        },
+        {
+          "w": "just",
+          "start": 170.73,
+          "end": 170.97,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 170.97,
+          "end": 171.21,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 171.21,
+          "end": 171.45,
+          "p": 1.0
+        },
+        {
+          "w": "computer,",
+          "start": 171.45,
+          "end": 172.17,
+          "p": 0.944
+        },
+        {
+          "w": "right?",
+          "start": 172.17,
+          "end": 172.73,
+          "p": 0.979
+        },
+        {
+          "w": "To",
+          "start": 172.73,
+          "end": 173.05,
+          "p": 0.993
+        },
+        {
+          "w": "other",
+          "start": 173.05,
+          "end": 173.37,
+          "p": 1.0
+        },
+        {
+          "w": "people",
+          "start": 173.37,
+          "end": 173.61,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 173.61,
+          "end": 173.77,
+          "p": 0.767
+        },
+        {
+          "w": "convince",
+          "start": 173.77,
+          "end": 174.17,
+          "p": 1.0
+        },
+        {
+          "w": "them",
+          "start": 174.17,
+          "end": 174.33,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 174.33,
+          "end": 174.49,
+          "p": 1.0
+        },
+        {
+          "w": "it's",
+          "start": 174.49,
+          "end": 174.73,
+          "p": 1.0
+        },
+        {
+          "w": "correct.",
+          "start": 174.73,
+          "end": 175.37,
+          "p": 0.999
+        },
+        {
+          "w": "Okay,",
+          "start": 175.37,
+          "end": 175.69,
+          "p": 0.819
+        },
+        {
+          "w": "so",
+          "start": 175.69,
+          "end": 175.93,
+          "p": 1.0
+        },
+        {
+          "w": "that's",
+          "start": 175.93,
+          "end": 176.17,
+          "p": 1.0
+        },
+        {
+          "w": "what",
+          "start": 176.17,
+          "end": 176.33,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 176.33,
+          "end": 176.49,
+          "p": 1.0
+        },
+        {
+          "w": "class",
+          "start": 176.49,
+          "end": 176.89,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 176.89,
+          "end": 177.21,
+          "p": 1.0
+        },
+        {
+          "w": "about.",
+          "start": 177.21,
+          "end": 177.64,
+          "p": 0.992
+        }
+      ]
+    },
+    {
+      "idx": 15,
+      "start": 179.23,
+      "end": 194.5,
+      "text": "So what do we what do I mean when I say solve a computational problem? What is a problem? What is an algorithm? Right? I know people make fun of me because I start with this question, but I mean, anyone want to answer that question?",
+      "words": [
+        {
+          "w": "So",
+          "start": 179.23,
+          "end": 179.47,
+          "p": 0.993
+        },
+        {
+          "w": "what",
+          "start": 179.47,
+          "end": 179.55,
+          "p": 0.887
+        },
+        {
+          "w": "do",
+          "start": 179.55,
+          "end": 179.63,
+          "p": 0.978
+        },
+        {
+          "w": "we",
+          "start": 179.63,
+          "end": 179.95,
+          "p": 0.761
+        },
+        {
+          "w": "what",
+          "start": 179.95,
+          "end": 180.11,
+          "p": 0.991
+        },
+        {
+          "w": "do",
+          "start": 180.11,
+          "end": 180.27,
+          "p": 1.0
+        },
+        {
+          "w": "I",
+          "start": 180.27,
+          "end": 180.43,
+          "p": 0.998
+        },
+        {
+          "w": "mean",
+          "start": 180.43,
+          "end": 180.67,
+          "p": 1.0
+        },
+        {
+          "w": "when",
+          "start": 180.67,
+          "end": 180.83,
+          "p": 1.0
+        },
+        {
+          "w": "I",
+          "start": 180.83,
+          "end": 181.15,
+          "p": 1.0
+        },
+        {
+          "w": "say",
+          "start": 181.15,
+          "end": 181.47,
+          "p": 1.0
+        },
+        {
+          "w": "solve",
+          "start": 181.47,
+          "end": 182.11,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 182.11,
+          "end": 182.59,
+          "p": 0.993
+        },
+        {
+          "w": "computational",
+          "start": 182.59,
+          "end": 183.55,
+          "p": 1.0
+        },
+        {
+          "w": "problem?",
+          "start": 183.55,
+          "end": 184.59,
+          "p": 0.994
+        },
+        {
+          "w": "What",
+          "start": 184.59,
+          "end": 184.99,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 184.99,
+          "end": 185.15,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 185.15,
+          "end": 185.47,
+          "p": 1.0
+        },
+        {
+          "w": "problem?",
+          "start": 185.47,
+          "end": 186.03,
+          "p": 0.992
+        },
+        {
+          "w": "What",
+          "start": 186.03,
+          "end": 186.27,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 186.27,
+          "end": 186.43,
+          "p": 1.0
+        },
+        {
+          "w": "an",
+          "start": 186.43,
+          "end": 186.67,
+          "p": 1.0
+        },
+        {
+          "w": "algorithm?",
+          "start": 186.67,
+          "end": 187.87,
+          "p": 0.977
+        },
+        {
+          "w": "Right?",
+          "start": 187.87,
+          "end": 188.51,
+          "p": 0.926
+        },
+        {
+          "w": "I",
+          "start": 188.51,
+          "end": 188.83,
+          "p": 0.998
+        },
+        {
+          "w": "know",
+          "start": 188.83,
+          "end": 189.07,
+          "p": 1.0
+        },
+        {
+          "w": "people",
+          "start": 189.07,
+          "end": 189.39,
+          "p": 1.0
+        },
+        {
+          "w": "make",
+          "start": 189.39,
+          "end": 189.55,
+          "p": 1.0
+        },
+        {
+          "w": "fun",
+          "start": 189.55,
+          "end": 189.79,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 189.79,
+          "end": 189.95,
+          "p": 1.0
+        },
+        {
+          "w": "me",
+          "start": 189.95,
+          "end": 190.11,
+          "p": 1.0
+        },
+        {
+          "w": "because",
+          "start": 190.11,
+          "end": 190.27,
+          "p": 1.0
+        },
+        {
+          "w": "I",
+          "start": 190.27,
+          "end": 190.43,
+          "p": 1.0
+        },
+        {
+          "w": "start",
+          "start": 190.43,
+          "end": 190.67,
+          "p": 1.0
+        },
+        {
+          "w": "with",
+          "start": 190.67,
+          "end": 190.91,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 190.91,
+          "end": 191.15,
+          "p": 1.0
+        },
+        {
+          "w": "question,",
+          "start": 191.15,
+          "end": 191.71,
+          "p": 0.972
+        },
+        {
+          "w": "but",
+          "start": 191.71,
+          "end": 192.11,
+          "p": 1.0
+        },
+        {
+          "w": "I",
+          "start": 192.11,
+          "end": 192.27,
+          "p": 0.971
+        },
+        {
+          "w": "mean,",
+          "start": 192.27,
+          "end": 192.83,
+          "p": 0.842
+        },
+        {
+          "w": "anyone",
+          "start": 192.83,
+          "end": 193.31,
+          "p": 0.998
+        },
+        {
+          "w": "want",
+          "start": 193.31,
+          "end": 193.47,
+          "p": 0.595
+        },
+        {
+          "w": "to",
+          "start": 193.47,
+          "end": 193.63,
+          "p": 0.995
+        },
+        {
+          "w": "answer",
+          "start": 193.63,
+          "end": 193.87,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 193.87,
+          "end": 194.03,
+          "p": 1.0
+        },
+        {
+          "w": "question?",
+          "start": 194.03,
+          "end": 194.5,
+          "p": 0.995
+        }
+      ]
+    },
+    {
+      "idx": 16,
+      "start": 197.56,
+      "end": 199.3,
+      "text": "No? What's the problem?",
+      "words": [
+        {
+          "w": "No?",
+          "start": 197.56,
+          "end": 198.2,
+          "p": 0.835
+        },
+        {
+          "w": "What's",
+          "start": 198.2,
+          "end": 198.68,
+          "p": 0.997
+        },
+        {
+          "w": "the",
+          "start": 198.68,
+          "end": 198.84,
+          "p": 0.547
+        },
+        {
+          "w": "problem?",
+          "start": 198.84,
+          "end": 199.3,
+          "p": 0.996
+        }
+      ]
+    },
+    {
+      "idx": 17,
+      "start": 200.41,
+      "end": 201.38,
+      "text": "Computationally.",
+      "words": [
+        {
+          "w": "Computationally.",
+          "start": 200.49,
+          "end": 201.38,
+          "p": 0.909
+        }
+      ]
+    },
+    {
+      "idx": 18,
+      "start": 202.49,
+      "end": 202.92,
+      "text": "No.",
+      "words": [
+        {
+          "w": "No.",
+          "start": 202.57,
+          "end": 202.92,
+          "p": 0.81
+        }
+      ]
+    },
+    {
+      "idx": 19,
+      "start": 204.03,
+      "end": 206.24,
+      "text": "Okay, so it's not such a stupid question. Yeah.",
+      "words": [
+        {
+          "w": "Okay,",
+          "start": 204.03,
+          "end": 204.35,
+          "p": 0.825
+        },
+        {
+          "w": "so",
+          "start": 204.35,
+          "end": 204.51,
+          "p": 0.999
+        },
+        {
+          "w": "it's",
+          "start": 204.51,
+          "end": 204.67,
+          "p": 0.995
+        },
+        {
+          "w": "not",
+          "start": 204.67,
+          "end": 204.83,
+          "p": 1.0
+        },
+        {
+          "w": "such",
+          "start": 204.83,
+          "end": 205.07,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 205.07,
+          "end": 205.15,
+          "p": 0.999
+        },
+        {
+          "w": "stupid",
+          "start": 205.15,
+          "end": 205.47,
+          "p": 1.0
+        },
+        {
+          "w": "question.",
+          "start": 205.47,
+          "end": 205.79,
+          "p": 0.904
+        },
+        {
+          "w": "Yeah.",
+          "start": 205.79,
+          "end": 206.24,
+          "p": 0.881
+        }
+      ]
+    },
+    {
+      "idx": 20,
+      "start": 207.68,
+      "end": 217.86,
+      "text": "Something you want to compute. Okay, yes, that's that's true, right? But kind of a little bit more abstractly, what I'm gonna think of a computational problem being.",
+      "words": [
+        {
+          "w": "Something",
+          "start": 207.68,
+          "end": 208.16,
+          "p": 0.965
+        },
+        {
+          "w": "you",
+          "start": 208.16,
+          "end": 208.32,
+          "p": 1.0
+        },
+        {
+          "w": "want",
+          "start": 208.32,
+          "end": 208.48,
+          "p": 0.999
+        },
+        {
+          "w": "to",
+          "start": 208.48,
+          "end": 208.64,
+          "p": 1.0
+        },
+        {
+          "w": "compute.",
+          "start": 208.64,
+          "end": 209.28,
+          "p": 0.905
+        },
+        {
+          "w": "Okay,",
+          "start": 209.28,
+          "end": 209.84,
+          "p": 0.74
+        },
+        {
+          "w": "yes,",
+          "start": 209.84,
+          "end": 210.24,
+          "p": 0.938
+        },
+        {
+          "w": "that's",
+          "start": 210.24,
+          "end": 210.64,
+          "p": 0.936
+        },
+        {
+          "w": "that's",
+          "start": 210.64,
+          "end": 210.96,
+          "p": 0.995
+        },
+        {
+          "w": "true,",
+          "start": 210.96,
+          "end": 211.52,
+          "p": 0.938
+        },
+        {
+          "w": "right?",
+          "start": 211.52,
+          "end": 212.16,
+          "p": 0.689
+        },
+        {
+          "w": "But",
+          "start": 212.16,
+          "end": 212.48,
+          "p": 0.994
+        },
+        {
+          "w": "kind",
+          "start": 212.48,
+          "end": 212.72,
+          "p": 0.985
+        },
+        {
+          "w": "of",
+          "start": 212.72,
+          "end": 212.88,
+          "p": 0.991
+        },
+        {
+          "w": "a",
+          "start": 212.88,
+          "end": 212.96,
+          "p": 1.0
+        },
+        {
+          "w": "little",
+          "start": 212.96,
+          "end": 213.12,
+          "p": 1.0
+        },
+        {
+          "w": "bit",
+          "start": 213.12,
+          "end": 213.28,
+          "p": 1.0
+        },
+        {
+          "w": "more",
+          "start": 213.28,
+          "end": 213.52,
+          "p": 1.0
+        },
+        {
+          "w": "abstractly,",
+          "start": 213.52,
+          "end": 214.32,
+          "p": 0.969
+        },
+        {
+          "w": "what",
+          "start": 214.32,
+          "end": 214.48,
+          "p": 0.999
+        },
+        {
+          "w": "I'm",
+          "start": 214.48,
+          "end": 214.72,
+          "p": 0.999
+        },
+        {
+          "w": "gonna",
+          "start": 214.72,
+          "end": 215.04,
+          "p": 0.91
+        },
+        {
+          "w": "think",
+          "start": 215.04,
+          "end": 215.28,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 215.28,
+          "end": 215.6,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 215.6,
+          "end": 215.92,
+          "p": 0.999
+        },
+        {
+          "w": "computational",
+          "start": 215.92,
+          "end": 216.8,
+          "p": 1.0
+        },
+        {
+          "w": "problem",
+          "start": 216.8,
+          "end": 217.12,
+          "p": 1.0
+        },
+        {
+          "w": "being.",
+          "start": 217.12,
+          "end": 217.86,
+          "p": 0.867
+        }
+      ]
+    },
+    {
+      "idx": 21,
+      "start": 219.0,
+      "end": 236.1,
+      "text": "And this is where uh kind of your prerequisite and discrete mathematics should come in, right? It's a problem, is kind of you've got a set of inputs. Inputs. Okay, maybe I have uh one, two, three, four, five.",
+      "words": [
+        {
+          "w": "And",
+          "start": 219.0,
+          "end": 219.32,
+          "p": 0.987
+        },
+        {
+          "w": "this",
+          "start": 219.32,
+          "end": 219.56,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 219.56,
+          "end": 219.88,
+          "p": 1.0
+        },
+        {
+          "w": "where",
+          "start": 219.88,
+          "end": 220.12,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 220.12,
+          "end": 220.36,
+          "p": 0.78
+        },
+        {
+          "w": "kind",
+          "start": 220.36,
+          "end": 220.6,
+          "p": 0.987
+        },
+        {
+          "w": "of",
+          "start": 220.6,
+          "end": 220.84,
+          "p": 0.999
+        },
+        {
+          "w": "your",
+          "start": 220.84,
+          "end": 221.08,
+          "p": 1.0
+        },
+        {
+          "w": "prerequisite",
+          "start": 221.08,
+          "end": 221.88,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 221.88,
+          "end": 222.04,
+          "p": 0.856
+        },
+        {
+          "w": "discrete",
+          "start": 222.04,
+          "end": 222.44,
+          "p": 1.0
+        },
+        {
+          "w": "mathematics",
+          "start": 222.44,
+          "end": 223.08,
+          "p": 1.0
+        },
+        {
+          "w": "should",
+          "start": 223.08,
+          "end": 223.4,
+          "p": 1.0
+        },
+        {
+          "w": "come",
+          "start": 223.4,
+          "end": 223.72,
+          "p": 1.0
+        },
+        {
+          "w": "in,",
+          "start": 223.72,
+          "end": 224.2,
+          "p": 0.865
+        },
+        {
+          "w": "right?",
+          "start": 224.2,
+          "end": 224.92,
+          "p": 0.907
+        },
+        {
+          "w": "It's",
+          "start": 224.92,
+          "end": 225.88,
+          "p": 0.986
+        },
+        {
+          "w": "a",
+          "start": 225.88,
+          "end": 226.2,
+          "p": 0.999
+        },
+        {
+          "w": "problem,",
+          "start": 226.2,
+          "end": 226.6,
+          "p": 0.633
+        },
+        {
+          "w": "is",
+          "start": 226.6,
+          "end": 226.84,
+          "p": 0.64
+        },
+        {
+          "w": "kind",
+          "start": 226.84,
+          "end": 227.08,
+          "p": 0.995
+        },
+        {
+          "w": "of",
+          "start": 227.08,
+          "end": 227.56,
+          "p": 0.999
+        },
+        {
+          "w": "you've",
+          "start": 227.56,
+          "end": 227.96,
+          "p": 0.997
+        },
+        {
+          "w": "got",
+          "start": 227.96,
+          "end": 228.12,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 228.12,
+          "end": 228.2,
+          "p": 1.0
+        },
+        {
+          "w": "set",
+          "start": 228.2,
+          "end": 228.36,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 228.36,
+          "end": 228.6,
+          "p": 1.0
+        },
+        {
+          "w": "inputs.",
+          "start": 228.6,
+          "end": 229.88,
+          "p": 0.957
+        },
+        {
+          "w": "Inputs.",
+          "start": 229.88,
+          "end": 231.16,
+          "p": 0.823
+        },
+        {
+          "w": "Okay,",
+          "start": 231.16,
+          "end": 231.56,
+          "p": 0.845
+        },
+        {
+          "w": "maybe",
+          "start": 231.56,
+          "end": 232.04,
+          "p": 1.0
+        },
+        {
+          "w": "I",
+          "start": 232.04,
+          "end": 232.36,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 232.36,
+          "end": 232.68,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 232.68,
+          "end": 233.24,
+          "p": 0.92
+        },
+        {
+          "w": "one,",
+          "start": 233.24,
+          "end": 233.64,
+          "p": 0.985
+        },
+        {
+          "w": "two,",
+          "start": 233.64,
+          "end": 234.04,
+          "p": 0.999
+        },
+        {
+          "w": "three,",
+          "start": 234.04,
+          "end": 234.52,
+          "p": 0.999
+        },
+        {
+          "w": "four,",
+          "start": 234.52,
+          "end": 235.24,
+          "p": 0.997
+        },
+        {
+          "w": "five.",
+          "start": 235.24,
+          "end": 236.1,
+          "p": 0.906
+        }
+      ]
+    },
+    {
+      "idx": 22,
+      "start": 236.64,
+      "end": 244.16,
+      "text": "Possible inputs I could have to my algorithm, okay? Then I have a space of outputs, okay? Outputs.",
+      "words": [
+        {
+          "w": "Possible",
+          "start": 236.8,
+          "end": 237.2,
+          "p": 0.92
+        },
+        {
+          "w": "inputs",
+          "start": 237.2,
+          "end": 237.68,
+          "p": 0.992
+        },
+        {
+          "w": "I",
+          "start": 237.68,
+          "end": 237.76,
+          "p": 1.0
+        },
+        {
+          "w": "could",
+          "start": 237.76,
+          "end": 237.92,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 237.92,
+          "end": 238.08,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 238.08,
+          "end": 238.24,
+          "p": 1.0
+        },
+        {
+          "w": "my",
+          "start": 238.24,
+          "end": 238.4,
+          "p": 1.0
+        },
+        {
+          "w": "algorithm,",
+          "start": 238.4,
+          "end": 239.36,
+          "p": 0.898
+        },
+        {
+          "w": "okay?",
+          "start": 239.36,
+          "end": 240.0,
+          "p": 0.872
+        },
+        {
+          "w": "Then",
+          "start": 240.0,
+          "end": 240.24,
+          "p": 0.998
+        },
+        {
+          "w": "I",
+          "start": 240.24,
+          "end": 240.48,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 240.48,
+          "end": 240.64,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 240.64,
+          "end": 240.88,
+          "p": 0.995
+        },
+        {
+          "w": "space",
+          "start": 240.88,
+          "end": 241.2,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 241.2,
+          "end": 241.36,
+          "p": 0.999
+        },
+        {
+          "w": "outputs,",
+          "start": 241.36,
+          "end": 242.16,
+          "p": 0.848
+        },
+        {
+          "w": "okay?",
+          "start": 242.16,
+          "end": 242.96,
+          "p": 0.906
+        },
+        {
+          "w": "Outputs.",
+          "start": 242.96,
+          "end": 244.16,
+          "p": 0.928
+        }
+      ]
+    },
+    {
+      "idx": 23,
+      "start": 246.17,
+      "end": 265.35,
+      "text": "And maybe, I don't know, maybe I have more of them than I do inputs, but these are the possible outputs to my uh my problem. And what a problem is, is a binary relation between these inputs and outputs. Essentially, for each input, I specify which of these outputs is correct.",
+      "words": [
+        {
+          "w": "And",
+          "start": 246.25,
+          "end": 246.49,
+          "p": 0.981
+        },
+        {
+          "w": "maybe,",
+          "start": 246.49,
+          "end": 247.29,
+          "p": 0.923
+        },
+        {
+          "w": "I",
+          "start": 247.29,
+          "end": 247.45,
+          "p": 0.998
+        },
+        {
+          "w": "don't",
+          "start": 247.45,
+          "end": 247.69,
+          "p": 0.996
+        },
+        {
+          "w": "know,",
+          "start": 247.69,
+          "end": 247.93,
+          "p": 0.945
+        },
+        {
+          "w": "maybe",
+          "start": 247.93,
+          "end": 248.25,
+          "p": 1.0
+        },
+        {
+          "w": "I",
+          "start": 248.25,
+          "end": 248.41,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 248.41,
+          "end": 248.57,
+          "p": 1.0
+        },
+        {
+          "w": "more",
+          "start": 248.57,
+          "end": 248.73,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 248.73,
+          "end": 248.89,
+          "p": 1.0
+        },
+        {
+          "w": "them",
+          "start": 248.89,
+          "end": 249.05,
+          "p": 1.0
+        },
+        {
+          "w": "than",
+          "start": 249.05,
+          "end": 249.21,
+          "p": 1.0
+        },
+        {
+          "w": "I",
+          "start": 249.21,
+          "end": 249.37,
+          "p": 1.0
+        },
+        {
+          "w": "do",
+          "start": 249.37,
+          "end": 249.61,
+          "p": 1.0
+        },
+        {
+          "w": "inputs,",
+          "start": 249.61,
+          "end": 250.09,
+          "p": 0.939
+        },
+        {
+          "w": "but",
+          "start": 250.09,
+          "end": 250.25,
+          "p": 1.0
+        },
+        {
+          "w": "these",
+          "start": 250.25,
+          "end": 250.41,
+          "p": 1.0
+        },
+        {
+          "w": "are",
+          "start": 250.41,
+          "end": 250.57,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 250.57,
+          "end": 250.81,
+          "p": 1.0
+        },
+        {
+          "w": "possible",
+          "start": 250.81,
+          "end": 251.29,
+          "p": 1.0
+        },
+        {
+          "w": "outputs",
+          "start": 251.29,
+          "end": 251.93,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 251.93,
+          "end": 252.25,
+          "p": 1.0
+        },
+        {
+          "w": "my",
+          "start": 252.25,
+          "end": 252.89,
+          "p": 0.897
+        },
+        {
+          "w": "uh",
+          "start": 252.89,
+          "end": 253.45,
+          "p": 0.784
+        },
+        {
+          "w": "my",
+          "start": 253.45,
+          "end": 253.77,
+          "p": 0.996
+        },
+        {
+          "w": "problem.",
+          "start": 253.77,
+          "end": 254.65,
+          "p": 0.891
+        },
+        {
+          "w": "And",
+          "start": 254.65,
+          "end": 254.97,
+          "p": 0.992
+        },
+        {
+          "w": "what",
+          "start": 254.97,
+          "end": 255.21,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 255.21,
+          "end": 255.53,
+          "p": 1.0
+        },
+        {
+          "w": "problem",
+          "start": 255.53,
+          "end": 255.85,
+          "p": 1.0
+        },
+        {
+          "w": "is,",
+          "start": 255.85,
+          "end": 256.41,
+          "p": 0.859
+        },
+        {
+          "w": "is",
+          "start": 256.41,
+          "end": 257.05,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 257.05,
+          "end": 257.37,
+          "p": 1.0
+        },
+        {
+          "w": "binary",
+          "start": 257.37,
+          "end": 257.93,
+          "p": 1.0
+        },
+        {
+          "w": "relation",
+          "start": 257.93,
+          "end": 258.33,
+          "p": 1.0
+        },
+        {
+          "w": "between",
+          "start": 258.33,
+          "end": 258.73,
+          "p": 1.0
+        },
+        {
+          "w": "these",
+          "start": 258.73,
+          "end": 258.89,
+          "p": 1.0
+        },
+        {
+          "w": "inputs",
+          "start": 258.89,
+          "end": 259.29,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 259.29,
+          "end": 259.45,
+          "p": 1.0
+        },
+        {
+          "w": "outputs.",
+          "start": 259.45,
+          "end": 260.01,
+          "p": 0.994
+        },
+        {
+          "w": "Essentially,",
+          "start": 260.01,
+          "end": 260.57,
+          "p": 0.874
+        },
+        {
+          "w": "for",
+          "start": 260.57,
+          "end": 260.73,
+          "p": 1.0
+        },
+        {
+          "w": "each",
+          "start": 260.73,
+          "end": 261.05,
+          "p": 1.0
+        },
+        {
+          "w": "input,",
+          "start": 261.05,
+          "end": 261.61,
+          "p": 0.96
+        },
+        {
+          "w": "I",
+          "start": 261.61,
+          "end": 261.85,
+          "p": 1.0
+        },
+        {
+          "w": "specify",
+          "start": 261.85,
+          "end": 262.49,
+          "p": 1.0
+        },
+        {
+          "w": "which",
+          "start": 262.49,
+          "end": 262.73,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 262.73,
+          "end": 262.89,
+          "p": 1.0
+        },
+        {
+          "w": "these",
+          "start": 262.89,
+          "end": 263.13,
+          "p": 1.0
+        },
+        {
+          "w": "outputs",
+          "start": 263.13,
+          "end": 264.33,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 264.33,
+          "end": 264.57,
+          "p": 1.0
+        },
+        {
+          "w": "correct.",
+          "start": 264.57,
+          "end": 265.35,
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "idx": 24,
+      "start": 266.3,
+      "end": 286.08,
+      "text": "Right? It doesn't necessarily have to be one. Right? If I say, give me the index in an array containing the value five, there could be multiple fives in that array, and so any of those indices would be correct. So uh maybe this guy maps to that output, and maybe this guy maps to",
+      "words": [
+        {
+          "w": "Right?",
+          "start": 266.38,
+          "end": 266.86,
+          "p": 0.789
+        },
+        {
+          "w": "It",
+          "start": 266.86,
+          "end": 267.02,
+          "p": 0.99
+        },
+        {
+          "w": "doesn't",
+          "start": 267.02,
+          "end": 267.34,
+          "p": 1.0
+        },
+        {
+          "w": "necessarily",
+          "start": 267.34,
+          "end": 267.82,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 267.82,
+          "end": 267.98,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 267.98,
+          "end": 268.22,
+          "p": 1.0
+        },
+        {
+          "w": "be",
+          "start": 268.22,
+          "end": 268.54,
+          "p": 1.0
+        },
+        {
+          "w": "one.",
+          "start": 268.54,
+          "end": 269.1,
+          "p": 0.713
+        },
+        {
+          "w": "Right?",
+          "start": 269.1,
+          "end": 269.5,
+          "p": 0.731
+        },
+        {
+          "w": "If",
+          "start": 269.5,
+          "end": 269.74,
+          "p": 0.999
+        },
+        {
+          "w": "I",
+          "start": 269.74,
+          "end": 270.06,
+          "p": 1.0
+        },
+        {
+          "w": "say,",
+          "start": 270.06,
+          "end": 270.7,
+          "p": 0.786
+        },
+        {
+          "w": "give",
+          "start": 270.7,
+          "end": 271.18,
+          "p": 0.971
+        },
+        {
+          "w": "me",
+          "start": 271.18,
+          "end": 271.42,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 271.42,
+          "end": 271.66,
+          "p": 1.0
+        },
+        {
+          "w": "index",
+          "start": 271.66,
+          "end": 272.3,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 272.3,
+          "end": 272.46,
+          "p": 1.0
+        },
+        {
+          "w": "an",
+          "start": 272.46,
+          "end": 272.7,
+          "p": 1.0
+        },
+        {
+          "w": "array",
+          "start": 272.7,
+          "end": 273.18,
+          "p": 1.0
+        },
+        {
+          "w": "containing",
+          "start": 273.18,
+          "end": 273.74,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 273.74,
+          "end": 273.98,
+          "p": 1.0
+        },
+        {
+          "w": "value",
+          "start": 273.98,
+          "end": 274.54,
+          "p": 1.0
+        },
+        {
+          "w": "five,",
+          "start": 274.54,
+          "end": 275.34,
+          "p": 0.87
+        },
+        {
+          "w": "there",
+          "start": 275.34,
+          "end": 275.58,
+          "p": 1.0
+        },
+        {
+          "w": "could",
+          "start": 275.58,
+          "end": 275.74,
+          "p": 1.0
+        },
+        {
+          "w": "be",
+          "start": 275.74,
+          "end": 275.9,
+          "p": 1.0
+        },
+        {
+          "w": "multiple",
+          "start": 275.9,
+          "end": 276.38,
+          "p": 1.0
+        },
+        {
+          "w": "fives",
+          "start": 276.38,
+          "end": 276.78,
+          "p": 0.982
+        },
+        {
+          "w": "in",
+          "start": 276.78,
+          "end": 276.86,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 276.86,
+          "end": 277.02,
+          "p": 1.0
+        },
+        {
+          "w": "array,",
+          "start": 277.02,
+          "end": 277.42,
+          "p": 0.887
+        },
+        {
+          "w": "and",
+          "start": 277.42,
+          "end": 277.66,
+          "p": 0.999
+        },
+        {
+          "w": "so",
+          "start": 277.66,
+          "end": 277.98,
+          "p": 1.0
+        },
+        {
+          "w": "any",
+          "start": 277.98,
+          "end": 278.22,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 278.22,
+          "end": 278.38,
+          "p": 1.0
+        },
+        {
+          "w": "those",
+          "start": 278.38,
+          "end": 278.62,
+          "p": 1.0
+        },
+        {
+          "w": "indices",
+          "start": 278.62,
+          "end": 279.34,
+          "p": 1.0
+        },
+        {
+          "w": "would",
+          "start": 279.34,
+          "end": 279.58,
+          "p": 1.0
+        },
+        {
+          "w": "be",
+          "start": 279.58,
+          "end": 279.82,
+          "p": 1.0
+        },
+        {
+          "w": "correct.",
+          "start": 279.82,
+          "end": 280.54,
+          "p": 0.996
+        },
+        {
+          "w": "So",
+          "start": 280.54,
+          "end": 280.94,
+          "p": 0.975
+        },
+        {
+          "w": "uh",
+          "start": 280.94,
+          "end": 281.34,
+          "p": 0.88
+        },
+        {
+          "w": "maybe",
+          "start": 281.34,
+          "end": 281.82,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 281.82,
+          "end": 281.98,
+          "p": 1.0
+        },
+        {
+          "w": "guy",
+          "start": 281.98,
+          "end": 282.38,
+          "p": 1.0
+        },
+        {
+          "w": "maps",
+          "start": 282.38,
+          "end": 282.94,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 282.94,
+          "end": 283.26,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 283.26,
+          "end": 283.5,
+          "p": 1.0
+        },
+        {
+          "w": "output,",
+          "start": 283.5,
+          "end": 284.06,
+          "p": 0.95
+        },
+        {
+          "w": "and",
+          "start": 284.06,
+          "end": 284.22,
+          "p": 0.971
+        },
+        {
+          "w": "maybe",
+          "start": 284.22,
+          "end": 284.54,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 284.54,
+          "end": 284.7,
+          "p": 1.0
+        },
+        {
+          "w": "guy",
+          "start": 284.7,
+          "end": 285.02,
+          "p": 1.0
+        },
+        {
+          "w": "maps",
+          "start": 285.02,
+          "end": 285.42,
+          "p": 0.998
+        },
+        {
+          "w": "to",
+          "start": 285.42,
+          "end": 286.08,
+          "p": 0.998
+        }
+      ]
+    },
+    {
+      "idx": 25,
+      "start": 286.01,
+      "end": 303.36,
+      "text": "I don't know, two or three outputs, right? This input goes to one, two, I don't know. There's a there's some kind of mapping here. These edges represent a binary relation. It's kind of a graph, a bipartite graph between these inputs and outputs.",
+      "words": [
+        {
+          "w": "I",
+          "start": 286.17,
+          "end": 286.25,
+          "p": 0.968
+        },
+        {
+          "w": "don't",
+          "start": 286.25,
+          "end": 286.41,
+          "p": 0.992
+        },
+        {
+          "w": "know,",
+          "start": 286.41,
+          "end": 286.65,
+          "p": 0.928
+        },
+        {
+          "w": "two",
+          "start": 286.65,
+          "end": 286.81,
+          "p": 0.984
+        },
+        {
+          "w": "or",
+          "start": 286.81,
+          "end": 286.97,
+          "p": 1.0
+        },
+        {
+          "w": "three",
+          "start": 286.97,
+          "end": 287.29,
+          "p": 1.0
+        },
+        {
+          "w": "outputs,",
+          "start": 287.29,
+          "end": 288.09,
+          "p": 0.944
+        },
+        {
+          "w": "right?",
+          "start": 288.09,
+          "end": 288.57,
+          "p": 0.965
+        },
+        {
+          "w": "This",
+          "start": 288.57,
+          "end": 288.89,
+          "p": 0.997
+        },
+        {
+          "w": "input",
+          "start": 288.89,
+          "end": 290.01,
+          "p": 1.0
+        },
+        {
+          "w": "goes",
+          "start": 290.01,
+          "end": 290.65,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 290.65,
+          "end": 290.97,
+          "p": 1.0
+        },
+        {
+          "w": "one,",
+          "start": 290.97,
+          "end": 292.09,
+          "p": 0.955
+        },
+        {
+          "w": "two,",
+          "start": 292.09,
+          "end": 292.81,
+          "p": 0.832
+        },
+        {
+          "w": "I",
+          "start": 292.81,
+          "end": 292.89,
+          "p": 0.999
+        },
+        {
+          "w": "don't",
+          "start": 292.89,
+          "end": 293.21,
+          "p": 0.991
+        },
+        {
+          "w": "know.",
+          "start": 293.21,
+          "end": 293.45,
+          "p": 0.9
+        },
+        {
+          "w": "There's",
+          "start": 293.45,
+          "end": 293.77,
+          "p": 0.946
+        },
+        {
+          "w": "a",
+          "start": 293.77,
+          "end": 294.33,
+          "p": 0.986
+        },
+        {
+          "w": "there's",
+          "start": 294.33,
+          "end": 294.73,
+          "p": 0.981
+        },
+        {
+          "w": "some",
+          "start": 294.73,
+          "end": 294.89,
+          "p": 1.0
+        },
+        {
+          "w": "kind",
+          "start": 294.89,
+          "end": 295.05,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 295.05,
+          "end": 295.13,
+          "p": 1.0
+        },
+        {
+          "w": "mapping",
+          "start": 295.13,
+          "end": 295.61,
+          "p": 1.0
+        },
+        {
+          "w": "here.",
+          "start": 295.61,
+          "end": 295.85,
+          "p": 0.962
+        },
+        {
+          "w": "These",
+          "start": 295.85,
+          "end": 296.09,
+          "p": 0.999
+        },
+        {
+          "w": "edges",
+          "start": 296.09,
+          "end": 296.49,
+          "p": 1.0
+        },
+        {
+          "w": "represent",
+          "start": 296.49,
+          "end": 296.89,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 296.89,
+          "end": 297.05,
+          "p": 1.0
+        },
+        {
+          "w": "binary",
+          "start": 297.05,
+          "end": 297.69,
+          "p": 1.0
+        },
+        {
+          "w": "relation.",
+          "start": 297.69,
+          "end": 298.65,
+          "p": 0.923
+        },
+        {
+          "w": "It's",
+          "start": 298.65,
+          "end": 298.89,
+          "p": 0.979
+        },
+        {
+          "w": "kind",
+          "start": 298.89,
+          "end": 299.05,
+          "p": 0.999
+        },
+        {
+          "w": "of",
+          "start": 299.05,
+          "end": 299.13,
+          "p": 0.995
+        },
+        {
+          "w": "a",
+          "start": 299.13,
+          "end": 299.29,
+          "p": 0.998
+        },
+        {
+          "w": "graph,",
+          "start": 299.29,
+          "end": 299.61,
+          "p": 0.995
+        },
+        {
+          "w": "a",
+          "start": 299.61,
+          "end": 299.77,
+          "p": 0.999
+        },
+        {
+          "w": "bipartite",
+          "start": 299.77,
+          "end": 300.73,
+          "p": 1.0
+        },
+        {
+          "w": "graph",
+          "start": 300.73,
+          "end": 301.21,
+          "p": 1.0
+        },
+        {
+          "w": "between",
+          "start": 301.21,
+          "end": 301.69,
+          "p": 1.0
+        },
+        {
+          "w": "these",
+          "start": 301.69,
+          "end": 301.93,
+          "p": 1.0
+        },
+        {
+          "w": "inputs",
+          "start": 301.93,
+          "end": 302.41,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 302.41,
+          "end": 302.57,
+          "p": 1.0
+        },
+        {
+          "w": "outputs.",
+          "start": 302.57,
+          "end": 303.36,
+          "p": 0.979
+        }
+      ]
+    },
+    {
+      "idx": 26,
+      "start": 303.23,
+      "end": 322.63,
+      "text": "And these are specifying which of these outputs are correct for these inputs. All right? That's really the formal definition of what a problem is. Now, generally, if I have a problem, an o computational problem, I'm not going to specify the problem to you by saying, okay, for input one,",
+      "words": [
+        {
+          "w": "And",
+          "start": 303.23,
+          "end": 303.47,
+          "p": 0.993
+        },
+        {
+          "w": "these",
+          "start": 303.47,
+          "end": 303.71,
+          "p": 1.0
+        },
+        {
+          "w": "are",
+          "start": 303.71,
+          "end": 303.87,
+          "p": 1.0
+        },
+        {
+          "w": "specifying",
+          "start": 303.87,
+          "end": 304.51,
+          "p": 1.0
+        },
+        {
+          "w": "which",
+          "start": 304.51,
+          "end": 304.75,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 304.75,
+          "end": 304.83,
+          "p": 1.0
+        },
+        {
+          "w": "these",
+          "start": 304.83,
+          "end": 304.99,
+          "p": 0.999
+        },
+        {
+          "w": "outputs",
+          "start": 304.99,
+          "end": 305.47,
+          "p": 1.0
+        },
+        {
+          "w": "are",
+          "start": 305.47,
+          "end": 305.63,
+          "p": 1.0
+        },
+        {
+          "w": "correct",
+          "start": 305.63,
+          "end": 306.03,
+          "p": 1.0
+        },
+        {
+          "w": "for",
+          "start": 306.03,
+          "end": 306.27,
+          "p": 1.0
+        },
+        {
+          "w": "these",
+          "start": 306.27,
+          "end": 306.51,
+          "p": 1.0
+        },
+        {
+          "w": "inputs.",
+          "start": 306.51,
+          "end": 307.55,
+          "p": 0.988
+        },
+        {
+          "w": "All",
+          "start": 307.55,
+          "end": 307.79,
+          "p": 0.608
+        },
+        {
+          "w": "right?",
+          "start": 307.79,
+          "end": 308.35,
+          "p": 0.788
+        },
+        {
+          "w": "That's",
+          "start": 308.35,
+          "end": 308.83,
+          "p": 0.999
+        },
+        {
+          "w": "really",
+          "start": 308.83,
+          "end": 309.07,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 309.07,
+          "end": 309.39,
+          "p": 1.0
+        },
+        {
+          "w": "formal",
+          "start": 309.39,
+          "end": 309.87,
+          "p": 1.0
+        },
+        {
+          "w": "definition",
+          "start": 309.87,
+          "end": 310.51,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 310.51,
+          "end": 310.83,
+          "p": 1.0
+        },
+        {
+          "w": "what",
+          "start": 310.83,
+          "end": 311.15,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 311.15,
+          "end": 311.47,
+          "p": 1.0
+        },
+        {
+          "w": "problem",
+          "start": 311.47,
+          "end": 311.71,
+          "p": 1.0
+        },
+        {
+          "w": "is.",
+          "start": 311.71,
+          "end": 312.11,
+          "p": 0.995
+        },
+        {
+          "w": "Now,",
+          "start": 312.11,
+          "end": 312.51,
+          "p": 0.93
+        },
+        {
+          "w": "generally,",
+          "start": 312.51,
+          "end": 313.47,
+          "p": 0.99
+        },
+        {
+          "w": "if",
+          "start": 313.47,
+          "end": 313.71,
+          "p": 1.0
+        },
+        {
+          "w": "I",
+          "start": 313.71,
+          "end": 314.03,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 314.03,
+          "end": 314.27,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 314.27,
+          "end": 314.59,
+          "p": 1.0
+        },
+        {
+          "w": "problem,",
+          "start": 314.59,
+          "end": 314.99,
+          "p": 0.956
+        },
+        {
+          "w": "an",
+          "start": 314.99,
+          "end": 315.23,
+          "p": 0.625
+        },
+        {
+          "w": "o",
+          "start": 315.23,
+          "end": 315.79,
+          "p": 0.505
+        },
+        {
+          "w": "computational",
+          "start": 315.79,
+          "end": 316.75,
+          "p": 1.0
+        },
+        {
+          "w": "problem,",
+          "start": 316.75,
+          "end": 317.63,
+          "p": 0.986
+        },
+        {
+          "w": "I'm",
+          "start": 317.63,
+          "end": 318.03,
+          "p": 0.999
+        },
+        {
+          "w": "not",
+          "start": 318.03,
+          "end": 318.35,
+          "p": 1.0
+        },
+        {
+          "w": "going",
+          "start": 318.35,
+          "end": 318.67,
+          "p": 0.998
+        },
+        {
+          "w": "to",
+          "start": 318.67,
+          "end": 318.91,
+          "p": 1.0
+        },
+        {
+          "w": "specify",
+          "start": 318.91,
+          "end": 319.47,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 319.47,
+          "end": 319.63,
+          "p": 1.0
+        },
+        {
+          "w": "problem",
+          "start": 319.63,
+          "end": 319.87,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 319.87,
+          "end": 320.11,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 320.11,
+          "end": 320.27,
+          "p": 1.0
+        },
+        {
+          "w": "by",
+          "start": 320.27,
+          "end": 320.51,
+          "p": 1.0
+        },
+        {
+          "w": "saying,",
+          "start": 320.51,
+          "end": 320.99,
+          "p": 0.922
+        },
+        {
+          "w": "okay,",
+          "start": 320.99,
+          "end": 321.39,
+          "p": 0.816
+        },
+        {
+          "w": "for",
+          "start": 321.39,
+          "end": 321.63,
+          "p": 1.0
+        },
+        {
+          "w": "input",
+          "start": 321.63,
+          "end": 322.03,
+          "p": 1.0
+        },
+        {
+          "w": "one,",
+          "start": 322.03,
+          "end": 322.63,
+          "p": 0.729
+        }
+      ]
+    },
+    {
+      "idx": 27,
+      "start": 323.48,
+      "end": 337.38,
+      "text": "The correct answer is zero. And for input two, the correct answer is three, and so on and so forth. That would take forever, right? Usually what we do when defining a problem is specify some kind of predicate saying that, oh, we can check.",
+      "words": [
+        {
+          "w": "The",
+          "start": 323.56,
+          "end": 323.72,
+          "p": 0.53
+        },
+        {
+          "w": "correct",
+          "start": 323.72,
+          "end": 324.12,
+          "p": 1.0
+        },
+        {
+          "w": "answer",
+          "start": 324.12,
+          "end": 324.6,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 324.6,
+          "end": 324.76,
+          "p": 1.0
+        },
+        {
+          "w": "zero.",
+          "start": 324.76,
+          "end": 325.32,
+          "p": 0.88
+        },
+        {
+          "w": "And",
+          "start": 325.32,
+          "end": 325.64,
+          "p": 0.985
+        },
+        {
+          "w": "for",
+          "start": 325.64,
+          "end": 325.88,
+          "p": 0.919
+        },
+        {
+          "w": "input",
+          "start": 325.88,
+          "end": 326.28,
+          "p": 0.999
+        },
+        {
+          "w": "two,",
+          "start": 326.28,
+          "end": 326.6,
+          "p": 0.935
+        },
+        {
+          "w": "the",
+          "start": 326.6,
+          "end": 326.68,
+          "p": 0.999
+        },
+        {
+          "w": "correct",
+          "start": 326.68,
+          "end": 327.0,
+          "p": 1.0
+        },
+        {
+          "w": "answer",
+          "start": 327.0,
+          "end": 327.24,
+          "p": 0.999
+        },
+        {
+          "w": "is",
+          "start": 327.24,
+          "end": 327.4,
+          "p": 0.999
+        },
+        {
+          "w": "three,",
+          "start": 327.4,
+          "end": 327.8,
+          "p": 0.762
+        },
+        {
+          "w": "and",
+          "start": 327.8,
+          "end": 327.96,
+          "p": 0.999
+        },
+        {
+          "w": "so",
+          "start": 327.96,
+          "end": 328.12,
+          "p": 1.0
+        },
+        {
+          "w": "on",
+          "start": 328.12,
+          "end": 328.28,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 328.28,
+          "end": 328.44,
+          "p": 0.999
+        },
+        {
+          "w": "so",
+          "start": 328.44,
+          "end": 328.52,
+          "p": 0.999
+        },
+        {
+          "w": "forth.",
+          "start": 328.52,
+          "end": 328.84,
+          "p": 0.915
+        },
+        {
+          "w": "That",
+          "start": 328.84,
+          "end": 329.0,
+          "p": 0.998
+        },
+        {
+          "w": "would",
+          "start": 329.0,
+          "end": 329.16,
+          "p": 1.0
+        },
+        {
+          "w": "take",
+          "start": 329.16,
+          "end": 329.32,
+          "p": 1.0
+        },
+        {
+          "w": "forever,",
+          "start": 329.32,
+          "end": 329.88,
+          "p": 0.961
+        },
+        {
+          "w": "right?",
+          "start": 329.88,
+          "end": 330.36,
+          "p": 0.985
+        },
+        {
+          "w": "Usually",
+          "start": 330.36,
+          "end": 330.92,
+          "p": 0.999
+        },
+        {
+          "w": "what",
+          "start": 330.92,
+          "end": 331.16,
+          "p": 1.0
+        },
+        {
+          "w": "we",
+          "start": 331.16,
+          "end": 331.48,
+          "p": 1.0
+        },
+        {
+          "w": "do",
+          "start": 331.48,
+          "end": 331.72,
+          "p": 1.0
+        },
+        {
+          "w": "when",
+          "start": 331.72,
+          "end": 332.04,
+          "p": 1.0
+        },
+        {
+          "w": "defining",
+          "start": 332.04,
+          "end": 332.6,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 332.6,
+          "end": 332.92,
+          "p": 1.0
+        },
+        {
+          "w": "problem",
+          "start": 332.92,
+          "end": 333.56,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 333.56,
+          "end": 333.8,
+          "p": 1.0
+        },
+        {
+          "w": "specify",
+          "start": 333.8,
+          "end": 334.36,
+          "p": 1.0
+        },
+        {
+          "w": "some",
+          "start": 334.36,
+          "end": 334.52,
+          "p": 1.0
+        },
+        {
+          "w": "kind",
+          "start": 334.52,
+          "end": 334.68,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 334.68,
+          "end": 334.92,
+          "p": 0.998
+        },
+        {
+          "w": "predicate",
+          "start": 334.92,
+          "end": 335.56,
+          "p": 1.0
+        },
+        {
+          "w": "saying",
+          "start": 335.56,
+          "end": 335.88,
+          "p": 1.0
+        },
+        {
+          "w": "that,",
+          "start": 335.88,
+          "end": 336.2,
+          "p": 0.862
+        },
+        {
+          "w": "oh,",
+          "start": 336.2,
+          "end": 336.44,
+          "p": 0.904
+        },
+        {
+          "w": "we",
+          "start": 336.44,
+          "end": 336.6,
+          "p": 1.0
+        },
+        {
+          "w": "can",
+          "start": 336.6,
+          "end": 336.76,
+          "p": 1.0
+        },
+        {
+          "w": "check.",
+          "start": 336.76,
+          "end": 337.38,
+          "p": 0.934
+        }
+      ]
+    },
+    {
+      "idx": 28,
+      "start": 338.68,
+      "end": 357.03,
+      "text": "If I give you an input and an output, I can check whether that output is correct or not. That's usually how we define a problem. Is uh uh uh if I uh am checking for whether this index contains a five, I can just go to that array, look at index five, and say, or that the index you gave me.",
+      "words": [
+        {
+          "w": "If",
+          "start": 338.68,
+          "end": 338.92,
+          "p": 0.987
+        },
+        {
+          "w": "I",
+          "start": 338.92,
+          "end": 339.08,
+          "p": 1.0
+        },
+        {
+          "w": "give",
+          "start": 339.08,
+          "end": 339.24,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 339.24,
+          "end": 339.4,
+          "p": 1.0
+        },
+        {
+          "w": "an",
+          "start": 339.4,
+          "end": 339.48,
+          "p": 1.0
+        },
+        {
+          "w": "input",
+          "start": 339.48,
+          "end": 339.8,
+          "p": 1.0
+        },
+        {
+          "w": "and",
+          "start": 339.8,
+          "end": 339.96,
+          "p": 0.999
+        },
+        {
+          "w": "an",
+          "start": 339.96,
+          "end": 340.12,
+          "p": 0.997
+        },
+        {
+          "w": "output,",
+          "start": 340.12,
+          "end": 340.52,
+          "p": 0.991
+        },
+        {
+          "w": "I",
+          "start": 340.52,
+          "end": 340.6,
+          "p": 1.0
+        },
+        {
+          "w": "can",
+          "start": 340.6,
+          "end": 340.76,
+          "p": 1.0
+        },
+        {
+          "w": "check",
+          "start": 340.76,
+          "end": 341.0,
+          "p": 1.0
+        },
+        {
+          "w": "whether",
+          "start": 341.0,
+          "end": 341.48,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 341.48,
+          "end": 341.72,
+          "p": 1.0
+        },
+        {
+          "w": "output",
+          "start": 341.72,
+          "end": 342.2,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 342.2,
+          "end": 342.44,
+          "p": 1.0
+        },
+        {
+          "w": "correct",
+          "start": 342.44,
+          "end": 342.84,
+          "p": 1.0
+        },
+        {
+          "w": "or",
+          "start": 342.84,
+          "end": 342.92,
+          "p": 1.0
+        },
+        {
+          "w": "not.",
+          "start": 342.92,
+          "end": 343.24,
+          "p": 0.993
+        },
+        {
+          "w": "That's",
+          "start": 343.24,
+          "end": 343.48,
+          "p": 0.999
+        },
+        {
+          "w": "usually",
+          "start": 343.48,
+          "end": 343.8,
+          "p": 1.0
+        },
+        {
+          "w": "how",
+          "start": 343.8,
+          "end": 343.96,
+          "p": 1.0
+        },
+        {
+          "w": "we",
+          "start": 343.96,
+          "end": 344.2,
+          "p": 1.0
+        },
+        {
+          "w": "define",
+          "start": 344.2,
+          "end": 344.84,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 344.84,
+          "end": 345.16,
+          "p": 1.0
+        },
+        {
+          "w": "problem.",
+          "start": 345.16,
+          "end": 345.8,
+          "p": 0.872
+        },
+        {
+          "w": "Is",
+          "start": 345.8,
+          "end": 346.28,
+          "p": 0.721
+        },
+        {
+          "w": "uh",
+          "start": 346.28,
+          "end": 346.44,
+          "p": 0.487
+        },
+        {
+          "w": "uh",
+          "start": 346.44,
+          "end": 346.68,
+          "p": 0.63
+        },
+        {
+          "w": "uh",
+          "start": 346.68,
+          "end": 347.08,
+          "p": 0.798
+        },
+        {
+          "w": "if",
+          "start": 347.08,
+          "end": 347.56,
+          "p": 0.99
+        },
+        {
+          "w": "I",
+          "start": 347.56,
+          "end": 348.04,
+          "p": 0.97
+        },
+        {
+          "w": "uh",
+          "start": 348.04,
+          "end": 348.68,
+          "p": 0.463
+        },
+        {
+          "w": "am",
+          "start": 348.68,
+          "end": 349.0,
+          "p": 0.758
+        },
+        {
+          "w": "checking",
+          "start": 349.0,
+          "end": 349.64,
+          "p": 1.0
+        },
+        {
+          "w": "for",
+          "start": 349.64,
+          "end": 349.8,
+          "p": 0.999
+        },
+        {
+          "w": "whether",
+          "start": 349.8,
+          "end": 350.44,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 350.44,
+          "end": 350.68,
+          "p": 1.0
+        },
+        {
+          "w": "index",
+          "start": 350.68,
+          "end": 351.08,
+          "p": 1.0
+        },
+        {
+          "w": "contains",
+          "start": 351.08,
+          "end": 351.48,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 351.48,
+          "end": 351.64,
+          "p": 0.994
+        },
+        {
+          "w": "five,",
+          "start": 351.64,
+          "end": 352.12,
+          "p": 0.827
+        },
+        {
+          "w": "I",
+          "start": 352.12,
+          "end": 352.28,
+          "p": 0.999
+        },
+        {
+          "w": "can",
+          "start": 352.28,
+          "end": 352.44,
+          "p": 1.0
+        },
+        {
+          "w": "just",
+          "start": 352.44,
+          "end": 352.68,
+          "p": 1.0
+        },
+        {
+          "w": "go",
+          "start": 352.68,
+          "end": 352.84,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 352.84,
+          "end": 353.0,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 353.0,
+          "end": 353.16,
+          "p": 1.0
+        },
+        {
+          "w": "array,",
+          "start": 353.16,
+          "end": 353.56,
+          "p": 0.992
+        },
+        {
+          "w": "look",
+          "start": 353.56,
+          "end": 353.72,
+          "p": 1.0
+        },
+        {
+          "w": "at",
+          "start": 353.72,
+          "end": 353.88,
+          "p": 1.0
+        },
+        {
+          "w": "index",
+          "start": 353.88,
+          "end": 354.28,
+          "p": 0.999
+        },
+        {
+          "w": "five,",
+          "start": 354.28,
+          "end": 354.6,
+          "p": 0.902
+        },
+        {
+          "w": "and",
+          "start": 354.6,
+          "end": 354.76,
+          "p": 0.996
+        },
+        {
+          "w": "say,",
+          "start": 354.76,
+          "end": 355.16,
+          "p": 0.652
+        },
+        {
+          "w": "or",
+          "start": 355.16,
+          "end": 355.4,
+          "p": 0.953
+        },
+        {
+          "w": "that",
+          "start": 355.4,
+          "end": 355.64,
+          "p": 0.666
+        },
+        {
+          "w": "the",
+          "start": 355.64,
+          "end": 355.8,
+          "p": 0.995
+        },
+        {
+          "w": "index",
+          "start": 355.8,
+          "end": 356.12,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 356.12,
+          "end": 356.28,
+          "p": 1.0
+        },
+        {
+          "w": "gave",
+          "start": 356.28,
+          "end": 356.52,
+          "p": 1.0
+        },
+        {
+          "w": "me.",
+          "start": 356.52,
+          "end": 357.03,
+          "p": 0.784
+        }
+      ]
+    },
+    {
+      "idx": 29,
+      "start": 356.92,
+      "end": 375.78,
+      "text": "And see if it equals five, right? So usually we're putting it in terms of predicates because in general we don't really want to talk about small instances of problems. So let's say I had the problem of among the students in this classroom, do any pair of you have the same birthday?",
+      "words": [
+        {
+          "w": "And",
+          "start": 357.0,
+          "end": 357.16,
+          "p": 0.943
+        },
+        {
+          "w": "see",
+          "start": 357.16,
+          "end": 357.32,
+          "p": 0.88
+        },
+        {
+          "w": "if",
+          "start": 357.32,
+          "end": 357.48,
+          "p": 1.0
+        },
+        {
+          "w": "it",
+          "start": 357.48,
+          "end": 357.64,
+          "p": 0.997
+        },
+        {
+          "w": "equals",
+          "start": 357.64,
+          "end": 357.96,
+          "p": 0.999
+        },
+        {
+          "w": "five,",
+          "start": 357.96,
+          "end": 358.44,
+          "p": 0.885
+        },
+        {
+          "w": "right?",
+          "start": 358.44,
+          "end": 358.92,
+          "p": 0.992
+        },
+        {
+          "w": "So",
+          "start": 358.92,
+          "end": 359.32,
+          "p": 0.999
+        },
+        {
+          "w": "usually",
+          "start": 359.32,
+          "end": 359.88,
+          "p": 1.0
+        },
+        {
+          "w": "we're",
+          "start": 359.88,
+          "end": 360.2,
+          "p": 0.996
+        },
+        {
+          "w": "putting",
+          "start": 360.2,
+          "end": 360.52,
+          "p": 1.0
+        },
+        {
+          "w": "it",
+          "start": 360.52,
+          "end": 360.68,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 360.68,
+          "end": 360.76,
+          "p": 1.0
+        },
+        {
+          "w": "terms",
+          "start": 360.76,
+          "end": 361.0,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 361.0,
+          "end": 361.24,
+          "p": 1.0
+        },
+        {
+          "w": "predicates",
+          "start": 361.24,
+          "end": 362.04,
+          "p": 1.0
+        },
+        {
+          "w": "because",
+          "start": 362.04,
+          "end": 362.28,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 362.28,
+          "end": 362.52,
+          "p": 1.0
+        },
+        {
+          "w": "general",
+          "start": 362.52,
+          "end": 363.08,
+          "p": 1.0
+        },
+        {
+          "w": "we",
+          "start": 363.08,
+          "end": 363.24,
+          "p": 1.0
+        },
+        {
+          "w": "don't",
+          "start": 363.24,
+          "end": 363.56,
+          "p": 1.0
+        },
+        {
+          "w": "really",
+          "start": 363.56,
+          "end": 363.88,
+          "p": 1.0
+        },
+        {
+          "w": "want",
+          "start": 363.88,
+          "end": 364.12,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 364.12,
+          "end": 364.36,
+          "p": 1.0
+        },
+        {
+          "w": "talk",
+          "start": 364.36,
+          "end": 364.92,
+          "p": 1.0
+        },
+        {
+          "w": "about",
+          "start": 364.92,
+          "end": 365.56,
+          "p": 1.0
+        },
+        {
+          "w": "small",
+          "start": 365.56,
+          "end": 366.2,
+          "p": 1.0
+        },
+        {
+          "w": "instances",
+          "start": 366.2,
+          "end": 366.76,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 366.76,
+          "end": 367.0,
+          "p": 1.0
+        },
+        {
+          "w": "problems.",
+          "start": 367.0,
+          "end": 367.48,
+          "p": 0.969
+        },
+        {
+          "w": "So",
+          "start": 367.48,
+          "end": 367.72,
+          "p": 0.996
+        },
+        {
+          "w": "let's",
+          "start": 367.72,
+          "end": 368.12,
+          "p": 1.0
+        },
+        {
+          "w": "say",
+          "start": 368.12,
+          "end": 368.36,
+          "p": 1.0
+        },
+        {
+          "w": "I",
+          "start": 368.36,
+          "end": 368.68,
+          "p": 1.0
+        },
+        {
+          "w": "had",
+          "start": 368.68,
+          "end": 368.92,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 368.92,
+          "end": 369.24,
+          "p": 1.0
+        },
+        {
+          "w": "problem",
+          "start": 369.24,
+          "end": 369.88,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 369.88,
+          "end": 371.32,
+          "p": 0.995
+        },
+        {
+          "w": "among",
+          "start": 371.32,
+          "end": 371.8,
+          "p": 0.999
+        },
+        {
+          "w": "the",
+          "start": 371.8,
+          "end": 372.04,
+          "p": 1.0
+        },
+        {
+          "w": "students",
+          "start": 372.04,
+          "end": 372.44,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 372.44,
+          "end": 372.6,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 372.6,
+          "end": 372.76,
+          "p": 1.0
+        },
+        {
+          "w": "classroom,",
+          "start": 372.76,
+          "end": 373.72,
+          "p": 0.924
+        },
+        {
+          "w": "do",
+          "start": 373.72,
+          "end": 373.96,
+          "p": 0.998
+        },
+        {
+          "w": "any",
+          "start": 373.96,
+          "end": 374.2,
+          "p": 1.0
+        },
+        {
+          "w": "pair",
+          "start": 374.2,
+          "end": 374.44,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 374.44,
+          "end": 374.6,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 374.6,
+          "end": 374.76,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 374.76,
+          "end": 374.92,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 374.92,
+          "end": 375.0,
+          "p": 1.0
+        },
+        {
+          "w": "same",
+          "start": 375.0,
+          "end": 375.24,
+          "p": 1.0
+        },
+        {
+          "w": "birthday?",
+          "start": 375.24,
+          "end": 375.78,
+          "p": 0.999
+        }
+      ]
+    },
+    {
+      "idx": 30,
+      "start": 376.51,
+      "end": 395.33,
+      "text": "Okay? All right, well, probably if there's more than 365 of you, the answer is yes. Right? Right? That by what? Pigeonhole principle, right? Two of you must have the same birthday, right? But so let's let's generalize it a little bit. Say that, uh oh, I don't know, uh",
+      "words": [
+        {
+          "w": "Okay?",
+          "start": 376.51,
+          "end": 377.23,
+          "p": 0.815
+        },
+        {
+          "w": "All",
+          "start": 377.23,
+          "end": 377.47,
+          "p": 0.595
+        },
+        {
+          "w": "right,",
+          "start": 377.47,
+          "end": 377.95,
+          "p": 0.853
+        },
+        {
+          "w": "well,",
+          "start": 377.95,
+          "end": 378.75,
+          "p": 0.845
+        },
+        {
+          "w": "probably",
+          "start": 378.75,
+          "end": 379.31,
+          "p": 1.0
+        },
+        {
+          "w": "if",
+          "start": 379.31,
+          "end": 379.47,
+          "p": 1.0
+        },
+        {
+          "w": "there's",
+          "start": 379.47,
+          "end": 379.71,
+          "p": 0.998
+        },
+        {
+          "w": "more",
+          "start": 379.71,
+          "end": 379.87,
+          "p": 1.0
+        },
+        {
+          "w": "than",
+          "start": 379.87,
+          "end": 380.03,
+          "p": 1.0
+        },
+        {
+          "w": "365",
+          "start": 380.03,
+          "end": 381.07,
+          "p": 0.981
+        },
+        {
+          "w": "of",
+          "start": 381.07,
+          "end": 381.23,
+          "p": 1.0
+        },
+        {
+          "w": "you,",
+          "start": 381.23,
+          "end": 381.47,
+          "p": 0.983
+        },
+        {
+          "w": "the",
+          "start": 381.47,
+          "end": 381.63,
+          "p": 1.0
+        },
+        {
+          "w": "answer",
+          "start": 381.63,
+          "end": 381.95,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 381.95,
+          "end": 382.19,
+          "p": 1.0
+        },
+        {
+          "w": "yes.",
+          "start": 382.19,
+          "end": 383.15,
+          "p": 0.891
+        },
+        {
+          "w": "Right?",
+          "start": 383.15,
+          "end": 383.95,
+          "p": 0.954
+        },
+        {
+          "w": "Right?",
+          "start": 383.95,
+          "end": 384.27,
+          "p": 0.778
+        },
+        {
+          "w": "That",
+          "start": 384.27,
+          "end": 384.59,
+          "p": 0.982
+        },
+        {
+          "w": "by",
+          "start": 384.59,
+          "end": 384.83,
+          "p": 0.995
+        },
+        {
+          "w": "what?",
+          "start": 384.83,
+          "end": 385.15,
+          "p": 0.91
+        },
+        {
+          "w": "Pigeonhole",
+          "start": 385.15,
+          "end": 385.79,
+          "p": 0.994
+        },
+        {
+          "w": "principle,",
+          "start": 385.79,
+          "end": 386.19,
+          "p": 0.963
+        },
+        {
+          "w": "right?",
+          "start": 386.19,
+          "end": 386.75,
+          "p": 0.99
+        },
+        {
+          "w": "Two",
+          "start": 386.75,
+          "end": 386.99,
+          "p": 0.995
+        },
+        {
+          "w": "of",
+          "start": 386.99,
+          "end": 387.15,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 387.15,
+          "end": 387.31,
+          "p": 1.0
+        },
+        {
+          "w": "must",
+          "start": 387.31,
+          "end": 387.55,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 387.55,
+          "end": 387.71,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 387.71,
+          "end": 387.79,
+          "p": 1.0
+        },
+        {
+          "w": "same",
+          "start": 387.79,
+          "end": 388.03,
+          "p": 1.0
+        },
+        {
+          "w": "birthday,",
+          "start": 388.03,
+          "end": 388.75,
+          "p": 0.92
+        },
+        {
+          "w": "right?",
+          "start": 388.75,
+          "end": 389.39,
+          "p": 0.949
+        },
+        {
+          "w": "But",
+          "start": 389.39,
+          "end": 390.03,
+          "p": 0.982
+        },
+        {
+          "w": "so",
+          "start": 390.03,
+          "end": 390.35,
+          "p": 0.998
+        },
+        {
+          "w": "let's",
+          "start": 390.35,
+          "end": 390.91,
+          "p": 0.988
+        },
+        {
+          "w": "let's",
+          "start": 390.91,
+          "end": 391.31,
+          "p": 0.966
+        },
+        {
+          "w": "generalize",
+          "start": 391.31,
+          "end": 391.87,
+          "p": 1.0
+        },
+        {
+          "w": "it",
+          "start": 391.87,
+          "end": 392.03,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 392.03,
+          "end": 392.19,
+          "p": 1.0
+        },
+        {
+          "w": "little",
+          "start": 392.19,
+          "end": 392.35,
+          "p": 1.0
+        },
+        {
+          "w": "bit.",
+          "start": 392.35,
+          "end": 392.67,
+          "p": 0.792
+        },
+        {
+          "w": "Say",
+          "start": 392.67,
+          "end": 393.15,
+          "p": 0.97
+        },
+        {
+          "w": "that,",
+          "start": 393.15,
+          "end": 393.47,
+          "p": 0.763
+        },
+        {
+          "w": "uh",
+          "start": 393.47,
+          "end": 393.79,
+          "p": 0.839
+        },
+        {
+          "w": "oh,",
+          "start": 393.79,
+          "end": 394.03,
+          "p": 0.592
+        },
+        {
+          "w": "I",
+          "start": 394.03,
+          "end": 394.11,
+          "p": 0.998
+        },
+        {
+          "w": "don't",
+          "start": 394.11,
+          "end": 394.43,
+          "p": 0.993
+        },
+        {
+          "w": "know,",
+          "start": 394.43,
+          "end": 394.67,
+          "p": 0.696
+        },
+        {
+          "w": "uh",
+          "start": 394.67,
+          "end": 395.33,
+          "p": 0.952
+        }
+      ]
+    },
+    {
+      "idx": 31,
+      "start": 395.42,
+      "end": 402.31,
+      "text": "I need a bigger space of birthdays for this question to be interesting. Maybe I tack on the year. Maybe I tack on the hour.",
+      "words": [
+        {
+          "w": "I",
+          "start": 395.58,
+          "end": 395.82,
+          "p": 0.994
+        },
+        {
+          "w": "need",
+          "start": 395.82,
+          "end": 395.98,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 395.98,
+          "end": 396.06,
+          "p": 1.0
+        },
+        {
+          "w": "bigger",
+          "start": 396.06,
+          "end": 396.38,
+          "p": 1.0
+        },
+        {
+          "w": "space",
+          "start": 396.38,
+          "end": 396.7,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 396.7,
+          "end": 396.86,
+          "p": 0.999
+        },
+        {
+          "w": "birthdays",
+          "start": 396.86,
+          "end": 397.42,
+          "p": 1.0
+        },
+        {
+          "w": "for",
+          "start": 397.42,
+          "end": 397.58,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 397.58,
+          "end": 397.74,
+          "p": 1.0
+        },
+        {
+          "w": "question",
+          "start": 397.74,
+          "end": 398.06,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 398.06,
+          "end": 398.14,
+          "p": 1.0
+        },
+        {
+          "w": "be",
+          "start": 398.14,
+          "end": 398.3,
+          "p": 1.0
+        },
+        {
+          "w": "interesting.",
+          "start": 398.3,
+          "end": 399.02,
+          "p": 0.977
+        },
+        {
+          "w": "Maybe",
+          "start": 399.02,
+          "end": 399.26,
+          "p": 1.0
+        },
+        {
+          "w": "I",
+          "start": 399.26,
+          "end": 399.5,
+          "p": 0.999
+        },
+        {
+          "w": "tack",
+          "start": 399.5,
+          "end": 399.74,
+          "p": 0.999
+        },
+        {
+          "w": "on",
+          "start": 399.74,
+          "end": 399.9,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 399.9,
+          "end": 400.06,
+          "p": 1.0
+        },
+        {
+          "w": "year.",
+          "start": 400.06,
+          "end": 400.54,
+          "p": 0.839
+        },
+        {
+          "w": "Maybe",
+          "start": 400.54,
+          "end": 400.86,
+          "p": 0.999
+        },
+        {
+          "w": "I",
+          "start": 400.86,
+          "end": 401.1,
+          "p": 0.999
+        },
+        {
+          "w": "tack",
+          "start": 401.1,
+          "end": 401.42,
+          "p": 0.999
+        },
+        {
+          "w": "on",
+          "start": 401.42,
+          "end": 401.58,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 401.58,
+          "end": 401.74,
+          "p": 1.0
+        },
+        {
+          "w": "hour.",
+          "start": 401.74,
+          "end": 402.31,
+          "p": 0.992
+        }
+      ]
+    },
+    {
+      "idx": 32,
+      "start": 403.36,
+      "end": 422.79,
+      "text": "That you were born. And that's a bigger space of inputs. And I wouldn't necessarily expect that two of you would be born in the same year, on the same day, in the same hour. Right? That would be a little less likely. In fact, as long as that space is larger than something like the square of the number of u.",
+      "words": [
+        {
+          "w": "That",
+          "start": 403.52,
+          "end": 403.76,
+          "p": 0.971
+        },
+        {
+          "w": "you",
+          "start": 403.76,
+          "end": 404.08,
+          "p": 1.0
+        },
+        {
+          "w": "were",
+          "start": 404.08,
+          "end": 404.32,
+          "p": 0.999
+        },
+        {
+          "w": "born.",
+          "start": 404.32,
+          "end": 405.04,
+          "p": 0.907
+        },
+        {
+          "w": "And",
+          "start": 405.04,
+          "end": 405.28,
+          "p": 0.992
+        },
+        {
+          "w": "that's",
+          "start": 405.28,
+          "end": 405.52,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 405.52,
+          "end": 405.6,
+          "p": 1.0
+        },
+        {
+          "w": "bigger",
+          "start": 405.6,
+          "end": 405.92,
+          "p": 1.0
+        },
+        {
+          "w": "space",
+          "start": 405.92,
+          "end": 406.16,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 406.16,
+          "end": 406.32,
+          "p": 1.0
+        },
+        {
+          "w": "inputs.",
+          "start": 406.32,
+          "end": 406.8,
+          "p": 0.858
+        },
+        {
+          "w": "And",
+          "start": 406.8,
+          "end": 406.96,
+          "p": 0.984
+        },
+        {
+          "w": "I",
+          "start": 406.96,
+          "end": 407.12,
+          "p": 1.0
+        },
+        {
+          "w": "wouldn't",
+          "start": 407.12,
+          "end": 407.52,
+          "p": 1.0
+        },
+        {
+          "w": "necessarily",
+          "start": 407.52,
+          "end": 408.32,
+          "p": 1.0
+        },
+        {
+          "w": "expect",
+          "start": 408.32,
+          "end": 409.28,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 409.28,
+          "end": 409.84,
+          "p": 1.0
+        },
+        {
+          "w": "two",
+          "start": 409.84,
+          "end": 410.08,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 410.08,
+          "end": 410.32,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 410.32,
+          "end": 410.56,
+          "p": 0.99
+        },
+        {
+          "w": "would",
+          "start": 410.56,
+          "end": 410.8,
+          "p": 1.0
+        },
+        {
+          "w": "be",
+          "start": 410.8,
+          "end": 410.96,
+          "p": 1.0
+        },
+        {
+          "w": "born",
+          "start": 410.96,
+          "end": 411.28,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 411.28,
+          "end": 411.44,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 411.44,
+          "end": 411.52,
+          "p": 1.0
+        },
+        {
+          "w": "same",
+          "start": 411.52,
+          "end": 411.76,
+          "p": 1.0
+        },
+        {
+          "w": "year,",
+          "start": 411.76,
+          "end": 412.16,
+          "p": 0.954
+        },
+        {
+          "w": "on",
+          "start": 412.16,
+          "end": 412.32,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 412.32,
+          "end": 412.4,
+          "p": 1.0
+        },
+        {
+          "w": "same",
+          "start": 412.4,
+          "end": 412.64,
+          "p": 1.0
+        },
+        {
+          "w": "day,",
+          "start": 412.64,
+          "end": 412.96,
+          "p": 0.998
+        },
+        {
+          "w": "in",
+          "start": 412.96,
+          "end": 413.2,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 413.2,
+          "end": 413.28,
+          "p": 1.0
+        },
+        {
+          "w": "same",
+          "start": 413.28,
+          "end": 413.6,
+          "p": 1.0
+        },
+        {
+          "w": "hour.",
+          "start": 413.6,
+          "end": 414.08,
+          "p": 0.9
+        },
+        {
+          "w": "Right?",
+          "start": 414.08,
+          "end": 414.4,
+          "p": 0.778
+        },
+        {
+          "w": "That",
+          "start": 414.4,
+          "end": 414.64,
+          "p": 0.994
+        },
+        {
+          "w": "would",
+          "start": 414.64,
+          "end": 414.8,
+          "p": 1.0
+        },
+        {
+          "w": "be",
+          "start": 414.8,
+          "end": 414.88,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 414.88,
+          "end": 415.04,
+          "p": 1.0
+        },
+        {
+          "w": "little",
+          "start": 415.04,
+          "end": 415.2,
+          "p": 1.0
+        },
+        {
+          "w": "less",
+          "start": 415.2,
+          "end": 415.44,
+          "p": 1.0
+        },
+        {
+          "w": "likely.",
+          "start": 415.44,
+          "end": 416.08,
+          "p": 0.998
+        },
+        {
+          "w": "In",
+          "start": 416.08,
+          "end": 416.24,
+          "p": 0.991
+        },
+        {
+          "w": "fact,",
+          "start": 416.24,
+          "end": 416.56,
+          "p": 0.999
+        },
+        {
+          "w": "as",
+          "start": 416.56,
+          "end": 416.8,
+          "p": 1.0
+        },
+        {
+          "w": "long",
+          "start": 416.8,
+          "end": 417.04,
+          "p": 1.0
+        },
+        {
+          "w": "as",
+          "start": 417.04,
+          "end": 417.28,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 417.28,
+          "end": 417.52,
+          "p": 0.994
+        },
+        {
+          "w": "space",
+          "start": 417.52,
+          "end": 418.0,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 418.0,
+          "end": 418.24,
+          "p": 1.0
+        },
+        {
+          "w": "larger",
+          "start": 418.24,
+          "end": 418.8,
+          "p": 1.0
+        },
+        {
+          "w": "than",
+          "start": 418.8,
+          "end": 419.04,
+          "p": 1.0
+        },
+        {
+          "w": "something",
+          "start": 419.04,
+          "end": 419.6,
+          "p": 1.0
+        },
+        {
+          "w": "like",
+          "start": 419.6,
+          "end": 419.92,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 419.92,
+          "end": 420.24,
+          "p": 1.0
+        },
+        {
+          "w": "square",
+          "start": 420.24,
+          "end": 421.12,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 421.12,
+          "end": 421.36,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 421.36,
+          "end": 421.6,
+          "p": 1.0
+        },
+        {
+          "w": "number",
+          "start": 421.6,
+          "end": 421.92,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 421.92,
+          "end": 422.16,
+          "p": 0.998
+        },
+        {
+          "w": "u.",
+          "start": 422.16,
+          "end": 422.79,
+          "p": 0.528
+        }
+      ]
+    },
+    {
+      "idx": 33,
+      "start": 423.0,
+      "end": 442.24,
+      "text": "Right, th then I'm less likely than than than even to uh to have a pair of you. That that that's uh the uh uh kind of the uh a birthday problem you may have seen in uh 042, potentially, right? But in general,",
+      "words": [
+        {
+          "w": "Right,",
+          "start": 423.16,
+          "end": 423.88,
+          "p": 0.593
+        },
+        {
+          "w": "th",
+          "start": 423.88,
+          "end": 424.2,
+          "p": 0.675
+        },
+        {
+          "w": "then",
+          "start": 424.2,
+          "end": 424.44,
+          "p": 1.0
+        },
+        {
+          "w": "I'm",
+          "start": 424.44,
+          "end": 424.76,
+          "p": 0.995
+        },
+        {
+          "w": "less",
+          "start": 424.76,
+          "end": 425.16,
+          "p": 1.0
+        },
+        {
+          "w": "likely",
+          "start": 425.16,
+          "end": 425.8,
+          "p": 1.0
+        },
+        {
+          "w": "than",
+          "start": 425.8,
+          "end": 426.36,
+          "p": 0.936
+        },
+        {
+          "w": "than",
+          "start": 426.36,
+          "end": 427.0,
+          "p": 0.81
+        },
+        {
+          "w": "than",
+          "start": 427.0,
+          "end": 427.48,
+          "p": 0.898
+        },
+        {
+          "w": "even",
+          "start": 427.48,
+          "end": 428.44,
+          "p": 0.987
+        },
+        {
+          "w": "to",
+          "start": 428.44,
+          "end": 429.0,
+          "p": 0.996
+        },
+        {
+          "w": "uh",
+          "start": 429.0,
+          "end": 429.64,
+          "p": 0.944
+        },
+        {
+          "w": "to",
+          "start": 429.64,
+          "end": 429.96,
+          "p": 0.992
+        },
+        {
+          "w": "have",
+          "start": 429.96,
+          "end": 430.12,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 430.12,
+          "end": 430.28,
+          "p": 1.0
+        },
+        {
+          "w": "pair",
+          "start": 430.28,
+          "end": 430.6,
+          "p": 0.99
+        },
+        {
+          "w": "of",
+          "start": 430.6,
+          "end": 430.84,
+          "p": 0.998
+        },
+        {
+          "w": "you.",
+          "start": 430.84,
+          "end": 431.16,
+          "p": 0.666
+        },
+        {
+          "w": "That",
+          "start": 431.16,
+          "end": 431.32,
+          "p": 0.833
+        },
+        {
+          "w": "that",
+          "start": 431.32,
+          "end": 431.56,
+          "p": 0.724
+        },
+        {
+          "w": "that's",
+          "start": 431.56,
+          "end": 431.88,
+          "p": 0.909
+        },
+        {
+          "w": "uh",
+          "start": 431.88,
+          "end": 432.44,
+          "p": 0.686
+        },
+        {
+          "w": "the",
+          "start": 432.44,
+          "end": 432.6,
+          "p": 0.723
+        },
+        {
+          "w": "uh",
+          "start": 432.6,
+          "end": 432.76,
+          "p": 0.563
+        },
+        {
+          "w": "uh",
+          "start": 432.76,
+          "end": 433.08,
+          "p": 0.471
+        },
+        {
+          "w": "kind",
+          "start": 433.08,
+          "end": 433.32,
+          "p": 0.981
+        },
+        {
+          "w": "of",
+          "start": 433.32,
+          "end": 433.56,
+          "p": 0.997
+        },
+        {
+          "w": "the",
+          "start": 433.56,
+          "end": 433.88,
+          "p": 0.978
+        },
+        {
+          "w": "uh",
+          "start": 433.88,
+          "end": 434.52,
+          "p": 0.676
+        },
+        {
+          "w": "a",
+          "start": 434.52,
+          "end": 434.68,
+          "p": 0.968
+        },
+        {
+          "w": "birthday",
+          "start": 434.68,
+          "end": 435.4,
+          "p": 0.981
+        },
+        {
+          "w": "problem",
+          "start": 435.4,
+          "end": 435.64,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 435.64,
+          "end": 435.88,
+          "p": 1.0
+        },
+        {
+          "w": "may",
+          "start": 435.88,
+          "end": 436.12,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 436.12,
+          "end": 436.36,
+          "p": 0.998
+        },
+        {
+          "w": "seen",
+          "start": 436.36,
+          "end": 437.24,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 437.24,
+          "end": 438.04,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 438.04,
+          "end": 438.68,
+          "p": 0.982
+        },
+        {
+          "w": "042,",
+          "start": 438.68,
+          "end": 440.04,
+          "p": 0.686
+        },
+        {
+          "w": "potentially,",
+          "start": 440.04,
+          "end": 440.68,
+          "p": 0.877
+        },
+        {
+          "w": "right?",
+          "start": 440.68,
+          "end": 441.16,
+          "p": 0.956
+        },
+        {
+          "w": "But",
+          "start": 441.16,
+          "end": 441.4,
+          "p": 0.944
+        },
+        {
+          "w": "in",
+          "start": 441.4,
+          "end": 441.56,
+          "p": 1.0
+        },
+        {
+          "w": "general,",
+          "start": 441.56,
+          "end": 442.24,
+          "p": 0.761
+        }
+      ]
+    },
+    {
+      "idx": 34,
+      "start": 442.2,
+      "end": 461.73,
+      "text": "I don't uh I don't I'm not gonna mess with probability so much here. I want a deterministic algorithm, right? A way of checking whether two of you have the same birth time, let's say. Okay, so uh in general, in this class, we're not gonna concentrate on inputs such as is there.",
+      "words": [
+        {
+          "w": "I",
+          "start": 442.36,
+          "end": 442.44,
+          "p": 0.855
+        },
+        {
+          "w": "don't",
+          "start": 442.44,
+          "end": 442.76,
+          "p": 0.999
+        },
+        {
+          "w": "uh",
+          "start": 442.76,
+          "end": 443.0,
+          "p": 0.847
+        },
+        {
+          "w": "I",
+          "start": 443.0,
+          "end": 443.16,
+          "p": 0.85
+        },
+        {
+          "w": "don't",
+          "start": 443.16,
+          "end": 443.56,
+          "p": 0.999
+        },
+        {
+          "w": "I'm",
+          "start": 443.56,
+          "end": 443.8,
+          "p": 0.976
+        },
+        {
+          "w": "not",
+          "start": 443.8,
+          "end": 443.96,
+          "p": 1.0
+        },
+        {
+          "w": "gonna",
+          "start": 443.96,
+          "end": 444.2,
+          "p": 0.907
+        },
+        {
+          "w": "mess",
+          "start": 444.2,
+          "end": 444.44,
+          "p": 1.0
+        },
+        {
+          "w": "with",
+          "start": 444.44,
+          "end": 444.68,
+          "p": 1.0
+        },
+        {
+          "w": "probability",
+          "start": 444.68,
+          "end": 445.24,
+          "p": 0.998
+        },
+        {
+          "w": "so",
+          "start": 445.24,
+          "end": 445.48,
+          "p": 1.0
+        },
+        {
+          "w": "much",
+          "start": 445.48,
+          "end": 445.64,
+          "p": 1.0
+        },
+        {
+          "w": "here.",
+          "start": 445.64,
+          "end": 446.04,
+          "p": 0.982
+        },
+        {
+          "w": "I",
+          "start": 446.04,
+          "end": 446.2,
+          "p": 0.999
+        },
+        {
+          "w": "want",
+          "start": 446.2,
+          "end": 446.36,
+          "p": 0.982
+        },
+        {
+          "w": "a",
+          "start": 446.36,
+          "end": 446.52,
+          "p": 0.999
+        },
+        {
+          "w": "deterministic",
+          "start": 446.52,
+          "end": 447.4,
+          "p": 1.0
+        },
+        {
+          "w": "algorithm,",
+          "start": 447.4,
+          "end": 448.2,
+          "p": 0.981
+        },
+        {
+          "w": "right?",
+          "start": 448.2,
+          "end": 448.6,
+          "p": 0.863
+        },
+        {
+          "w": "A",
+          "start": 448.6,
+          "end": 448.84,
+          "p": 0.96
+        },
+        {
+          "w": "way",
+          "start": 448.84,
+          "end": 449.08,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 449.08,
+          "end": 449.32,
+          "p": 1.0
+        },
+        {
+          "w": "checking",
+          "start": 449.32,
+          "end": 449.96,
+          "p": 1.0
+        },
+        {
+          "w": "whether",
+          "start": 449.96,
+          "end": 450.44,
+          "p": 1.0
+        },
+        {
+          "w": "two",
+          "start": 450.44,
+          "end": 450.68,
+          "p": 0.999
+        },
+        {
+          "w": "of",
+          "start": 450.68,
+          "end": 450.84,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 450.84,
+          "end": 451.0,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 451.0,
+          "end": 451.16,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 451.16,
+          "end": 451.32,
+          "p": 1.0
+        },
+        {
+          "w": "same",
+          "start": 451.32,
+          "end": 451.72,
+          "p": 1.0
+        },
+        {
+          "w": "birth",
+          "start": 451.72,
+          "end": 452.36,
+          "p": 1.0
+        },
+        {
+          "w": "time,",
+          "start": 452.36,
+          "end": 452.76,
+          "p": 0.944
+        },
+        {
+          "w": "let's",
+          "start": 452.76,
+          "end": 453.24,
+          "p": 1.0
+        },
+        {
+          "w": "say.",
+          "start": 453.24,
+          "end": 453.72,
+          "p": 0.987
+        },
+        {
+          "w": "Okay,",
+          "start": 453.72,
+          "end": 454.44,
+          "p": 0.707
+        },
+        {
+          "w": "so",
+          "start": 454.44,
+          "end": 454.84,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 454.84,
+          "end": 455.16,
+          "p": 0.936
+        },
+        {
+          "w": "in",
+          "start": 455.16,
+          "end": 455.48,
+          "p": 0.991
+        },
+        {
+          "w": "general,",
+          "start": 455.48,
+          "end": 456.12,
+          "p": 0.855
+        },
+        {
+          "w": "in",
+          "start": 456.12,
+          "end": 456.36,
+          "p": 0.999
+        },
+        {
+          "w": "this",
+          "start": 456.36,
+          "end": 456.6,
+          "p": 1.0
+        },
+        {
+          "w": "class,",
+          "start": 456.6,
+          "end": 457.0,
+          "p": 0.875
+        },
+        {
+          "w": "we're",
+          "start": 457.0,
+          "end": 457.16,
+          "p": 0.999
+        },
+        {
+          "w": "not",
+          "start": 457.16,
+          "end": 457.32,
+          "p": 1.0
+        },
+        {
+          "w": "gonna",
+          "start": 457.32,
+          "end": 457.72,
+          "p": 0.996
+        },
+        {
+          "w": "concentrate",
+          "start": 457.72,
+          "end": 458.6,
+          "p": 1.0
+        },
+        {
+          "w": "on",
+          "start": 458.6,
+          "end": 458.92,
+          "p": 1.0
+        },
+        {
+          "w": "inputs",
+          "start": 458.92,
+          "end": 459.64,
+          "p": 0.825
+        },
+        {
+          "w": "such",
+          "start": 459.64,
+          "end": 460.04,
+          "p": 1.0
+        },
+        {
+          "w": "as",
+          "start": 460.04,
+          "end": 460.6,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 460.6,
+          "end": 460.92,
+          "p": 0.96
+        },
+        {
+          "w": "there.",
+          "start": 460.92,
+          "end": 461.73,
+          "p": 0.73
+        }
+      ]
+    },
+    {
+      "idx": 35,
+      "start": 462.27,
+      "end": 481.6,
+      "text": "Uh pair of you in this class that have the same birthday. That's kind of boring, right? Uh I I could just say, well, uh uh I I could do a lot of different things, but what we we do in this class, this is first a fixed classroom of you. I want to make algorithms that are general to",
+      "words": [
+        {
+          "w": "Uh",
+          "start": 462.43,
+          "end": 462.75,
+          "p": 0.666
+        },
+        {
+          "w": "pair",
+          "start": 462.75,
+          "end": 462.99,
+          "p": 0.993
+        },
+        {
+          "w": "of",
+          "start": 462.99,
+          "end": 463.23,
+          "p": 0.999
+        },
+        {
+          "w": "you",
+          "start": 463.23,
+          "end": 463.47,
+          "p": 0.957
+        },
+        {
+          "w": "in",
+          "start": 463.47,
+          "end": 463.63,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 463.63,
+          "end": 463.79,
+          "p": 1.0
+        },
+        {
+          "w": "class",
+          "start": 463.79,
+          "end": 464.19,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 464.19,
+          "end": 464.35,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 464.35,
+          "end": 464.51,
+          "p": 0.999
+        },
+        {
+          "w": "the",
+          "start": 464.51,
+          "end": 464.59,
+          "p": 1.0
+        },
+        {
+          "w": "same",
+          "start": 464.59,
+          "end": 464.83,
+          "p": 1.0
+        },
+        {
+          "w": "birthday.",
+          "start": 464.83,
+          "end": 465.47,
+          "p": 0.879
+        },
+        {
+          "w": "That's",
+          "start": 465.47,
+          "end": 465.79,
+          "p": 0.994
+        },
+        {
+          "w": "kind",
+          "start": 465.79,
+          "end": 465.95,
+          "p": 0.999
+        },
+        {
+          "w": "of",
+          "start": 465.95,
+          "end": 466.03,
+          "p": 0.984
+        },
+        {
+          "w": "boring,",
+          "start": 466.03,
+          "end": 466.59,
+          "p": 0.955
+        },
+        {
+          "w": "right?",
+          "start": 466.59,
+          "end": 466.99,
+          "p": 0.991
+        },
+        {
+          "w": "Uh",
+          "start": 466.99,
+          "end": 467.23,
+          "p": 0.857
+        },
+        {
+          "w": "I",
+          "start": 467.23,
+          "end": 467.55,
+          "p": 0.91
+        },
+        {
+          "w": "I",
+          "start": 467.55,
+          "end": 467.79,
+          "p": 0.703
+        },
+        {
+          "w": "could",
+          "start": 467.79,
+          "end": 468.11,
+          "p": 1.0
+        },
+        {
+          "w": "just",
+          "start": 468.11,
+          "end": 468.43,
+          "p": 1.0
+        },
+        {
+          "w": "say,",
+          "start": 468.43,
+          "end": 468.91,
+          "p": 0.905
+        },
+        {
+          "w": "well,",
+          "start": 468.91,
+          "end": 469.39,
+          "p": 0.734
+        },
+        {
+          "w": "uh",
+          "start": 469.39,
+          "end": 470.11,
+          "p": 0.938
+        },
+        {
+          "w": "uh",
+          "start": 470.11,
+          "end": 470.43,
+          "p": 0.572
+        },
+        {
+          "w": "I",
+          "start": 470.43,
+          "end": 470.67,
+          "p": 0.857
+        },
+        {
+          "w": "I",
+          "start": 470.67,
+          "end": 470.91,
+          "p": 0.784
+        },
+        {
+          "w": "could",
+          "start": 470.91,
+          "end": 471.15,
+          "p": 1.0
+        },
+        {
+          "w": "do",
+          "start": 471.15,
+          "end": 471.31,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 471.31,
+          "end": 471.39,
+          "p": 1.0
+        },
+        {
+          "w": "lot",
+          "start": 471.39,
+          "end": 471.55,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 471.55,
+          "end": 471.71,
+          "p": 1.0
+        },
+        {
+          "w": "different",
+          "start": 471.71,
+          "end": 472.03,
+          "p": 1.0
+        },
+        {
+          "w": "things,",
+          "start": 472.03,
+          "end": 472.59,
+          "p": 0.915
+        },
+        {
+          "w": "but",
+          "start": 472.59,
+          "end": 472.83,
+          "p": 1.0
+        },
+        {
+          "w": "what",
+          "start": 472.83,
+          "end": 473.07,
+          "p": 0.998
+        },
+        {
+          "w": "we",
+          "start": 473.07,
+          "end": 473.47,
+          "p": 0.982
+        },
+        {
+          "w": "we",
+          "start": 473.47,
+          "end": 473.71,
+          "p": 0.901
+        },
+        {
+          "w": "do",
+          "start": 473.71,
+          "end": 473.87,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 473.87,
+          "end": 473.95,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 473.95,
+          "end": 474.11,
+          "p": 1.0
+        },
+        {
+          "w": "class,",
+          "start": 474.11,
+          "end": 474.75,
+          "p": 0.839
+        },
+        {
+          "w": "this",
+          "start": 474.75,
+          "end": 474.91,
+          "p": 0.981
+        },
+        {
+          "w": "is",
+          "start": 474.91,
+          "end": 475.07,
+          "p": 0.998
+        },
+        {
+          "w": "first",
+          "start": 475.07,
+          "end": 475.55,
+          "p": 0.668
+        },
+        {
+          "w": "a",
+          "start": 475.55,
+          "end": 475.71,
+          "p": 0.994
+        },
+        {
+          "w": "fixed",
+          "start": 475.71,
+          "end": 476.51,
+          "p": 1.0
+        },
+        {
+          "w": "classroom",
+          "start": 476.51,
+          "end": 477.79,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 477.79,
+          "end": 478.11,
+          "p": 0.992
+        },
+        {
+          "w": "you.",
+          "start": 478.11,
+          "end": 478.83,
+          "p": 0.87
+        },
+        {
+          "w": "I",
+          "start": 478.83,
+          "end": 479.07,
+          "p": 0.993
+        },
+        {
+          "w": "want",
+          "start": 479.07,
+          "end": 479.23,
+          "p": 0.998
+        },
+        {
+          "w": "to",
+          "start": 479.23,
+          "end": 479.47,
+          "p": 1.0
+        },
+        {
+          "w": "make",
+          "start": 479.47,
+          "end": 479.71,
+          "p": 1.0
+        },
+        {
+          "w": "algorithms",
+          "start": 479.71,
+          "end": 480.35,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 480.35,
+          "end": 480.43,
+          "p": 0.999
+        },
+        {
+          "w": "are",
+          "start": 480.43,
+          "end": 480.67,
+          "p": 1.0
+        },
+        {
+          "w": "general",
+          "start": 480.67,
+          "end": 481.07,
+          "p": 0.999
+        },
+        {
+          "w": "to",
+          "start": 481.07,
+          "end": 481.6,
+          "p": 0.989
+        }
+      ]
+    },
+    {
+      "idx": 36,
+      "start": 481.53,
+      "end": 501.41,
+      "text": "Any classroom, right? To go to your recitation. I want an algorithm that'll apply to your recitation. I want an algorithm that not only applies to this classroom, but also the machine learning class before you, right? I want an algorithm that can change uh its uh uh it can accept an arbitrarily sized input.",
+      "words": [
+        {
+          "w": "Any",
+          "start": 481.77,
+          "end": 482.01,
+          "p": 0.818
+        },
+        {
+          "w": "classroom,",
+          "start": 482.01,
+          "end": 482.81,
+          "p": 0.969
+        },
+        {
+          "w": "right?",
+          "start": 482.81,
+          "end": 483.29,
+          "p": 0.84
+        },
+        {
+          "w": "To",
+          "start": 483.29,
+          "end": 483.53,
+          "p": 0.978
+        },
+        {
+          "w": "go",
+          "start": 483.53,
+          "end": 483.69,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 483.69,
+          "end": 483.85,
+          "p": 0.999
+        },
+        {
+          "w": "your",
+          "start": 483.85,
+          "end": 484.17,
+          "p": 0.999
+        },
+        {
+          "w": "recitation.",
+          "start": 484.17,
+          "end": 484.73,
+          "p": 0.977
+        },
+        {
+          "w": "I",
+          "start": 484.73,
+          "end": 484.81,
+          "p": 0.992
+        },
+        {
+          "w": "want",
+          "start": 484.81,
+          "end": 484.97,
+          "p": 0.993
+        },
+        {
+          "w": "an",
+          "start": 484.97,
+          "end": 485.05,
+          "p": 0.998
+        },
+        {
+          "w": "algorithm",
+          "start": 485.05,
+          "end": 485.45,
+          "p": 1.0
+        },
+        {
+          "w": "that'll",
+          "start": 485.45,
+          "end": 485.77,
+          "p": 0.829
+        },
+        {
+          "w": "apply",
+          "start": 485.77,
+          "end": 486.01,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 486.01,
+          "end": 486.09,
+          "p": 1.0
+        },
+        {
+          "w": "your",
+          "start": 486.09,
+          "end": 486.25,
+          "p": 1.0
+        },
+        {
+          "w": "recitation.",
+          "start": 486.25,
+          "end": 486.89,
+          "p": 0.969
+        },
+        {
+          "w": "I",
+          "start": 486.89,
+          "end": 487.05,
+          "p": 0.729
+        },
+        {
+          "w": "want",
+          "start": 487.05,
+          "end": 487.29,
+          "p": 0.988
+        },
+        {
+          "w": "an",
+          "start": 487.29,
+          "end": 487.37,
+          "p": 0.971
+        },
+        {
+          "w": "algorithm",
+          "start": 487.37,
+          "end": 487.85,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 487.85,
+          "end": 488.01,
+          "p": 1.0
+        },
+        {
+          "w": "not",
+          "start": 488.01,
+          "end": 488.25,
+          "p": 1.0
+        },
+        {
+          "w": "only",
+          "start": 488.25,
+          "end": 488.49,
+          "p": 1.0
+        },
+        {
+          "w": "applies",
+          "start": 488.49,
+          "end": 488.89,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 488.89,
+          "end": 489.05,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 489.05,
+          "end": 489.21,
+          "p": 1.0
+        },
+        {
+          "w": "classroom,",
+          "start": 489.21,
+          "end": 489.93,
+          "p": 0.963
+        },
+        {
+          "w": "but",
+          "start": 489.93,
+          "end": 490.09,
+          "p": 1.0
+        },
+        {
+          "w": "also",
+          "start": 490.09,
+          "end": 490.33,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 490.33,
+          "end": 490.49,
+          "p": 1.0
+        },
+        {
+          "w": "machine",
+          "start": 490.49,
+          "end": 490.89,
+          "p": 1.0
+        },
+        {
+          "w": "learning",
+          "start": 490.89,
+          "end": 491.29,
+          "p": 1.0
+        },
+        {
+          "w": "class",
+          "start": 491.29,
+          "end": 491.61,
+          "p": 1.0
+        },
+        {
+          "w": "before",
+          "start": 491.61,
+          "end": 492.01,
+          "p": 1.0
+        },
+        {
+          "w": "you,",
+          "start": 492.01,
+          "end": 492.33,
+          "p": 0.823
+        },
+        {
+          "w": "right?",
+          "start": 492.33,
+          "end": 492.97,
+          "p": 0.844
+        },
+        {
+          "w": "I",
+          "start": 492.97,
+          "end": 493.21,
+          "p": 0.976
+        },
+        {
+          "w": "want",
+          "start": 493.21,
+          "end": 493.37,
+          "p": 0.999
+        },
+        {
+          "w": "an",
+          "start": 493.37,
+          "end": 493.53,
+          "p": 1.0
+        },
+        {
+          "w": "algorithm",
+          "start": 493.53,
+          "end": 494.25,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 494.25,
+          "end": 494.57,
+          "p": 1.0
+        },
+        {
+          "w": "can",
+          "start": 494.57,
+          "end": 494.89,
+          "p": 1.0
+        },
+        {
+          "w": "change",
+          "start": 494.89,
+          "end": 496.01,
+          "p": 1.0
+        },
+        {
+          "w": "uh",
+          "start": 496.01,
+          "end": 496.57,
+          "p": 0.867
+        },
+        {
+          "w": "its",
+          "start": 496.57,
+          "end": 497.13,
+          "p": 0.644
+        },
+        {
+          "w": "uh",
+          "start": 497.13,
+          "end": 497.53,
+          "p": 0.739
+        },
+        {
+          "w": "uh",
+          "start": 497.53,
+          "end": 498.01,
+          "p": 0.713
+        },
+        {
+          "w": "it",
+          "start": 498.01,
+          "end": 498.25,
+          "p": 0.981
+        },
+        {
+          "w": "can",
+          "start": 498.25,
+          "end": 498.57,
+          "p": 0.999
+        },
+        {
+          "w": "accept",
+          "start": 498.57,
+          "end": 499.13,
+          "p": 1.0
+        },
+        {
+          "w": "an",
+          "start": 499.13,
+          "end": 499.37,
+          "p": 0.999
+        },
+        {
+          "w": "arbitrarily",
+          "start": 499.37,
+          "end": 500.25,
+          "p": 1.0
+        },
+        {
+          "w": "sized",
+          "start": 500.25,
+          "end": 500.73,
+          "p": 1.0
+        },
+        {
+          "w": "input.",
+          "start": 500.73,
+          "end": 501.41,
+          "p": 0.976
+        }
+      ]
+    },
+    {
+      "idx": 37,
+      "start": 501.47,
+      "end": 521.06,
+      "text": "Right? Here we have a class of maybe 300, 400 students, right? But I want my algorithm to work for a billion students. Right? Like maybe I'm trying to check if there's a match of something in the Facebook database or something like that. Right? Okay, so in general, uh we are looking for",
+      "words": [
+        {
+          "w": "Right?",
+          "start": 501.55,
+          "end": 502.03,
+          "p": 0.772
+        },
+        {
+          "w": "Here",
+          "start": 502.03,
+          "end": 502.35,
+          "p": 0.998
+        },
+        {
+          "w": "we",
+          "start": 502.35,
+          "end": 502.51,
+          "p": 1.0
+        },
+        {
+          "w": "have",
+          "start": 502.51,
+          "end": 502.67,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 502.67,
+          "end": 502.75,
+          "p": 1.0
+        },
+        {
+          "w": "class",
+          "start": 502.75,
+          "end": 502.99,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 502.99,
+          "end": 503.15,
+          "p": 1.0
+        },
+        {
+          "w": "maybe",
+          "start": 503.15,
+          "end": 503.47,
+          "p": 1.0
+        },
+        {
+          "w": "300,",
+          "start": 503.47,
+          "end": 504.11,
+          "p": 0.959
+        },
+        {
+          "w": "400",
+          "start": 504.11,
+          "end": 504.75,
+          "p": 0.999
+        },
+        {
+          "w": "students,",
+          "start": 504.75,
+          "end": 505.47,
+          "p": 0.825
+        },
+        {
+          "w": "right?",
+          "start": 505.47,
+          "end": 505.87,
+          "p": 0.891
+        },
+        {
+          "w": "But",
+          "start": 505.87,
+          "end": 506.03,
+          "p": 0.997
+        },
+        {
+          "w": "I",
+          "start": 506.03,
+          "end": 506.19,
+          "p": 1.0
+        },
+        {
+          "w": "want",
+          "start": 506.19,
+          "end": 506.35,
+          "p": 1.0
+        },
+        {
+          "w": "my",
+          "start": 506.35,
+          "end": 506.51,
+          "p": 1.0
+        },
+        {
+          "w": "algorithm",
+          "start": 506.51,
+          "end": 507.07,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 507.07,
+          "end": 507.23,
+          "p": 1.0
+        },
+        {
+          "w": "work",
+          "start": 507.23,
+          "end": 507.47,
+          "p": 1.0
+        },
+        {
+          "w": "for",
+          "start": 507.47,
+          "end": 507.63,
+          "p": 0.997
+        },
+        {
+          "w": "a",
+          "start": 507.63,
+          "end": 507.79,
+          "p": 0.999
+        },
+        {
+          "w": "billion",
+          "start": 507.79,
+          "end": 508.43,
+          "p": 1.0
+        },
+        {
+          "w": "students.",
+          "start": 508.43,
+          "end": 508.99,
+          "p": 0.815
+        },
+        {
+          "w": "Right?",
+          "start": 508.99,
+          "end": 509.31,
+          "p": 0.625
+        },
+        {
+          "w": "Like",
+          "start": 509.31,
+          "end": 509.55,
+          "p": 0.979
+        },
+        {
+          "w": "maybe",
+          "start": 509.55,
+          "end": 509.79,
+          "p": 1.0
+        },
+        {
+          "w": "I'm",
+          "start": 509.79,
+          "end": 510.03,
+          "p": 0.999
+        },
+        {
+          "w": "trying",
+          "start": 510.03,
+          "end": 510.27,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 510.27,
+          "end": 510.43,
+          "p": 1.0
+        },
+        {
+          "w": "check",
+          "start": 510.43,
+          "end": 510.83,
+          "p": 1.0
+        },
+        {
+          "w": "if",
+          "start": 510.83,
+          "end": 510.99,
+          "p": 1.0
+        },
+        {
+          "w": "there's",
+          "start": 510.99,
+          "end": 511.31,
+          "p": 0.999
+        },
+        {
+          "w": "a",
+          "start": 511.31,
+          "end": 511.47,
+          "p": 1.0
+        },
+        {
+          "w": "match",
+          "start": 511.47,
+          "end": 511.87,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 511.87,
+          "end": 512.11,
+          "p": 1.0
+        },
+        {
+          "w": "something",
+          "start": 512.11,
+          "end": 512.67,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 512.67,
+          "end": 512.83,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 512.83,
+          "end": 513.07,
+          "p": 1.0
+        },
+        {
+          "w": "Facebook",
+          "start": 513.07,
+          "end": 513.63,
+          "p": 0.999
+        },
+        {
+          "w": "database",
+          "start": 513.63,
+          "end": 514.19,
+          "p": 1.0
+        },
+        {
+          "w": "or",
+          "start": 514.19,
+          "end": 514.35,
+          "p": 1.0
+        },
+        {
+          "w": "something",
+          "start": 514.35,
+          "end": 514.67,
+          "p": 1.0
+        },
+        {
+          "w": "like",
+          "start": 514.67,
+          "end": 514.91,
+          "p": 1.0
+        },
+        {
+          "w": "that.",
+          "start": 514.91,
+          "end": 515.23,
+          "p": 0.861
+        },
+        {
+          "w": "Right?",
+          "start": 515.23,
+          "end": 515.87,
+          "p": 0.727
+        },
+        {
+          "w": "Okay,",
+          "start": 515.87,
+          "end": 516.51,
+          "p": 0.77
+        },
+        {
+          "w": "so",
+          "start": 516.51,
+          "end": 516.99,
+          "p": 1.0
+        },
+        {
+          "w": "in",
+          "start": 516.99,
+          "end": 517.31,
+          "p": 1.0
+        },
+        {
+          "w": "general,",
+          "start": 517.31,
+          "end": 518.43,
+          "p": 0.951
+        },
+        {
+          "w": "uh",
+          "start": 518.43,
+          "end": 519.23,
+          "p": 0.777
+        },
+        {
+          "w": "we",
+          "start": 519.23,
+          "end": 519.55,
+          "p": 0.998
+        },
+        {
+          "w": "are",
+          "start": 519.55,
+          "end": 519.87,
+          "p": 0.995
+        },
+        {
+          "w": "looking",
+          "start": 519.87,
+          "end": 520.43,
+          "p": 1.0
+        },
+        {
+          "w": "for",
+          "start": 520.43,
+          "end": 521.06,
+          "p": 1.0
+        }
+      ]
+    },
+    {
+      "idx": 38,
+      "start": 521.08,
+      "end": 523.11,
+      "text": "Uh general",
+      "words": [
+        {
+          "w": "Uh",
+          "start": 521.32,
+          "end": 522.04,
+          "p": 0.697
+        },
+        {
+          "w": "general",
+          "start": 522.04,
+          "end": 523.11,
+          "p": 0.833
+        }
+      ]
+    },
+    {
+      "idx": 39,
+      "start": 524.8,
+      "end": 525.89,
+      "text": "Problems.",
+      "words": [
+        {
+          "w": "Problems.",
+          "start": 524.96,
+          "end": 525.89,
+          "p": 0.853
+        }
+      ]
+    },
+    {
+      "idx": 40,
+      "start": 527.26,
+      "end": 531.62,
+      "text": "That have arbitrarily",
+      "words": [
+        {
+          "w": "That",
+          "start": 527.98,
+          "end": 528.54,
+          "p": 0.66
+        },
+        {
+          "w": "have",
+          "start": 528.54,
+          "end": 529.82,
+          "p": 0.992
+        },
+        {
+          "w": "arbitrarily",
+          "start": 529.82,
+          "end": 531.62,
+          "p": 0.996
+        }
+      ]
+    },
+    {
+      "idx": 41,
+      "start": 532.83,
+      "end": 533.86,
+      "text": "sized",
+      "words": [
+        {
+          "w": "sized",
+          "start": 533.07,
+          "end": 533.86,
+          "p": 0.717
+        }
+      ]
+    },
+    {
+      "idx": 42,
+      "start": 535.04,
+      "end": 546.82,
+      "text": "Inputs, right? So these these inputs could grow very large, but we want a kind of a fixed size algorithm to solve those problems. Okay? So what is an algorithm then?",
+      "words": [
+        {
+          "w": "Inputs,",
+          "start": 535.2,
+          "end": 535.84,
+          "p": 0.802
+        },
+        {
+          "w": "right?",
+          "start": 535.84,
+          "end": 536.16,
+          "p": 0.936
+        },
+        {
+          "w": "So",
+          "start": 536.16,
+          "end": 536.48,
+          "p": 0.993
+        },
+        {
+          "w": "these",
+          "start": 536.48,
+          "end": 536.88,
+          "p": 0.925
+        },
+        {
+          "w": "these",
+          "start": 536.88,
+          "end": 537.12,
+          "p": 0.84
+        },
+        {
+          "w": "inputs",
+          "start": 537.12,
+          "end": 537.76,
+          "p": 1.0
+        },
+        {
+          "w": "could",
+          "start": 537.76,
+          "end": 538.08,
+          "p": 1.0
+        },
+        {
+          "w": "grow",
+          "start": 538.08,
+          "end": 538.72,
+          "p": 1.0
+        },
+        {
+          "w": "very",
+          "start": 538.72,
+          "end": 539.04,
+          "p": 1.0
+        },
+        {
+          "w": "large,",
+          "start": 539.04,
+          "end": 539.68,
+          "p": 0.981
+        },
+        {
+          "w": "but",
+          "start": 539.68,
+          "end": 539.84,
+          "p": 1.0
+        },
+        {
+          "w": "we",
+          "start": 539.84,
+          "end": 540.0,
+          "p": 1.0
+        },
+        {
+          "w": "want",
+          "start": 540.0,
+          "end": 540.16,
+          "p": 0.978
+        },
+        {
+          "w": "a",
+          "start": 540.16,
+          "end": 540.32,
+          "p": 0.991
+        },
+        {
+          "w": "kind",
+          "start": 540.32,
+          "end": 540.48,
+          "p": 0.993
+        },
+        {
+          "w": "of",
+          "start": 540.48,
+          "end": 540.64,
+          "p": 0.999
+        },
+        {
+          "w": "a",
+          "start": 540.64,
+          "end": 540.8,
+          "p": 0.993
+        },
+        {
+          "w": "fixed",
+          "start": 540.8,
+          "end": 541.28,
+          "p": 1.0
+        },
+        {
+          "w": "size",
+          "start": 541.28,
+          "end": 541.76,
+          "p": 1.0
+        },
+        {
+          "w": "algorithm",
+          "start": 541.76,
+          "end": 542.48,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 542.48,
+          "end": 542.72,
+          "p": 1.0
+        },
+        {
+          "w": "solve",
+          "start": 542.72,
+          "end": 543.12,
+          "p": 1.0
+        },
+        {
+          "w": "those",
+          "start": 543.12,
+          "end": 543.52,
+          "p": 1.0
+        },
+        {
+          "w": "problems.",
+          "start": 543.52,
+          "end": 544.32,
+          "p": 0.951
+        },
+        {
+          "w": "Okay?",
+          "start": 544.32,
+          "end": 545.04,
+          "p": 0.719
+        },
+        {
+          "w": "So",
+          "start": 545.04,
+          "end": 545.28,
+          "p": 0.984
+        },
+        {
+          "w": "what",
+          "start": 545.28,
+          "end": 545.52,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 545.52,
+          "end": 545.68,
+          "p": 0.998
+        },
+        {
+          "w": "an",
+          "start": 545.68,
+          "end": 545.84,
+          "p": 1.0
+        },
+        {
+          "w": "algorithm",
+          "start": 545.84,
+          "end": 546.4,
+          "p": 1.0
+        },
+        {
+          "w": "then?",
+          "start": 546.4,
+          "end": 546.82,
+          "p": 0.996
+        }
+      ]
+    },
+    {
+      "idx": 43,
+      "start": 555.42,
+      "end": 558.05,
+      "text": "Riv what what am I to no?",
+      "words": [
+        {
+          "w": "Riv",
+          "start": 555.5,
+          "end": 556.46,
+          "p": 0.788
+        },
+        {
+          "w": "what",
+          "start": 556.46,
+          "end": 556.86,
+          "p": 0.781
+        },
+        {
+          "w": "what",
+          "start": 556.86,
+          "end": 557.1,
+          "p": 0.923
+        },
+        {
+          "w": "am",
+          "start": 557.1,
+          "end": 557.26,
+          "p": 0.697
+        },
+        {
+          "w": "I",
+          "start": 557.26,
+          "end": 557.42,
+          "p": 0.997
+        },
+        {
+          "w": "to",
+          "start": 557.42,
+          "end": 557.74,
+          "p": 0.458
+        },
+        {
+          "w": "no?",
+          "start": 557.74,
+          "end": 558.05,
+          "p": 0.471
+        }
+      ]
+    },
+    {
+      "idx": 44,
+      "start": 559.23,
+      "end": 576.77,
+      "text": "I really can't spell. Told you. Okay. I didn't lie to you. Um so an algorithm is a little different than a problem. A problem specification, I can state to you what this graph or I can tell you what this graph looks like. An algorithm is really",
+      "words": [
+        {
+          "w": "I",
+          "start": 559.39,
+          "end": 559.55,
+          "p": 0.975
+        },
+        {
+          "w": "really",
+          "start": 559.55,
+          "end": 559.71,
+          "p": 1.0
+        },
+        {
+          "w": "can't",
+          "start": 559.71,
+          "end": 560.03,
+          "p": 0.999
+        },
+        {
+          "w": "spell.",
+          "start": 560.03,
+          "end": 560.59,
+          "p": 0.934
+        },
+        {
+          "w": "Told",
+          "start": 560.59,
+          "end": 560.91,
+          "p": 0.778
+        },
+        {
+          "w": "you.",
+          "start": 560.91,
+          "end": 561.31,
+          "p": 0.893
+        },
+        {
+          "w": "Okay.",
+          "start": 561.31,
+          "end": 562.35,
+          "p": 0.888
+        },
+        {
+          "w": "I",
+          "start": 562.35,
+          "end": 562.67,
+          "p": 0.996
+        },
+        {
+          "w": "didn't",
+          "start": 562.67,
+          "end": 563.07,
+          "p": 1.0
+        },
+        {
+          "w": "lie",
+          "start": 563.07,
+          "end": 563.31,
+          "p": 0.999
+        },
+        {
+          "w": "to",
+          "start": 563.31,
+          "end": 563.63,
+          "p": 1.0
+        },
+        {
+          "w": "you.",
+          "start": 563.63,
+          "end": 564.03,
+          "p": 0.983
+        },
+        {
+          "w": "Um",
+          "start": 564.03,
+          "end": 564.83,
+          "p": 0.849
+        },
+        {
+          "w": "so",
+          "start": 564.83,
+          "end": 565.23,
+          "p": 0.847
+        },
+        {
+          "w": "an",
+          "start": 565.23,
+          "end": 565.47,
+          "p": 0.999
+        },
+        {
+          "w": "algorithm",
+          "start": 565.47,
+          "end": 566.11,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 566.11,
+          "end": 566.27,
+          "p": 0.999
+        },
+        {
+          "w": "a",
+          "start": 566.27,
+          "end": 566.35,
+          "p": 1.0
+        },
+        {
+          "w": "little",
+          "start": 566.35,
+          "end": 566.51,
+          "p": 1.0
+        },
+        {
+          "w": "different",
+          "start": 566.51,
+          "end": 566.83,
+          "p": 1.0
+        },
+        {
+          "w": "than",
+          "start": 566.83,
+          "end": 566.99,
+          "p": 1.0
+        },
+        {
+          "w": "a",
+          "start": 566.99,
+          "end": 567.15,
+          "p": 0.999
+        },
+        {
+          "w": "problem.",
+          "start": 567.15,
+          "end": 567.55,
+          "p": 0.93
+        },
+        {
+          "w": "A",
+          "start": 567.55,
+          "end": 567.87,
+          "p": 0.985
+        },
+        {
+          "w": "problem",
+          "start": 567.87,
+          "end": 569.07,
+          "p": 1.0
+        },
+        {
+          "w": "specification,",
+          "start": 569.07,
+          "end": 570.43,
+          "p": 0.83
+        },
+        {
+          "w": "I",
+          "start": 570.43,
+          "end": 570.75,
+          "p": 0.999
+        },
+        {
+          "w": "can",
+          "start": 570.75,
+          "end": 570.99,
+          "p": 1.0
+        },
+        {
+          "w": "state",
+          "start": 570.99,
+          "end": 571.31,
+          "p": 1.0
+        },
+        {
+          "w": "to",
+          "start": 571.31,
+          "end": 571.63,
+          "p": 0.994
+        },
+        {
+          "w": "you",
+          "start": 571.63,
+          "end": 571.87,
+          "p": 0.999
+        },
+        {
+          "w": "what",
+          "start": 571.87,
+          "end": 572.19,
+          "p": 0.998
+        },
+        {
+          "w": "this",
+          "start": 572.19,
+          "end": 572.51,
+          "p": 1.0
+        },
+        {
+          "w": "graph",
+          "start": 572.51,
+          "end": 573.15,
+          "p": 1.0
+        },
+        {
+          "w": "or",
+          "start": 573.15,
+          "end": 573.63,
+          "p": 0.998
+        },
+        {
+          "w": "I",
+          "start": 573.63,
+          "end": 573.87,
+          "p": 0.997
+        },
+        {
+          "w": "can",
+          "start": 573.87,
+          "end": 574.03,
+          "p": 0.999
+        },
+        {
+          "w": "tell",
+          "start": 574.03,
+          "end": 574.35,
+          "p": 1.0
+        },
+        {
+          "w": "you",
+          "start": 574.35,
+          "end": 574.51,
+          "p": 1.0
+        },
+        {
+          "w": "what",
+          "start": 574.51,
+          "end": 574.67,
+          "p": 1.0
+        },
+        {
+          "w": "this",
+          "start": 574.67,
+          "end": 574.83,
+          "p": 0.999
+        },
+        {
+          "w": "graph",
+          "start": 574.83,
+          "end": 575.15,
+          "p": 1.0
+        },
+        {
+          "w": "looks",
+          "start": 575.15,
+          "end": 575.31,
+          "p": 0.999
+        },
+        {
+          "w": "like.",
+          "start": 575.31,
+          "end": 575.55,
+          "p": 0.939
+        },
+        {
+          "w": "An",
+          "start": 575.55,
+          "end": 575.71,
+          "p": 0.959
+        },
+        {
+          "w": "algorithm",
+          "start": 575.71,
+          "end": 576.19,
+          "p": 1.0
+        },
+        {
+          "w": "is",
+          "start": 576.19,
+          "end": 576.35,
+          "p": 0.999
+        },
+        {
+          "w": "really",
+          "start": 576.35,
+          "end": 576.77,
+          "p": 1.0
+        }
+      ]
+    },
+    {
+      "idx": 45,
+      "start": 576.86,
+      "end": 595.46,
+      "text": "I don't know what the outputs are, I don't know what these edges are, but well, I wanna I want a fixed size kind of machine or procedure that if I give it an input, it will generate an output, and if it generates an output, it better be one of these correct outputs. Right? So",
+      "words": [
+        {
+          "w": "I",
+          "start": 576.86,
+          "end": 577.02,
+          "p": 0.996
+        },
+        {
+          "w": "don't",
+          "start": 577.02,
+          "end": 577.26,
+          "p": 0.999
+        },
+        {
+          "w": "know",
+          "start": 577.26,
+          "end": 577.42,
+          "p": 1.0
+        },
+        {
+          "w": "what",
+          "start": 577.42,
+          "end": 577.5,
+          "p": 1.0
+        },
+        {
+          "w": "the",
+          "start": 577.5,
+          "end": 577.66,
+          "p": 1.0
+        },
+        {
+          "w": "outputs",
+          "start": 577.66,
+          "end": 578.06,
+          "p": 1.0
+        },
+        {
+          "w": "are,",
+          "start": 578.06,
+          "end": 578.3,
+          "p": 0.862
+        },
+        {
+          "w": "I",
+          "start": 578.3,
+          "end": 578.46,
+          "p": 0.999
+        },
+        {
+          "w": "don't",
+          "start": 578.46,
+          "end": 578.62,
+          "p": 1.0
+        },
+        {
+          "w": "know",
+          "start": 578.62,
+          "end": 578.7,
+          "p": 1.0
+        },
+        {
+          "w": "what",
+          "start": 578.7,
+          "end": 578.86,
+          "p": 1.0
+        },
+        {
+          "w": "these",
+          "start": 578.86,
+          "end": 579.1,
+          "p": 1.0
+        },
+        {
+          "w": "edges",
+          "start": 579.1,
+          "end": 579.66,
+          "p": 1.0
+        },
+        {
+          "w": "are,",
+          "start": 579.66,
+          "end": 580.14,
+          "p": 0.839
+        },
+        {
+          "w": "but",
+          "start": 580.14,
+          "end": 580.38,
+          "p": 1.0
+        },
+        {
+          "w": "well,",
+          "start": 580.38,
+          "end": 580.7,
+          "p": 0.655
+        },
+        {
+          "w": "I",
+          "start": 580.7,
+          "end": 580.78,
+          "p": 0.74
+        },
+        {
+          "w": "wanna",
+          "start": 580.78,
+          "end": 581.1,
+          "p": 0.922
+        },
+        {
+          "w": "I",
+          "start": 581.1,
+          "end": 581.18,
+          "p": 0.702
+        },
+        {
+          "w": "want",
+          "start": 581.18,
+          "end": 581.34,
+          "p": 0.803
+        },
+        {
+          "w": "a",
+          "start": 581.34,
+          "end": 581.5,
+          "p": 0.988
+        },
+        {
+          "w": "fixed",
+          "start": 581.5,
+          "end": 581.98,
+          "p": 0.994
+        },
+        {
+          "w": "size",
+          "start": 581.98,
+          "end": 582.38,
+          "p": 0.997
+        },
+        {
+          "w": "kind",
+          "start": 582.38,
+          "end": 582.7,
+          "p": 0.994
+        },
+        {
+          "w": "of",
+          "start": 582.7,
+          "end": 583.18,
+          "p": 1.0
+        },
+        {
+          "w": "machine",
+          "start": 583.18,
+          "end": 583.82,
+          "p": 1.0
+        },
+        {
+          "w": "or",
+          "start": 583.82,
+          "end": 583.98,
+          "p": 1.0
+        },
+        {
+          "w": "procedure",
+          "start": 583.98,
+          "end": 584.7,
+          "p": 1.0
+        },
+        {
+          "w": "that",
+          "start": 584.7,
+          "end": 584.94,
+          "p": 1.0
+        },
+        {
+          "w": "if",
+          "start": 584.94,
+          "end": 585.1,
+          "p": 1.0
+        },
+        {
+          "w": "I",
+          "start": 585.1,
+          "end": 585.34,
+          "p": 0.999
+        },
+        {
+          "w": "give",
+          "start": 585.34,
+          "end": 585.74,
+          "p": 1.0
+        },
+        {
+          "w": "it",
+          "start": 585.74,
+          "end": 585.98,
+          "p": 1.0
+        },
+        {
+          "w": "an",
+          "start": 585.98,
+          "end": 586.3,
+          "p": 0.999
+        },
+        {
+          "w": "input,",
+          "start": 586.3,
+          "end": 587.42,
+          "p": 0.995
+        },
+        {
+          "w": "it",
+          "start": 587.42,
+          "end": 587.74,
+          "p": 1.0
+        },
+        {
+          "w": "will",
+          "start": 587.74,
+          "end": 588.06,
+          "p": 1.0
+        },
+        {
+          "w": "generate",
+          "start": 588.06,
+          "end": 588.62,
+          "p": 1.0
+        },
+        {
+          "w": "an",
+          "start": 588.62,
+          "end": 588.86,
+          "p": 1.0
+        },
+        {
+          "w": "output,",
+          "start": 588.86,
+          "end": 589.82,
+          "p": 0.872
+        },
+        {
+          "w": "and",
+          "start": 589.82,
+          "end": 590.06,
+          "p": 1.0
+        },
+        {
+          "w": "if",
+          "start": 590.06,
+          "end": 590.22,
+          "p": 1.0
+        },
+        {
+          "w": "it",
+          "start": 590.22,
+          "end": 590.38,
+          "p": 1.0
+        },
+        {
+          "w": "generates",
+          "start": 590.38,
+          "end": 590.78,
+          "p": 1.0
+        },
+        {
+          "w": "an",
+          "start": 590.78,
+          "end": 590.86,
+          "p": 1.0
+        },
+        {
+          "w": "output,",
+          "start": 590.86,
+          "end": 591.26,
+          "p": 0.982
+        },
+        {
+          "w": "it",
+          "start": 591.26,
+          "end": 591.42,
+          "p": 1.0
+        },
+        {
+          "w": "better",
+          "start": 591.42,
+          "end": 591.66,
+          "p": 1.0
+        },
+        {
+          "w": "be",
+          "start": 591.66,
+          "end": 591.82,
+          "p": 1.0
+        },
+        {
+          "w": "one",
+          "start": 591.82,
+          "end": 591.98,
+          "p": 1.0
+        },
+        {
+          "w": "of",
+          "start": 591.98,
+          "end": 592.06,
+          "p": 1.0
+        },
+        {
+          "w": "these",
+          "start": 592.06,
+          "end": 592.22,
+          "p": 1.0
+        },
+        {
+          "w": "correct",
+          "start": 592.22,
+          "end": 592.7,
+          "p": 1.0
+        },
+        {
+          "w": "outputs.",
+          "start": 592.7,
+          "end": 593.74,
+          "p": 0.864
+        },
+        {
+          "w": "Right?",
+          "start": 593.74,
+          "end": 594.78,
+          "p": 0.748
+        },
+        {
+          "w": "So",
+          "start": 594.78,
+          "end": 595.46,
+          "p": 0.599
+        }
+      ]
+    }
+  ]
+}
