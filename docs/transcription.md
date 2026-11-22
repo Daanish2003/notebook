@@ -4,12 +4,12 @@ Read this before working on uploads, jobs, the worker, or transcript storage.
 
 ## Flow
 
-1. **Submit.** The web app sends either a file (streamed by a plain Hono route in `apps/server` into `$MEDIA_DIR/<id>/source.<ext>`) or a URL (oRPC procedure). Both insert a `transcription` row with `status = 'queued'`.
-2. **Claim.** The worker (`apps/transcriber`, Python) polls the SQLite file every few seconds, claims the oldest queued row in a single `UPDATE … RETURNING` transaction, sets `status = 'processing'`, and records `progress` as it goes. On startup it requeues rows stuck in `processing`. The details are decided in the map ticket "Data model and media layout".
+1. **Submit.** The web app sends either a file (streamed by a plain Hono route in `apps/server` into `$MEDIA_DIR/<id>/source.<ext>`) or a URL (oRPC procedure). Both insert a `source` row plus its single `transcription` row with `status = 'queued'`.
+2. **Claim.** The worker (`apps/transcriber`, Python) polls the SQLite file every few seconds, claims the oldest queued row in a single `UPDATE … RETURNING` transaction, moves `status` through `downloading` and `transcribing`, and records `progress` as it goes. On startup it requeues rows stuck mid-transcription; after 3 attempts a row is `failed`. The details are decided in the map ticket "Data model and media layout".
 3. **Fetch.** For URLs, `yt-dlp -x` downloads the audio and fills in `title` and `duration`.
 4. **Normalise.** `ffmpeg` converts to 16 kHz mono WAV (`$MEDIA_DIR/<id>/audio.wav`).
 5. **Transcribe.** onnx-asr runs Parakeet TDT 0.6b v3 with Silero VAD and timestamps. The model loads once, when the worker starts.
-6. **Store.** Insert one `transcript_segment` row per VAD segment (`idx`, `start_ms`, `end_ms`, `text`, and `words` as JSON with per-token times), then set `status = 'done'`. On failure, set `status = 'error'` with the message. Delete `audio.wav` afterwards. Always keep the Source's audio for playback: uploads transcoded to Opus, and URL Sources as the native audio yt-dlp downloaded.
+6. **Store.** Insert one `segment` row per VAD segment (`idx`, `start_ms`, `end_ms`, `text`, and `words` as JSON with per-token times), then set `status = 'done'`. On failure, set `status = 'failed'` with `error_kind` and `error_message`. Delete `audio.wav` afterwards. Always keep the Source's audio for playback as `media/<source-id>/audio.webm`: uploads transcoded to 48 kbps mono Opus, and URL Sources as the native audio yt-dlp downloaded.
 
 The server and web app only read rows, so the worker can restart at any time without losing jobs.
 

@@ -28,6 +28,10 @@ _Avoid_: Job (when talking about the domain), task, conversion
 A Transcript turned into files and downloaded to the device that asked for it. It is the only way Library data reaches a device.
 _Avoid_: Backup, sync, offline copy
 
+**Recently deleted**:
+Where a removed Source waits for 30 days before it is gone for good. It is invisible to the Library, search, and Export.
+_Avoid_: Trash, bin, archive
+
 **Owner**:
 The one person whose machine runs Notebook and whose tailnet devices may reach it.
 _Avoid_: User, account

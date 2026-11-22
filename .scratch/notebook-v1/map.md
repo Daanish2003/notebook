@@ -26,6 +26,8 @@ A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL
 - [Media URL ingestion and synced playback](issues/02-media-url-ingestion.md): yt-dlp as a pinned Python library, keeping the native Opus/WebM; metadata covers the Library card; failures are classified by error text; the YouTube embed is polled for time; our own audio is served with Range support.
 - [Running Notebook always-on](issues/09-always-on-operation.md): started on demand by socket activation when the app opens (no linger), the server stops after 15 min idle, and the worker runs only while there's work; one Hono process on `127.0.0.1:4310` behind `tailscale serve` at `https://omarchy.<tailnet>.ts.net/`; the Library lives in `~/.local/share/notebook/` with daily DB snapshots; a weekly yt-dlp upgrade.
 - [Library and adding a Source](issues/05-library-ingest-prototype.md): Variant C "Journal". Search first, a date-grouped timeline of what was said, and a paste composer pinned at the bottom; plus drop-anywhere on desktop, a "needs attention" strip for failed and in-progress Sources, and full-Transcript search hits that open the reader at the timestamp.
+- [Data model and media layout](issues/06-data-model.md): `source` / `transcription` (one per Source) / `segment` with words JSON; FTS5 `porter unicode61` returns Source, Segment and timestamp; 30-day Recently deleted; 48 kbps Opus WebM for uploads; 3-attempt queue; WAL across Bun and Python; 2 s polling for progress.
+- [Editing and Export](issues/07-ownership-edit-export.md): rename a Source and edit Segment text in place (word timings dropped on edit); one Source exports as Markdown, SRT, VTT or text; Export Library is a Markdown zip with optional audio.
 
 ## Not yet specified
 
