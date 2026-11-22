@@ -9,12 +9,12 @@
 {
   "$schema": "https://r2.better-t-stack.dev/schema.json",
   "version": "3.49.2",
-  "createdAt": "2026-11-22T04:13:08.578Z",
-  "reproducibleCommand": "pnpm create better-t-stack@latest . --frontend tanstack-start native-uniwind --backend self --runtime none --database postgres --orm drizzle --api orpc --auth better-auth --payments none --addons evlog husky lefthook mcp oxlint skills turborepo --examples none --db-setup docker --web-deploy docker --server-deploy none --no-git --package-manager pnpm --install",
+  "createdAt": "2026-11-22T04:36:55.340Z",
+  "reproducibleCommand": "pnpm create better-t-stack@latest notebook --frontend tanstack-router --backend hono --runtime bun --database postgres --orm drizzle --api orpc --auth better-auth --payments none --addons pwa evlog lefthook mcp oxlint skills turborepo --examples none --db-setup docker --web-deploy none --server-deploy none --no-git --package-manager pnpm --install",
   "addonOptions": {
     "mcp": {
       "scope": "project",
-      "servers": ["better-t-stack", "context7", "better-auth", "expo"],
+      "servers": ["better-t-stack", "context7", "better-auth"],
       "agents": ["claude-code"],
     },
     "skills": {
@@ -24,16 +24,16 @@
   },
   "database": "postgres",
   "orm": "drizzle",
-  "backend": "self",
-  "runtime": "none",
-  "frontend": ["tanstack-start", "native-uniwind"],
-  "addons": ["evlog", "husky", "lefthook", "mcp", "oxlint", "skills", "turborepo"],
+  "backend": "hono",
+  "runtime": "bun",
+  "frontend": ["tanstack-router"],
+  "addons": ["pwa", "evlog", "lefthook", "mcp", "oxlint", "skills", "turborepo"],
   "examples": [],
   "auth": "better-auth",
   "payments": "none",
   "packageManager": "pnpm",
   "dbSetup": "docker",
   "api": "orpc",
-  "webDeploy": "docker",
+  "webDeploy": "none",
   "serverDeploy": "none",
 }

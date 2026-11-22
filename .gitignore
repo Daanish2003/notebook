@@ -58,17 +58,16 @@ tmp
 temp
 
 # Framework outputs
-.output
-.nitro
 .tanstack
-.expo
-.expo-shared
-web-build
-/apps/native/ios
-/apps/native/android
+dev-dist
+
+# App data (uploaded media, intermediate audio)
+/data
+
+# Python
+.venv
+__pycache__
 
 # Claude Code (personal)
 .claude/settings.local.json
-
-# Personal agent notes
 CLAUDE.local.md

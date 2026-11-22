@@ -1,20 +1,20 @@
 # notebook
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines React, TanStack Start, Self, ORPC, and more.
+This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines React, TanStack Router, Hono, ORPC, and more.
 
 ## Features
 
 - **TypeScript** - For type safety and improved developer experience
-- **TanStack Start** - SSR framework with TanStack Router
-- **React Native** - Build mobile apps using React
-- **Expo** - Tools for React Native development
+- **TanStack Router** - File-based routing with full type safety
 - **TailwindCSS** - Utility-first CSS for rapid UI development
 - **Shared UI package** - shadcn/ui primitives live in `packages/ui`
+- **Hono** - Lightweight, performant server framework
 - **oRPC** - End-to-end type-safe APIs with OpenAPI integration
+- **Bun** - Runtime environment
 - **Drizzle** - TypeScript-first ORM
 - **PostgreSQL** - Database engine
 - **Authentication** - Better-Auth
-- **Lefthook** - Git hooks (lint + format on commit, typecheck on push, Conventional Commits)
+- **PWA** - Progressive Web App support
 - **Oxlint** - Oxlint + Oxfmt (linting & formatting)
 - **Turborepo** - Optimized monorepo build system
 
@@ -31,7 +31,7 @@ pnpm install
 This project uses PostgreSQL with Drizzle ORM.
 
 1. Make sure you have a PostgreSQL database set up.
-2. Update your `apps/web/.env` file with your PostgreSQL connection details.
+2. Update your `apps/server/.env` file with your PostgreSQL connection details.
 
 3. Apply the schema to your database:
 
@@ -45,8 +45,8 @@ Then, run the development server:
 pnpm run dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) in your browser to see the fullstack application.
-From `apps/native`, run the `ios` script for iOS or the `android` script for Android to build and launch the app. See [Expo development builds](https://docs.expo.dev/develop/development-builds/introduction/) for device setup.
+Open [http://localhost:3001](http://localhost:3001) in your browser to see the web application.
+The API is running at [http://localhost:3000](http://localhost:3000).
 
 ## UI Customization
 
@@ -84,24 +84,8 @@ Bun's automatic env loading is disabled in `bunfig.toml`; the framework integrat
 
 Run standalone Node/Bun tools that use Varlock from the owning app directory so they load that app's schema and env files. `env:generate` only generates TypeScript files; it does not initialize environment values in a subsequent command.
 
-## Deployment
-
-### Docker Compose
-
-- Target: web + server
-- Config: `docker-compose.yml` (app Dockerfiles live in `apps/*/Dockerfile`)
-- Build images: pnpm run docker:build
-- Start: pnpm run docker:up
-- Logs: pnpm run docker:logs
-- Stop: pnpm run docker:down
-
-Environment variables are read from each app's `.env` file (baked into web builds for public variables) and overridden in `docker-compose.yml` for container networking.
-
-For more details, see the guide on [Deploying with Docker Compose](https://www.better-t-stack.dev/docs/guides/docker).
-
 ## Git Hooks and Formatting
 
-- Initialize hooks: `pnpm run prepare`
 - Run checks: `pnpm run check`
 
 ## Project Structure
@@ -109,8 +93,8 @@ For more details, see the guide on [Deploying with Docker Compose](https://www.b
 ```
 notebook/
 ├── apps/
-│   └── web/         # Fullstack application (React + TanStack Start)
-│   ├── native/      # Mobile application (React Native, Expo)
+│   ├── web/         # Frontend application (React + TanStack Router)
+│   └── server/      # Backend API (Hono, ORPC)
 ├── packages/
 │   ├── ui/          # Shared shadcn/ui components and styles
 │   ├── api/         # API layer / business logic
@@ -123,17 +107,14 @@ notebook/
 - `pnpm run dev`: Start all applications in development mode
 - `pnpm run build`: Build all applications
 - `pnpm run dev:web`: Start only the web application
+- `pnpm run dev:server`: Start only the server
 - `pnpm run check-types`: Check TypeScript types across all apps
-- `pnpm run dev:native`: Start the React Native/Expo development server
 - `pnpm run db:push`: Push schema changes to database
 - `pnpm run db:generate`: Generate database client/types
 - `pnpm run db:migrate`: Run database migrations
 - `pnpm run db:studio`: Open database studio UI
 - `pnpm run check`: Run Oxlint and Oxfmt
-- `pnpm run docker:build`: Build the Docker Compose images
-- `pnpm run docker:up`: Build and start the Docker Compose stack
-- `pnpm run docker:logs`: Tail logs from the Docker Compose stack
-- `pnpm run docker:down`: Stop the Docker Compose stack
+- `cd apps/web && pnpm run generate-pwa-assets`: Generate PWA assets
 
 ## Better Auth Schema Generation
 
