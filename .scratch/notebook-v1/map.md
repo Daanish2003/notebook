@@ -31,11 +31,13 @@ A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL
 - [Editing and Export](issues/07-ownership-edit-export.md): rename a Source and edit Segment text in place (word timings dropped on edit); one Source exports as Markdown, SRT, VTT or text; Export Library is a Markdown zip with optional audio.
 - [Organising the Library](issues/14-organising-the-library.md): manual Tags (any number per Source) plus a free channel filter; filter chips under the search box narrow the Library (all selected Tags), search within them; Export Library follows the filter.
 - [Off-disk backups](issues/15-off-disk-backups.md): restic over Tailscale to the Owner's laptop (USB fallback), DB snapshots plus media, encrypted, 7 daily / 4 weekly / 6 monthly, a monthly 5% read-back check, and an in-app warning after 7 days without an off-disk backup.
+- [How the Bot SDK can use Notebook](issues/16-bot-sdk-integration-points.md): Bot SDK Connections take tools from a Streamable HTTP MCP server with a per-user bearer token, but its guarded fetch blocks tailnet addresses (needs a `privateNetwork` opt-in or Host tools); it cuts results at 10k characters, so page Transcripts at 8k or less; tools only, no resources; a stateless `@modelcontextprotocol/server` 2.4 handler mounts in Hono.
+- [Agent access: CLI, Claude Code skill, MCP](issues/17-agent-access.md): one stateless `POST /mcp` for Claude Code and the Bot SDK (read tools plus idempotent `add_source`; no edit, delete or Export), per-client hashed bearer tokens (ADR 0003), a guidance-only Claude Code skill, a transcript resource for `@` mentions; Q&A moves to agents.
 - [Reader layout](issues/04-reader-prototype.md): Variant A "Article". A serif reading column with margin timestamps, chapter headings plus an Outline, a subtle spoken-word highlight with follow-along, click any word to seek; B's find-as-jump-list; C's bottom dock on phones; fillers hidden by default; uncertain words dotted.
 
 ## Not yet specified
 
-_Nothing right now. All remaining in-scope areas are tickets: AI reading help, speaker labels, agent access._
+_Nothing right now. All remaining in-scope areas are tickets: AI reading help, speaker labels._
 
 ## Out of scope
 
@@ -43,4 +45,6 @@ _Nothing right now. All remaining in-scope areas are tickets: AI reading help, s
 - Multi-user or public deployment: see ADR 0001. It becomes a new effort if it happens.
 - Native mobile app (Expo): the PWA covers phone access for now.
 - Cloud storage or sync services.
+- A `notebook` CLI: agents use the MCP endpoint instead (see "Agent access: CLI, Claude Code skill, MCP").
+- The Bot SDK's `privateNetwork` opt-in and Notebook Connection: implemented and decided in the bot-sdk repo; this map only depends on it.
 - Offline reading on devices: the Owner chose live access over the tailnet, with Export as the only way a Transcript lands on a device. [What each device keeps offline](issues/08-offline-behaviour.md) was closed for this reason.

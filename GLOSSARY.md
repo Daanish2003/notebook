@@ -36,6 +36,10 @@ _Avoid_: Backup, sync, offline copy
 Where a removed Source waits for 30 days before it is gone for good. It is invisible to the Library, search, and Export.
 _Avoid_: Trash, bin, archive
 
+**Agent token**:
+A named, revocable secret one agent client (such as Claude Code or the Bot SDK) presents to use Notebook's agent tools.
+_Avoid_: API key, password, access key
+
 **Owner**:
 The one person whose machine runs Notebook and whose tailnet devices may reach it.
 _Avoid_: User, account
