@@ -17,6 +17,7 @@ A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL
   - Speech-to-text: Parakeet TDT 0.6b v3 via onnx-asr on CUDA, loading voxtype's model files directly.
   - Languages: English plus Parakeet's European languages only.
   - Media: every Source keeps its audio on the Omarchy machine, uploads as Opus and URL Sources as the native audio yt-dlp downloaded. YouTube Sources play through the embed by default and fall back to the kept audio when embedding is disabled or the video is gone.
+- Before first use of AI notes: the Owner runs `claude setup-token` on omarchy (the CLI login expires around 2026-11-27) and turns off model training in Claude's privacy settings and ChatGPT's data controls.
 - Before any device installs the PWA: the Owner logs in to Tailscale, names the machine `omarchy`, enables MagicDNS and HTTPS, and finalises the tailnet name (see "Running Notebook always-on").
 - First build step after the map closes: re-scaffold with SQLite, no auth, no Docker (the current scaffold still has Postgres and Better Auth).
 
@@ -33,6 +34,8 @@ A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL
 - [Off-disk backups](issues/15-off-disk-backups.md): restic over Tailscale to the Owner's laptop (USB fallback), DB snapshots plus media, encrypted, 7 daily / 4 weekly / 6 monthly, a monthly 5% read-back check, and an in-app warning after 7 days without an off-disk backup.
 - [How the Bot SDK can use Notebook](issues/16-bot-sdk-integration-points.md): Bot SDK Connections take tools from a Streamable HTTP MCP server with a per-user bearer token, but its guarded fetch blocks tailnet addresses (needs a `privateNetwork` opt-in or Host tools); it cuts results at 10k characters, so page Transcripts at 8k or less; tools only, no resources; a stateless `@modelcontextprotocol/server` 2.4 handler mounts in Hono.
 - [Agent access: CLI, Claude Code skill, MCP](issues/17-agent-access.md): one stateless `POST /mcp` for Claude Code and the Bot SDK (read tools plus idempotent `add_source`; no edit, delete or Export), per-client hashed bearer tokens (ADR 0003), a guidance-only Claude Code skill, a transcript resource for `@` mentions; Q&A moves to agents.
+- [Calling Claude and ChatGPT through their CLIs](issues/10-claude-and-codex-cli.md): both work as isolated tool-less JSON completions (Claude ~6 s and more careful, so it's the default; Codex needs ~20 isolation flags); isolation is mandatory; call absolute binary paths; `claude setup-token` for unattended login; terms are grey, so on-demand only; turn off training in both accounts.
+- [AI reading help](issues/11-ai-reading-help.md): on-demand "AI notes" (summary, timestamped key points, chapters if YouTube has none) via Claude by default or ChatGPT per request, in a labelled card above the Transcript; stale after edits; failures checked and explained; optional, labelled section in Export.
 - [Reader layout](issues/04-reader-prototype.md): Variant A "Article". A serif reading column with margin timestamps, chapter headings plus an Outline, a subtle spoken-word highlight with follow-along, click any word to seek; B's find-as-jump-list; C's bottom dock on phones; fillers hidden by default; uncertain words dotted.
 
 ## Not yet specified

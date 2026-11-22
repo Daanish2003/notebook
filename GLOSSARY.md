@@ -36,6 +36,10 @@ _Avoid_: Backup, sync, offline copy
 Where a removed Source waits for 30 days before it is gone for good. It is invisible to the Library, search, and Export.
 _Avoid_: Trash, bin, archive
 
+**AI notes**:
+Machine-written notes about one Transcript (a summary, key points, and chapters when the Source has none), made on request and always labelled as generated.
+_Avoid_: Summary (that is one part), insights, analysis
+
 **Agent token**:
 A named, revocable secret one agent client (such as Claude Code or the Bot SDK) presents to use Notebook's agent tools.
 _Avoid_: API key, password, access key
