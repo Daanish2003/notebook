@@ -1,0 +1,25 @@
+{
+  "name": "@notebook/auth",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "check-types": "tsc -b"
+  },
+  "dependencies": {
+    "@better-auth/core": "1.7.22",
+    "@better-auth/drizzle-adapter": "1.7.22",
+    "@better-auth/expo": "catalog:",
+    "@notebook/db": "workspace:*",
+    "better-auth": "catalog:",
+    "drizzle-orm": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@notebook/config": "workspace:*",
+    "typescript": "^6.0.3"
+  }
+}
