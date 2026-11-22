@@ -4,7 +4,7 @@ Label: wayfinder:map
 
 ## Destination
 
-**Status: complete (2026-11-22).** The v1 spec is [#1 on GitHub](https://github.com/Daanish2003/notebook/issues/1), with build tickets #2–#17 as sub-issues. The re-scaffold is done.
+**Status: complete (2026-11-22).** The v1 spec is [#1 on GitHub](https://github.com/Daanish2003/notebook/issues/1), with build tickets #2–#18 as sub-issues. The re-scaffold is done.
 
 A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL), it is transcribed on the Omarchy machine, and the Owner reads it in an installable PWA that fetches everything live over the tailnet and is easy to read. An Export downloads a Transcript as files to whichever device asks. The map is done when nothing is left to decide before implementation starts.
 
