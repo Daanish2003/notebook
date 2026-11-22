@@ -4,7 +4,7 @@ Label: wayfinder:map
 
 ## Destination
 
-**Status: complete (2026-11-22).** Next: write the v1 spec from this map, then build it, starting with the re-scaffold.
+**Status: complete (2026-11-22).** The v1 spec is [`spec.md`](spec.md) (ready-for-agent). Next: build it, starting with the re-scaffold.
 
 A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL), it is transcribed on the Omarchy machine, and the Owner reads it in an installable PWA that fetches everything live over the tailnet and is easy to read. An Export downloads a Transcript as files to whichever device asks. The map is done when nothing is left to decide before implementation starts.
 
