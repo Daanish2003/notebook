@@ -1,7 +1,7 @@
 # Reader layout
 
 Type: prototype
-Status: open
+Status: claimed
 Blocked by: 03
 
 ## Question
