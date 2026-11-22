@@ -16,7 +16,7 @@ Decided with the Owner (grilling, 2026-11-22). The Owner asked to settle this ah
 
 - `source`:
   - `id`, `kind` (`youtube` | `url` | `upload`), `title`, `url`, `normalized_url` (YouTube video id or normalised URL, for duplicate detection), `channel`, `duration_sec`, `upload_date`, `playable_in_embed`.
-  - `chapters` (JSON of title + start; its display is decided by "Reader layout"), `audio_path`, `added_at`, `deleted_at`.
+  - `chapters` (JSON of title + start; shown as headings and in the reader's Outline), `audio_path`, `added_at`, `deleted_at`.
   - Every yt-dlp metadata column is nullable.
 - `transcription`: exactly one per Source; a retry resets it in place, with no attempt history. Fields: `status` (`queued` | `downloading` | `transcribing` | `done` | `failed`), `progress` (0–1), `attempts`, `error_kind` (private, unavailable, unsupported, login, rate-limited, outdated, other), `error_message`, `started_at`, `finished_at`.
 - `segment`: `source_id`, `idx`, `start_ms`, `end_ms`, `text`, `words` (JSON list of text, start, end, confidence: _provisional_), `edited_at`.
