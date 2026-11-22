@@ -1,8 +1,8 @@
 # notebook
 
-Personal transcription notebook: upload audio/video or paste a URL (YouTube or any site `yt-dlp` supports), and the Omarchy machine transcribes it locally with the same Parakeet model voxtype uses. Transcripts are stored and read in a PWA, reached from phone and laptop over Tailscale. Personal use for now; keep public deployment possible (auth stays on).
+Personal transcription notebook: upload audio/video or paste a URL (YouTube or any site `yt-dlp` supports), and the Omarchy machine transcribes it locally with the same Parakeet model voxtype uses. Transcripts are stored and read in a PWA, reached from phone and laptop over Tailscale. Single Owner: there is no app auth because the tailnet is the boundary (`docs/adr/0001`), and the Library is one SQLite file (`docs/adr/0002`). Domain terms are in `GLOSSARY.md`; v1 planning is in `.scratch/notebook-v1/map.md`.
 
-pnpm + Turborepo monorepo scaffolded with Better-T-Stack (`bts.jsonc` records the choices): `apps/server` is Hono on Bun (oRPC at `/rpc`, Better Auth at `/api/auth/*`, transcription jobs), `apps/web` is a TanStack Router SPA with the PWA addon, `apps/transcriber` (planned) is the Python GPU worker, and `packages/*` hold the API, auth, DB (Postgres + Drizzle) and UI. For uploads, jobs, the worker, or transcript storage, read `docs/transcription.md` first.
+pnpm + Turborepo monorepo scaffolded with Better-T-Stack (`bts.jsonc` records the choices): `apps/server` is Hono on Bun (oRPC at `/rpc`; starts Transcriptions), `apps/web` is a TanStack Router SPA with the PWA addon, `apps/transcriber` (planned) is the Python GPU worker, and `packages/*` hold the API, DB (Drizzle) and UI. The scaffold still has Postgres and Better Auth until the planned re-scaffold. For uploads, jobs, the worker, or transcript storage, read `docs/transcription.md` first.
 
 ## How we work
 
