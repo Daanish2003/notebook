@@ -27,7 +27,7 @@ A change is done when this passes:
 pnpm check && pnpm check-types
 ```
 
-For UI changes, also run the app and look at it: `pnpm db:start`, then `pnpm dev` (web on http://localhost:3001, server on http://localhost:3000). Test PWA behaviour against a production build (`pnpm build`), not the dev server.
+For UI changes, also run the app and look at it: `pnpm dev` (web on http://localhost:4321, server on http://localhost:4320; the dev Library is the git-ignored `data/notebook.db`). Test PWA behaviour against a production build (`pnpm build`), not the dev server.
 
 ## Gotchas
 
