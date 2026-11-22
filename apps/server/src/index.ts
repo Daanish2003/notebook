@@ -78,4 +78,5 @@ app.get("/", (c) => {
   return c.text("OK");
 });
 
-export default app;
+// Bun reads PORT before varlock loads the env, so pass the port explicitly.
+export default { port: ENV.PORT, fetch: app.fetch };
