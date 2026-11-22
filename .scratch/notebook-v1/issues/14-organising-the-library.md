@@ -1,7 +1,7 @@
 # Organising the Library
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by:
 
 ## Question

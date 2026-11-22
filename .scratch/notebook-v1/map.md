@@ -11,7 +11,7 @@ A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL
 - Domain language: `GLOSSARY.md`. Settled architecture: `docs/adr/` and `docs/transcription.md`. Read all three before resolving any ticket.
 - Skills: prototype tickets use `prototype`; UI tickets also consult `web-design-guidelines` and `shadcn`; grilling tickets use `grilling` + `domain-modeling`.
 - Standing decisions (from charting):
-  - Storage: the Omarchy machine holds the entire Library; nothing goes to a cloud. Devices keep no Library data: the PWA caches only its app shell and reads everything live over the tailnet. A device gets a copy of a Transcript only through an Export download.
+  - Storage: the Omarchy machine holds the entire Library; nothing is stored in a cloud. The one exception is AI reading help, which sends Transcript text to Claude (`claude -p`) or ChatGPT (`codex exec`, Sign in with ChatGPT) on the Owner's existing plans, only for the request being made. No local LLM. Devices keep no Library data: the PWA caches only its app shell and reads everything live over the tailnet. A device gets a copy of a Transcript only through an Export download.
   - Auth: none; the tailnet is the boundary (ADR 0001).
   - Database: one SQLite file via Drizzle (ADR 0002).
   - Speech-to-text: Parakeet TDT 0.6b v3 via onnx-asr on CUDA, loading voxtype's model files directly.

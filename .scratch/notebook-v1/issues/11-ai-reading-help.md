@@ -6,4 +6,11 @@ Blocked by: 10
 
 ## Question
 
-Given what "Local LLM options on the RTX 3060" found, which AI features does v1 include (summary, generated chapters for Sources without YouTube chapters, key points, Q&A over one Transcript, Q&A across the Library) and how do they behave? Settle: generated automatically after transcription or on demand; where each appears in the Article reader; how answers cite and link timestamps; storage and regeneration (including after the Owner edits the text); how it shares the GPU with the worker; and how it's labelled so machine output is never mistaken for the Transcript.
+Given what "Calling Claude and ChatGPT through their CLIs" found, which AI features does v1 include (summary, generated chapters for Sources without YouTube chapters, key points, Q&A over one Transcript, Q&A across the Library), and how do they behave? Settle:
+
+- Claude or ChatGPT by default, and whether the Owner can pick per request.
+- Generated automatically after transcription, or only on demand (each call spends plan usage and sends text off the machine).
+- Where each feature appears in the Article reader, and how answers cite and link timestamps.
+- Storage and regeneration, including after the Owner edits the text.
+- What the app shows when a CLI is logged out or over its limit.
+- How AI output is labelled, so machine text is never mistaken for the Transcript.
