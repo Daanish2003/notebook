@@ -29,11 +29,13 @@ A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL
 - [Library and adding a Source](issues/05-library-ingest-prototype.md): Variant C "Journal". Search first, a date-grouped timeline of what was said, and a paste composer pinned at the bottom; plus drop-anywhere on desktop, a "needs attention" strip for failed and in-progress Sources, and full-Transcript search hits that open the reader at the timestamp.
 - [Data model and media layout](issues/06-data-model.md): `source` / `transcription` (one per Source) / `segment` with words JSON; FTS5 `porter unicode61` returns Source, Segment and timestamp; 30-day Recently deleted; 48 kbps Opus WebM for uploads; 3-attempt queue; WAL across Bun and Python; 2 s polling for progress.
 - [Editing and Export](issues/07-ownership-edit-export.md): rename a Source and edit Segment text in place (word timings dropped on edit); one Source exports as Markdown, SRT, VTT or text; Export Library is a Markdown zip with optional audio.
+- [Organising the Library](issues/14-organising-the-library.md): manual Tags (any number per Source) plus a free channel filter; filter chips under the search box narrow the Library (all selected Tags), search within them; Export Library follows the filter.
+- [Off-disk backups](issues/15-off-disk-backups.md): restic over Tailscale to the Owner's laptop (USB fallback), DB snapshots plus media, encrypted, 7 daily / 4 weekly / 6 monthly, a monthly 5% read-back check, and an in-app warning after 7 days without an off-disk backup.
 - [Reader layout](issues/04-reader-prototype.md): Variant A "Article". A serif reading column with margin timestamps, chapter headings plus an Outline, a subtle spoken-word highlight with follow-along, click any word to seek; B's find-as-jump-list; C's bottom dock on phones; fillers hidden by default; uncertain words dotted.
 
 ## Not yet specified
 
-_Nothing right now. All remaining in-scope areas are tickets: AI reading help, speaker labels, organising the Library, off-disk backups._
+_Nothing right now. All remaining in-scope areas are tickets: AI reading help, speaker labels, agent access._
 
 ## Out of scope
 

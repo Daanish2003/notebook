@@ -20,6 +20,10 @@ _Avoid_: Transcription (that is the process), notes, text
 A contiguous stretch of speech in a Transcript with a start and end time, split where the speaker pauses.
 _Avoid_: Line, chunk, caption, cue
 
+**Tag**:
+A label the Owner puts on Sources to group them. A Source can carry any number of Tags.
+_Avoid_: Folder, category, label, collection
+
 **Transcription**:
 The process that turns a Source's media into its Transcript, together with its state (queued, processing, done, failed).
 _Avoid_: Job (when talking about the domain), task, conversion
