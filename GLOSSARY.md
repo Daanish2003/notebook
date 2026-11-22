@@ -20,6 +20,10 @@ _Avoid_: Transcription (that is the process), notes, text
 A contiguous stretch of speech in a Transcript with a start and end time, split where the speaker pauses.
 _Avoid_: Line, chunk, caption, cue
 
+**Speaker**:
+One voice detected in a Source's media, named "Speaker n" until the Owner renames it. Speakers belong to one Source; the same person in two Sources is two Speakers.
+_Avoid_: Voice, participant, person
+
 **Tag**:
 A label the Owner puts on Sources to group them. A Source can carry any number of Tags.
 _Avoid_: Folder, category, label, collection

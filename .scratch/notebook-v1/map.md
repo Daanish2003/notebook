@@ -4,6 +4,8 @@ Label: wayfinder:map
 
 ## Destination
 
+**Status: complete (2026-11-22).** Next: write the v1 spec from this map, then build it, starting with the re-scaffold.
+
 A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL), it is transcribed on the Omarchy machine, and the Owner reads it in an installable PWA that fetches everything live over the tailnet and is easy to read. An Export downloads a Transcript as files to whichever device asks. The map is done when nothing is left to decide before implementation starts.
 
 ## Notes
@@ -36,11 +38,13 @@ A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL
 - [Agent access: CLI, Claude Code skill, MCP](issues/17-agent-access.md): one stateless `POST /mcp` for Claude Code and the Bot SDK (read tools plus idempotent `add_source`; no edit, delete or Export), per-client hashed bearer tokens (ADR 0003), a guidance-only Claude Code skill, a transcript resource for `@` mentions; Q&A moves to agents.
 - [Calling Claude and ChatGPT through their CLIs](issues/10-claude-and-codex-cli.md): both work as isolated tool-less JSON completions (Claude ~6 s and more careful, so it's the default; Codex needs ~20 isolation flags); isolation is mandatory; call absolute binary paths; `claude setup-token` for unattended login; terms are grey, so on-demand only; turn off training in both accounts.
 - [AI reading help](issues/11-ai-reading-help.md): on-demand "AI notes" (summary, timestamped key points, chapters if YouTube has none) via Claude by default or ChatGPT per request, in a labelled card above the Transcript; stale after edits; failures checked and explained; optional, labelled section in Export.
+- [Local speaker diarization options](issues/12-diarization-options.md): Nemotron-3-Diarization on onnxruntime-gpu: ~9 s GPU and 726 MiB per hour of audio, 98–100% of words given the right speaker, right speaker count every time; about a third of Segments change speaker mid-way, so the speaker is stored per word; align by max-probability with snapping to sentence ends.
+- [Speaker labels](issues/13-speaker-labels.md): diarization runs on every Source as a `diarizing` stage (model regenerated from NVIDIA's checkpoint); speaker stored per word, names per Source; a new paragraph per speaker change in the reader; reassign, from-here and merge corrections; speakers in exports and agent tools; Re-detect speakers.
 - [Reader layout](issues/04-reader-prototype.md): Variant A "Article". A serif reading column with margin timestamps, chapter headings plus an Outline, a subtle spoken-word highlight with follow-along, click any word to seek; B's find-as-jump-list; C's bottom dock on phones; fillers hidden by default; uncertain words dotted.
 
 ## Not yet specified
 
-_Nothing right now. All remaining in-scope areas are tickets: AI reading help, speaker labels._
+_Nothing. Every ticket is resolved, and the map has reached its destination: v1 is fully specified._
 
 ## Out of scope
 
