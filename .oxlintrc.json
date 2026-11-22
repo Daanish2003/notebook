@@ -55,7 +55,8 @@
         "allowAsProps": true
       }
     ],
-    "unicorn/consistent-function-scoping": "off"
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/require-module-specifiers": "off"
   },
   "env": {
     "builtin": true,
