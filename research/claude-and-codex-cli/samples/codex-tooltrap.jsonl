@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a201c9-1c67-7663-a6da-a777a9680ef3"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"I have no shell, file-reading, directory-listing, or web-fetch tool available in this conversation, so I couldn’t run `cat canary.txt`, read `./canary.txt`, list the current directory, or fetch `https://example.com`."}}
+{"type":"turn.completed","usage":{"input_tokens":10175,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":56,"reasoning_output_tokens":0}}

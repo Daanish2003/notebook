@@ -1,0 +1,1 @@
+An algorithm is correct if, for a given input, any output it generates is one of the outputs deemed correct for that input [09:15]. The lecturer proposes proving correctness by explaining and communicating why the solution is correct, to convince other people—not just a computer [01:16] [02:26].
