@@ -33,11 +33,7 @@ A build-ready spec for Notebook v1. The Owner adds a Source (upload or media URL
 
 ## Not yet specified
 
-- **Off-disk backups**: copying DB snapshots (and maybe media) somewhere other than this disk. It waits until the Owner has a second drive or machine in mind.
-
-- **AI reading help**: summary, chapters, key points, and Q&A over a Transcript from a local LLM on the GPU. In scope, but it depends on what the reader shows, so it waits for the reader prototype.
-- **Speaker labels (diarization)**: whether and how Segments carry a speaker, and how that changes paragraph grouping. Waits on the reader layout and data model.
-- **Organising the Library**: tags, folders, or nothing beyond search and sort. Unclear until the library prototype shows how many Sources it takes for this to hurt.
+_Nothing right now. All remaining in-scope areas are tickets: AI reading help, speaker labels, organising the Library, off-disk backups._
 
 ## Out of scope
 
